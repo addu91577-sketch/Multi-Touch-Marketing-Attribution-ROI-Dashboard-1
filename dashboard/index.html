@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Touch Marketing Attribution & ROI Executive Dashboard</title>
+    <!-- Plotly.js CDN -->
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    <style>
+        :root {
+            --primary: #1e40af;
+            --primary-dark: #1e3a8a;
+            --accent: #3b82f6;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            padding: 24px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #2563eb 100%);
+            color: white;
+            padding: 32px 36px;
+            border-radius: 18px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.25);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .header-content h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .header-content p {
+            font-size: 15px;
+            opacity: 0.9;
+            max-width: 800px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+            padding: 6px 14px;
+            border-radius: 9999px;
+            font-size: 13px;
+            font-weight: 700;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* Model Switcher Toolbar */
+        .toolbar {
+            background: var(--card-bg);
+            padding: 18px 24px;
+            border-radius: 14px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 16px;
+            border: 1px solid var(--border);
+        }
+
+        .toolbar-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .model-buttons {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .btn-model {
+            background: #f1f5f9;
+            color: #475569;
+            border: 1px solid var(--border);
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-model:hover {
+            background: #e2e8f0;
+            color: var(--text-main);
+        }
+
+        .btn-model.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+        }
+
+        /* KPI Row */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin-bottom: 24px;
+        }
+
+        .kpi-card {
+            background: var(--card-bg);
+            padding: 22px 24px;
+            border-radius: 14px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border);
+            border-left: 5px solid var(--primary);
+            transition: transform 0.2s ease;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-2px);
+        }
+
+        .kpi-card.green { border-left-color: var(--success); }
+        .kpi-card.purple { border-left-color: #8b5cf6; }
+        .kpi-card.amber { border-left-color: var(--warning); }
+        .kpi-card.red { border-left-color: var(--danger); }
+
+        .kpi-label {
+            font-size: 13px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .kpi-value {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-main);
+            letter-spacing: -0.5px;
+        }
+
+        .kpi-sub {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Chart Cards */
+        .chart-card {
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border);
+            margin-bottom: 24px;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--text-main);
+        }
+
+        .card-desc {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        @media (max-width: 1024px) {
+            .grid-2 { grid-template-columns: 1fr; }
+        }
+
+        /* Simulator */
+        .sim-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+
+        .sim-channel {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .sim-channel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .sim-channel-name {
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .sim-channel-spend {
+            font-size: 13px;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .sim-slider {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .sim-slider-val {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Tables */
+        .table-wrap {
+            overflow-x: auto;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            text-align: right;
+            background: white;
+        }
+
+        th, td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: #f1f5f9;
+            color: #334155;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        tr:hover td {
+            background: #f8fafc;
+        }
+
+        .status-pill {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 9999px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .pill-green { background: #dcfce7; color: #15803d; }
+        .pill-blue { background: #dbeafe; color: #1e40af; }
+        .pill-amber { background: #fef3c7; color: #b45309; }
+        .pill-red { background: #fee2e2; color: #b91c1c; }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 13px;
+            padding: 32px 0 16px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Main Executive Header -->
+        <div class="header">
+            <div class="header-content">
+                <span class="badge">Enterprise Analytics Engine</span>
+                <h1 style="margin-top: 8px;">Multi-Touch Marketing Attribution & ROI Dashboard</h1>
+                <p>Auditing 1,050 omnichannel interactions across 300 customers with 6 algorithmic attribution models, conversion path analysis, and budget optimization simulation.</p>
+            </div>
+            <div>
+                <a href="https://github.com/addu91577-sketch/Multi-Touch-Marketing-Attribution-ROI-Dashboard-1" target="_blank" style="text-decoration: none;">
+                    <span class="badge" style="background: white; color: #0f172a; cursor: pointer;">GitHub Repository ↗</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Attribution Model Toolbar -->
+        <div class="toolbar">
+            <div class="toolbar-title">Active Attribution Model:</div>
+            <div class="model-buttons" id="model-buttons">
+                <button class="btn-model active" onclick="switchModel('Linear')">Linear Attribution</button>
+                <button class="btn-model" onclick="switchModel('First_Touch')">First-Touch (FTA)</button>
+                <button class="btn-model" onclick="switchModel('Last_Touch')">Last-Touch (LTA)</button>
+                <button class="btn-model" onclick="switchModel('Position_Based')">Position-Based (U-Shaped)</button>
+                <button class="btn-model" onclick="switchModel('Time_Decay')">Time-Decay (7-Day)</button>
+                <button class="btn-model" onclick="switchModel('Markov')">Markov Chain (Data-Driven)</button>
+            </div>
+        </div>
+
+        <!-- Executive KPI Cards -->
+        <div class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-label">Total Marketing Spend</div>
+                <div class="kpi-value" id="kpi-spend">$173,734.22</div>
+                <div class="kpi-sub">Across 8 channels & 1,050 touchpoints</div>
+            </div>
+            <div class="kpi-card green">
+                <div class="kpi-label"><span id="kpi-model-name">Linear</span> Attributed Revenue</div>
+                <div class="kpi-value" id="kpi-rev">$1,926,331.12</div>
+                <div class="kpi-sub">102 converting customer journeys</div>
+            </div>
+            <div class="kpi-card purple">
+                <div class="kpi-label">Attributed ROAS</div>
+                <div class="kpi-value" id="kpi-roas">11.09x</div>
+                <div class="kpi-sub">Return on Ad Spend multiple</div>
+            </div>
+            <div class="kpi-card amber">
+                <div class="kpi-label">Attributed Net Profit</div>
+                <div class="kpi-value" id="kpi-profit">$1,752,596.90</div>
+                <div class="kpi-sub">Portfolio Net ROI: +1,008.8%</div>
+            </div>
+            <div class="kpi-card green">
+                <div class="kpi-label">Budget Optimization Uplift</div>
+                <div class="kpi-value" id="kpi-uplift">+12.32%</div>
+                <div class="kpi-sub">+$237.3K revenue with $0 extra spend</div>
+            </div>
+        </div>
+
+        <!-- Main Chart: Channel Comparison -->
+        <div class="chart-card">
+            <div class="card-header">
+                <div>
+                    <div class="card-title">Attributed Revenue by Channel (<span id="chart-model-label">Linear</span> vs Portfolio)</div>
+                    <div class="card-desc">Compares channel revenue attribution under the selected model vs total marketing spend</div>
+                </div>
+            </div>
+            <div id="chart-channel-revenue" style="height: 440px;"></div>
+        </div>
+
+        <!-- Secondary Charts Grid -->
+        <div class="grid-2">
+            <!-- Bubble Chart: Spend vs ROAS -->
+            <div class="chart-card">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">Marketing Efficiency Matrix</div>
+                        <div class="card-desc">Spend vs Return on Ad Spend (Bubble size = Attributed Conversions)</div>
+                    </div>
+                </div>
+                <div id="chart-bubble" style="height: 420px;"></div>
+            </div>
+
+            <!-- Heatmap: Markov Transition Matrix -->
+            <div class="chart-card">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">Markov State Transition Matrix</div>
+                        <div class="card-desc">Probabilistic movement across customer touchpoints and absorbing states</div>
+                    </div>
+                </div>
+                <div id="chart-heatmap" style="height: 420px;"></div>
+            </div>
+        </div>
+
+        <!-- Interactive Budget Simulator -->
+        <div class="chart-card">
+            <div class="card-header">
+                <div>
+                    <div class="card-title">Interactive What-If Budget Simulator</div>
+                    <div class="card-desc">Adjust channel marketing spend (-50% to +50%) and observe projected portfolio revenue uplift</div>
+                </div>
+                <div style="text-align: right;">
+                    <span style="font-size: 13px; color: var(--text-muted);">Simulated Revenue: </span>
+                    <span id="sim-total-rev" style="font-size: 20px; font-weight: 800; color: #10b981;">$1,926,331.12</span>
+                    <span id="sim-uplift-badge" class="status-pill pill-green" style="margin-left: 8px;">+0.0%</span>
+                </div>
+            </div>
+            <div class="sim-grid" id="sim-sliders-container"></div>
+        </div>
+
+        <!-- Channel Performance Matrix Table -->
+        <div class="chart-card">
+            <div class="card-header">
+                <div>
+                    <div class="card-title">Channel Performance & Multi-Touch Attribution Matrix</div>
+                    <div class="card-desc">Spend, Conversions, Attributed Revenue, ROAS, ROI %, and CAC across all 8 channels</div>
+                </div>
+            </div>
+            <div class="table-wrap">
+                <table id="channel-table">
+                    <thead>
+                        <tr>
+                            <th style="text-align: left;">Channel</th>
+                            <th>Spend ($)</th>
+                            <th>Spend Share</th>
+                            <th>First-Touch Rev</th>
+                            <th>Last-Touch Rev</th>
+                            <th>Linear Rev</th>
+                            <th>Markov Rev</th>
+                            <th>FTA ROAS</th>
+                            <th>LTA ROAS</th>
+                            <th>Linear ROAS</th>
+                            <th>Markov ROAS</th>
+                            <th>Linear CAC</th>
+                        </tr>
+                    </thead>
+                    <tbody id="channel-table-body"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Top Customer Journey Paths Table -->
+        <div class="chart-card">
+            <div class="card-header">
+                <div>
+                    <div class="card-title">Top Converting Customer Journey Paths</div>
+                    <div class="card-desc">Most frequent multi-touch sequences, customer cohorts, conversion rates, and revenue</div>
+                </div>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="text-align: left;">Customer Journey Sequence</th>
+                            <th>Customers</th>
+                            <th>Conversions</th>
+                            <th>Conv. Rate (%)</th>
+                            <th>Avg Touchpoints</th>
+                            <th>Total Revenue</th>
+                        </tr>
+                    </thead>
+                    <tbody id="paths-table-body"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            Multi-Touch Marketing Attribution & ROI Optimization Project &bull; Built with Plotly & Python &bull; Open Source under MIT License
+        </footer>
+    </div>
+
+    <!-- Embedded Data & Interactive JavaScript -->
+    <script>
+        const channelData = [{"Channel": "Email", "Spend": 5601.86, "Touchpoints": 110, "First_Touch_Conversions": 10.0, "First_Touch_Revenue": 236053.56, "First_Touch_Net_Profit": 230451.7, "First_Touch_ROAS": 42.13842545154645, "First_Touch_ROI_Pct": 4113.842545154645, "First_Touch_CAC": 560.1859999999999, "Last_Touch_Conversions": 5.0, "Last_Touch_Revenue": 38471.97, "Last_Touch_Net_Profit": 32870.11, "Last_Touch_ROAS": 6.867713580846362, "Last_Touch_ROI_Pct": 586.7713580846362, "Last_Touch_CAC": 1120.3719999999998, "Linear_Conversions": 8.266666666666666, "Linear_Revenue": 180162.8545, "Linear_Net_Profit": 174560.99450000003, "Linear_ROAS": 32.16125617205714, "Linear_ROI_Pct": 3116.1256172057147, "Linear_CAC": 677.6443548387097, "Position_Based_Conversions": 7.766666666666667, "Position_Based_Revenue": 153199.092, "Position_Based_Net_Profit": 147597.23200000002, "Position_Based_ROAS": 27.347897305537806, "Position_Based_ROI_Pct": 2634.789730553781, "Position_Based_CAC": 721.2695278969957, "Time_Decay_Conversions": 7.767815756521278, "Time_Decay_Revenue": 138742.4476517475, "Time_Decay_Net_Profit": 133140.5876517475, "Time_Decay_ROAS": 24.76721082850116, "Time_Decay_ROI_Pct": 2376.7210828501165, "Time_Decay_CAC": 721.1628307863889, "Markov_Conversions": 6.33657002661283, "Markov_Revenue": 140695.32659624462, "Markov_Net_Profit": 135093.46659624463, "Markov_ROAS": 25.115823422264143, "Markov_ROI_Pct": 2411.5823422264148, "Markov_CAC": 884.0524095011754, "Spend_Share_Pct": 3.2243849254338035}, {"Channel": "Facebook Ads", "Spend": 33627.22, "Touchpoints": 132, "First_Touch_Conversions": 11.0, "First_Touch_Revenue": 161555.27, "First_Touch_Net_Profit": 127928.05, "First_Touch_ROAS": 4.804300504174891, "First_Touch_ROI_Pct": 380.4300504174891, "First_Touch_CAC": 3057.02, "Last_Touch_Conversions": 12.0, "Last_Touch_Revenue": 258413.85, "Last_Touch_Net_Profit": 224786.63, "Last_Touch_ROAS": 7.684662901066457, "Last_Touch_ROI_Pct": 668.4662901066457, "Last_Touch_CAC": 2802.268333333333, "Linear_Conversions": 11.266666666666667, "Linear_Revenue": 258760.02333333332, "Linear_Net_Profit": 225132.80333333332, "Linear_ROAS": 7.694957339123881, "Linear_ROI_Pct": 669.495733912388, "Linear_CAC": 2984.66449704142, "Position_Based_Conversions": 11.333333333333334, "Position_Based_Revenue": 227985.3443333333, "Position_Based_Net_Profit": 194358.1243333333, "Position_Based_ROAS": 6.779785671647354, "Position_Based_ROI_Pct": 577.9785671647354, "Position_Based_CAC": 2967.107647058824, "Time_Decay_Conversions": 11.128791924449343, "Time_Decay_Revenue": 243540.72022382088, "Time_Decay_Net_Profit": 209913.50022382088, "Time_Decay_ROAS": 7.242368540242722, "Time_Decay_ROI_Pct": 624.2368540242722, "Time_Decay_CAC": 3021.6415427916168, "Markov_Conversions": 10.975907164055682, "Markov_Revenue": 255906.90924286557, "Markov_Net_Profit": 222279.68924286557, "Markov_ROAS": 7.610111964142904, "Markov_ROI_Pct": 661.0111964142905, "Markov_CAC": 3063.730359356874, "Spend_Share_Pct": 19.35555355761231}, {"Channel": "Google Ads", "Spend": 38990.4, "Touchpoints": 125, "First_Touch_Conversions": 10.0, "First_Touch_Revenue": 311158.94, "First_Touch_Net_Profit": 272168.54, "First_Touch_ROAS": 7.980398764824161, "First_Touch_ROI_Pct": 698.0398764824162, "First_Touch_CAC": 3899.04, "Last_Touch_Conversions": 14.0, "Last_Touch_Revenue": 233456.17, "Last_Touch_Net_Profit": 194465.77, "Last_Touch_ROAS": 5.987529494439657, "Last_Touch_ROI_Pct": 498.75294944396575, "Last_Touch_CAC": 2785.0285714285715, "Linear_Conversions": 12.6, "Linear_Revenue": 250135.67016666668, "Linear_Net_Profit": 211145.27016666668, "Linear_ROAS": 6.415314286764605, "Linear_ROI_Pct": 541.5314286764606, "Linear_CAC": 3094.476190476191, "Position_Based_Conversions": 12.2, "Position_Based_Revenue": 264132.94533333334, "Position_Based_Net_Profit": 225142.5453333333, "Position_Based_ROAS": 6.774307145690563, "Position_Based_ROI_Pct": 577.4307145690562, "Position_Based_CAC": 3195.9344262295085, "Time_Decay_Conversions": 12.97870251699734, "Time_Decay_Revenue": 229480.1868036872, "Time_Decay_Net_Profit": 190489.7868036872, "Time_Decay_ROAS": 5.885556106212995, "Time_Decay_ROI_Pct": 488.5556106212995, "Time_Decay_CAC": 3004.183195426267, "Markov_Conversions": 12.54611902084339, "Markov_Revenue": 246674.1744443937, "Markov_Net_Profit": 207683.7744443937, "Markov_ROAS": 6.326536133109527, "Markov_ROI_Pct": 532.6536133109527, "Markov_CAC": 3107.7658306304625, "Spend_Share_Pct": 22.44255622179672}, {"Channel": "Instagram", "Spend": 27317.91, "Touchpoints": 143, "First_Touch_Conversions": 19.0, "First_Touch_Revenue": 358775.26, "First_Touch_Net_Profit": 331457.35000000003, "First_Touch_ROAS": 13.133334870786236, "First_Touch_ROI_Pct": 1213.3334870786236, "First_Touch_CAC": 1437.7847368421053, "Last_Touch_Conversions": 9.0, "Last_Touch_Revenue": 176146.25, "Last_Touch_Net_Profit": 148828.34, "Last_Touch_ROAS": 6.4480134095177855, "Last_Touch_ROI_Pct": 544.8013409517786, "Last_Touch_CAC": 3035.3233333333333, "Linear_Conversions": 16.116666666666667, "Linear_Revenue": 314193.26783333335, "Linear_Net_Profit": 286875.3578333334, "Linear_ROAS": 11.501365508317926, "Linear_ROI_Pct": 1050.1365508317926, "Linear_CAC": 1695.0099276111685, "Position_Based_Conversions": 14.666666666666666, "Position_Based_Revenue": 281789.32933333336, "Position_Based_Net_Profit": 254471.41933333332, "Position_Based_ROAS": 10.31518623984534, "Position_Based_ROI_Pct": 931.5186239845336, "Position_Based_CAC": 1862.5847727272728, "Time_Decay_Conversions": 12.83261537305099, "Time_Decay_Revenue": 226299.4393335565, "Time_Decay_Net_Profit": 198981.5293335565, "Time_Decay_ROAS": 8.28392213509586, "Time_Decay_ROI_Pct": 728.392213509586, "Time_Decay_CAC": 2128.7874066083764, "Markov_Conversions": 17.386706868335253, "Markov_Revenue": 338299.6300282758, "Markov_Net_Profit": 310981.7200282758, "Markov_ROAS": 12.38380352041118, "Markov_ROI_Pct": 1138.3803520411182, "Markov_CAC": 1571.1951784125088, "Spend_Share_Pct": 15.723966182367526}, {"Channel": "Mobile App", "Spend": 5218.05, "Touchpoints": 148, "First_Touch_Conversions": 9.0, "First_Touch_Revenue": 76462.33, "First_Touch_Net_Profit": 71244.28, "First_Touch_ROAS": 14.653429921139123, "First_Touch_ROI_Pct": 1365.3429921139125, "First_Touch_CAC": 579.7833333333333, "Last_Touch_Conversions": 17.0, "Last_Touch_Revenue": 439217.64, "Last_Touch_Net_Profit": 433999.59, "Last_Touch_ROAS": 84.17275418978355, "Last_Touch_ROI_Pct": 8317.275418978355, "Last_Touch_CAC": 306.9441176470588, "Linear_Conversions": 13.133333333333333, "Linear_Revenue": 202395.38583333333, "Linear_Net_Profit": 197177.33583333332, "Linear_ROAS": 38.78755202294599, "Linear_ROI_Pct": 3778.7552022946, "Linear_CAC": 397.3134517766498, "Position_Based_Conversions": 13.166666666666666, "Position_Based_Revenue": 242120.847, "Position_Based_Net_Profit": 236902.797, "Position_Based_ROAS": 46.40063759450369, "Position_Based_ROI_Pct": 4540.06375945037, "Position_Based_CAC": 396.3075949367089, "Time_Decay_Conversions": 14.599597772957964, "Time_Decay_Revenue": 328678.2001429064, "Time_Decay_Net_Profit": 323460.1501429064, "Time_Decay_ROAS": 62.98870270367405, "Time_Decay_ROI_Pct": 6198.870270367405, "Time_Decay_CAC": 357.4105315192388, "Markov_Conversions": 12.49826389779686, "Markov_Revenue": 195164.29505301127, "Markov_Net_Profit": 189946.24505301128, "Markov_ROAS": 37.401767911961606, "Markov_ROI_Pct": 3640.1767911961606, "Markov_CAC": 417.5019860894293, "Spend_Share_Pct": 3.0034670199112186}, {"Channel": "Organic Search", "Spend": 3564.87, "Touchpoints": 134, "First_Touch_Conversions": 13.0, "First_Touch_Revenue": 186293.34, "First_Touch_Net_Profit": 182728.47, "First_Touch_ROAS": 52.25810197847327, "First_Touch_ROI_Pct": 5125.810197847327, "First_Touch_CAC": 274.22076923076924, "Last_Touch_Conversions": 19.0, "Last_Touch_Revenue": 312336.24, "Last_Touch_Net_Profit": 308771.37, "Last_Touch_ROAS": 87.61504346582063, "Last_Touch_ROI_Pct": 8661.504346582064, "Last_Touch_CAC": 187.62473684210525, "Linear_Conversions": 14.416666666666666, "Linear_Revenue": 207385.0381666667, "Linear_Net_Profit": 203820.16816666667, "Linear_ROAS": 58.174642600337926, "Linear_ROI_Pct": 5717.464260033793, "Linear_CAC": 247.2742196531792, "Position_Based_Conversions": 15.433333333333334, "Position_Based_Revenue": 231403.854, "Position_Based_Net_Profit": 227838.98400000003, "Position_Based_ROAS": 64.91228403840815, "Position_Based_ROI_Pct": 6391.228403840814, "Position_Based_CAC": 230.9850971922246, "Time_Decay_Conversions": 15.68499750973893, "Time_Decay_Revenue": 244257.7670054172, "Time_Decay_Net_Profit": 240692.8970054172, "Time_Decay_ROAS": 68.5180012189553, "Time_Decay_ROI_Pct": 6751.8001218955305, "Time_Decay_CAC": 227.2789649973834, "Markov_Conversions": 15.396139278456252, "Markov_Revenue": 218285.2255580859, "Markov_Net_Profit": 214720.3555580859, "Markov_ROAS": 61.23231017066146, "Markov_ROI_Pct": 6023.231017066146, "Markov_CAC": 231.54311191431648, "Spend_Share_Pct": 2.0519100957773317}, {"Channel": "Website", "Spend": 4834.74, "Touchpoints": 117, "First_Touch_Conversions": 16.0, "First_Touch_Revenue": 238489.17, "First_Touch_Net_Profit": 233654.43, "First_Touch_ROAS": 49.32823068045025, "First_Touch_ROI_Pct": 4832.823068045025, "First_Touch_CAC": 302.17125, "Last_Touch_Conversions": 12.0, "Last_Touch_Revenue": 255886.99, "Last_Touch_Net_Profit": 251052.25, "Last_Touch_ROAS": 52.92673235789308, "Last_Touch_ROI_Pct": 5192.673235789309, "Last_Touch_CAC": 402.895, "Linear_Conversions": 14.316666666666666, "Linear_Revenue": 277021.51933333336, "Linear_Net_Profit": 272186.77933333337, "Linear_ROAS": 57.29812137433107, "Linear_ROI_Pct": 5629.812137433107, "Linear_CAC": 337.7001164144354, "Position_Based_Conversions": 14.2, "Position_Based_Revenue": 257960.49766666663, "Position_Based_Net_Profit": 253125.75766666667, "Position_Based_ROAS": 53.35560912617156, "Position_Based_ROI_Pct": 5235.560912617156, "Position_Based_CAC": 340.47464788732395, "Time_Decay_Conversions": 14.079594986633271, "Time_Decay_Revenue": 294513.6351142504, "Time_Decay_Net_Profit": 289678.8951142504, "Time_Decay_ROAS": 60.9161268474107, "Time_Decay_ROI_Pct": 5991.612684741071, "Time_Decay_CAC": 343.3862980142505, "Markov_Conversions": 15.27794197289089, "Markov_Revenue": 298774.93365547573, "Markov_Net_Profit": 293940.19365547574, "Markov_ROAS": 61.79751830615002, "Markov_ROI_Pct": 6079.751830615002, "Markov_CAC": 316.4523080777987, "Spend_Share_Pct": 2.782836910310473}, {"Channel": "YouTube", "Spend": 54579.17, "Touchpoints": 141, "First_Touch_Conversions": 14.0, "First_Touch_Revenue": 357543.25, "First_Touch_Net_Profit": 302964.08, "First_Touch_ROAS": 6.550910356460166, "First_Touch_ROI_Pct": 555.0910356460166, "First_Touch_CAC": 3898.512142857143, "Last_Touch_Conversions": 14.0, "Last_Touch_Revenue": 212402.01, "Last_Touch_Net_Profit": 157822.84000000003, "Last_Touch_ROAS": 3.891631367791046, "Last_Touch_ROI_Pct": 289.1631367791046, "Last_Touch_CAC": 3898.512142857143, "Linear_Conversions": 11.883333333333333, "Linear_Revenue": 236277.3608333333, "Linear_Net_Profit": 181698.19083333336, "Linear_ROAS": 4.329075741410749, "Linear_ROI_Pct": 332.90757414107503, "Linear_CAC": 4592.917531556803, "Position_Based_Conversions": 13.233333333333334, "Position_Based_Revenue": 267739.2103333333, "Position_Based_Net_Profit": 213160.04033333337, "Position_Based_ROAS": 4.905520005770212, "Position_Based_ROI_Pct": 390.5520005770212, "Position_Based_CAC": 4124.370528967254, "Time_Decay_Conversions": 12.927884159650883, "Time_Decay_Revenue": 220818.72372461396, "Time_Decay_Net_Profit": 166239.5537246139, "Time_Decay_ROAS": 4.045842465625878, "Time_Decay_ROI_Pct": 304.58424656258774, "Time_Decay_CAC": 4221.8176869457575, "Markov_Conversions": 11.582351771008843, "Markov_Revenue": 232530.62542164756, "Markov_Net_Profit": 177951.45542164752, "Markov_ROAS": 4.260428024494464, "Markov_ROI_Pct": 326.0428024494464, "Markov_CAC": 4712.2701053350975, "Spend_Share_Pct": 31.415325086790613}];
+        const pathsData = [{"Path": "Instagram -> Mobile App", "Total_Customers": 4, "Conversions": 2, "Total_Revenue": 21693.36, "Avg_Path_Length": 2.0, "Avg_Journey_Days": 6.5, "Conversion_Rate_Pct": 50.0, "Revenue_Per_Customer": 5423.34}, {"Path": "Mobile App -> Facebook Ads", "Total_Customers": 3, "Conversions": 2, "Total_Revenue": 25160.57, "Avg_Path_Length": 2.0, "Avg_Journey_Days": 5.333333333333333, "Conversion_Rate_Pct": 66.66666666666666, "Revenue_Per_Customer": 8386.856666666667}, {"Path": "Website -> Organic Search", "Total_Customers": 3, "Conversions": 2, "Total_Revenue": 24428.51, "Avg_Path_Length": 2.0, "Avg_Journey_Days": 5.333333333333333, "Conversion_Rate_Pct": 66.66666666666666, "Revenue_Per_Customer": 8142.836666666666}, {"Path": "Google Ads -> Instagram", "Total_Customers": 2, "Conversions": 2, "Total_Revenue": 44914.240000000005, "Avg_Path_Length": 2.0, "Avg_Journey_Days": 3.0, "Conversion_Rate_Pct": 100.0, "Revenue_Per_Customer": 22457.120000000003}, {"Path": "Instagram -> Facebook Ads", "Total_Customers": 4, "Conversions": 1, "Total_Revenue": 4468.94, "Avg_Path_Length": 2.0, "Avg_Journey_Days": 8.0, "Conversion_Rate_Pct": 25.0, "Revenue_Per_Customer": 1117.235}, {"Path": "Organic Search -> Mobile App", "Total_Customers": 4, "Conversions": 1, "Total_Revenue": 19304.2, "Avg_Path_Length": 2.0, "Avg_Journey_Days": 3.0, "Conversion_Rate_Pct": 25.0, "Revenue_Per_Customer": 4826.05}, {"Path": "Instagram -> Email", "Total_Customers": 3, "Conversions": 1, "Total_Revenue": 8396.81, "Avg_Path_Length": 2.0, "Avg_Journey_Days": 2.6666666666666665, "Conversion_Rate_Pct": 33.33333333333333, "Revenue_Per_Customer": 2798.9366666666665}, {"Path": "Email -> Website", "Total_Customers": 2, "Conversions": 1, "Total_Revenue": 51807.13, "Avg_Path_Length": 2.0, "Avg_Journey_Days": 2.0, "Conversion_Rate_Pct": 50.0, "Revenue_Per_Customer": 25903.565}, {"Path": "Facebook Ads -> Mobile App", "Total_Customers": 2, "Conversions": 1, "Total_Revenue": 3851.57, "Avg_Path_Length": 2.0, "Avg_Journey_Days": 0.5, "Conversion_Rate_Pct": 50.0, "Revenue_Per_Customer": 1925.785}, {"Path": "Facebook Ads -> Website -> YouTube", "Total_Customers": 2, "Conversions": 1, "Total_Revenue": 9820.7, "Avg_Path_Length": 3.0, "Avg_Journey_Days": 6.0, "Conversion_Rate_Pct": 50.0, "Revenue_Per_Customer": 4910.35}, {"Path": "Google Ads -> Google Ads -> Google Ads", "Total_Customers": 2, "Conversions": 1, "Total_Revenue": 4872.05, "Avg_Path_Length": 3.0, "Avg_Journey_Days": 12.0, "Conversion_Rate_Pct": 50.0, "Revenue_Per_Customer": 2436.025}, {"Path": "Google Ads -> Mobile App", "Total_Customers": 2, "Conversions": 1, "Total_Revenue": 18646.68, "Avg_Path_Length": 2.0, "Avg_Journey_Days": 6.0, "Conversion_Rate_Pct": 50.0, "Revenue_Per_Customer": 9323.34}, {"Path": "Instagram -> Google Ads", "Total_Customers": 2, "Conversions": 1, "Total_Revenue": 9667.92, "Avg_Path_Length": 2.0, "Avg_Journey_Days": 2.0, "Conversion_Rate_Pct": 50.0, "Revenue_Per_Customer": 4833.96}, {"Path": "Instagram -> Organic Search", "Total_Customers": 2, "Conversions": 1, "Total_Revenue": 14280.62, "Avg_Path_Length": 2.0, "Avg_Journey_Days": 4.5, "Conversion_Rate_Pct": 50.0, "Revenue_Per_Customer": 7140.31}, {"Path": "Instagram -> YouTube", "Total_Customers": 2, "Conversions": 1, "Total_Revenue": 13213.99, "Avg_Path_Length": 2.0, "Avg_Journey_Days": 12.5, "Conversion_Rate_Pct": 50.0, "Revenue_Per_Customer": 6606.995}];
+        const recsData = [{"Channel": "Email", "Current_Spend": 5601.86, "Current_Spend_Share_Pct": 3.2243849254338035, "Optimized_Spend": 7558.809084446426, "Optimized_Spend_Share_Pct": 4.350788856937007, "Spend_Delta": 1956.9490844464265, "Spend_Delta_Pct": 34.93391631433892, "Status": "Heavily Undervalued (Top-Funnel Initiator)", "Recommended_Action": "Scale Budget (+25% to +40%)", "Rationale": "Drives substantial customer acquisition (First-Touch ROAS 42.1x) that is obscured by single-touch Last-Click models (6.9x)."}, {"Channel": "Facebook Ads", "Current_Spend": 33627.22, "Current_Spend_Share_Pct": 19.35555355761231, "Optimized_Spend": 34903.48068741434, "Optimized_Spend_Share_Pct": 20.09015879969665, "Spend_Delta": 1276.2606874143385, "Spend_Delta_Pct": 3.795320241799169, "Status": "Balanced Performer", "Recommended_Action": "Maintain Budget with Creative Optimization", "Rationale": "Steady cross-funnel contributor with 7.7x multi-touch ROAS."}, {"Channel": "Google Ads", "Current_Spend": 38990.4, "Current_Spend_Share_Pct": 22.44255622179672, "Optimized_Spend": 40470.21054355847, "Optimized_Spend_Share_Pct": 23.29432310085973, "Spend_Delta": 1479.8105435584655, "Spend_Delta_Pct": 3.795320241799175, "Status": "Balanced Performer", "Recommended_Action": "Maintain Budget with Creative Optimization", "Rationale": "Steady cross-funnel contributor with 6.4x multi-touch ROAS."}, {"Channel": "Instagram", "Current_Spend": 27317.91, "Current_Spend_Share_Pct": 15.723966182367526, "Optimized_Spend": 28354.71216786648, "Optimized_Spend_Share_Pct": 16.320741053700576, "Spend_Delta": 1036.8021678664772, "Spend_Delta_Pct": 3.7953202417991614, "Status": "Balanced Performer", "Recommended_Action": "Maintain Budget with Creative Optimization", "Rationale": "Steady cross-funnel contributor with 11.5x multi-touch ROAS."}, {"Channel": "Mobile App", "Current_Spend": 5218.05, "Current_Spend_Share_Pct": 3.0034670199112186, "Optimized_Spend": 6228.5054640587805, "Optimized_Spend_Share_Pct": 3.5850769434247214, "Spend_Delta": 1010.4554640587804, "Spend_Delta_Pct": 19.364618278069017, "Status": "Conversion Closer (Bottom-Funnel Accelerator)", "Recommended_Action": "Protect / Optimize Retention Flow", "Rationale": "Dominant closer with 84.2x Last-Touch ROAS. Maintain seamless conversion funnels while relying on top-funnel channels for feeder traffic."}, {"Channel": "Organic Search", "Current_Spend": 3564.87, "Current_Spend_Share_Pct": 2.0519100957773317, "Optimized_Spend": 4625.2102908797815, "Optimized_Spend_Share_Pct": 2.662233318732361, "Spend_Delta": 1060.3402908797816, "Spend_Delta_Pct": 29.744150302248933, "Status": "High-Efficiency Nurturer (Under-invested)", "Recommended_Action": "Scale Budget (+15% to +30%)", "Rationale": "Exceptional multi-touch efficiency (Linear ROAS 58.2x) with only 2.1% budget share."}, {"Channel": "Website", "Current_Spend": 4834.74, "Current_Spend_Share_Pct": 2.782836910310473, "Optimized_Spend": 6272.79233232295, "Optimized_Spend_Share_Pct": 3.61056810357968, "Spend_Delta": 1438.05233232295, "Spend_Delta_Pct": 29.744150302248933, "Status": "High-Efficiency Nurturer (Under-invested)", "Recommended_Action": "Scale Budget (+15% to +30%)", "Rationale": "Exceptional multi-touch efficiency (Linear ROAS 57.3x) with only 2.8% budget share."}, {"Channel": "YouTube", "Current_Spend": 54579.17, "Current_Spend_Share_Pct": 31.415325086790613, "Optimized_Spend": 45320.49942945279, "Optimized_Spend_Share_Pct": 26.086109823069275, "Spend_Delta": -9258.670570547212, "Spend_Delta_Pct": -16.963743806560657, "Status": "Over-budgeted / Marginal Diminishing Returns", "Recommended_Action": "Reallocate / Trim Budget (-15% to -25%)", "Rationale": "Absorbs 31.4% of budget, but multi-touch Markov ROAS is 4.3x. Shift marginal dollars to higher-ROAS top-funnel channels."}];
+        const matrixData = {"states": ["(start)", "Email", "Facebook Ads", "Google Ads", "Instagram", "Mobile App", "Organic Search", "Website", "YouTube", "(conversion)", "(null)"], "matrix": [[0.0, 0.09, 0.1466666666666666, 0.1033333333333333, 0.16, 0.1066666666666666, 0.1366666666666666, 0.11, 0.1466666666666666, 0.0, 0.0], [0.0, 0.1363636363636363, 0.1272727272727272, 0.1, 0.0454545454545454, 0.1272727272727272, 0.1272727272727272, 0.0727272727272727, 0.0454545454545454, 0.0454545454545454, 0.1727272727272727], [0.0, 0.0833333333333333, 0.0757575757575757, 0.0833333333333333, 0.106060606060606, 0.0833333333333333, 0.0909090909090909, 0.0833333333333333, 0.0833333333333333, 0.0909090909090909, 0.2196969696969697], [0.0, 0.072, 0.064, 0.112, 0.096, 0.12, 0.072, 0.056, 0.104, 0.112, 0.192], [0.0, 0.0909090909090909, 0.1118881118881118, 0.0979020979020979, 0.1258741258741259, 0.1048951048951049, 0.1188811188811188, 0.0839160839160839, 0.0769230769230769, 0.0629370629370629, 0.1258741258741259], [0.0, 0.0472972972972973, 0.0878378378378378, 0.054054054054054, 0.0608108108108108, 0.1486486486486486, 0.0608108108108108, 0.0878378378378378, 0.0878378378378378, 0.1148648648648648, 0.25], [0.0, 0.0820895522388059, 0.044776119402985, 0.0895522388059701, 0.0970149253731343, 0.1119402985074626, 0.0820895522388059, 0.0671641791044776, 0.1044776119402985, 0.1417910447761194, 0.1791044776119403], [0.0, 0.0683760683760683, 0.0683760683760683, 0.094017094017094, 0.0854700854700854, 0.0598290598290598, 0.1282051282051282, 0.094017094017094, 0.1282051282051282, 0.1025641025641025, 0.1709401709401709], [0.0, 0.0638297872340425, 0.0921985815602836, 0.0921985815602836, 0.0992907801418439, 0.1205673758865248, 0.0425531914893617, 0.0921985815602836, 0.1063829787234042, 0.0992907801418439, 0.1914893617021276], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]]};
+
+        let currentModel = 'Linear';
+
+        const modelNames = {
+            'Linear': 'Linear',
+            'First_Touch': 'First-Touch (FTA)',
+            'Last_Touch': 'Last-Touch (LTA)',
+            'Position_Based': 'Position-Based (U-Shaped)',
+            'Time_Decay': 'Time-Decay (7-Day)',
+            'Markov': 'Markov Chain (Data-Driven)'
+        };
+
+        // Formatters
+        const fmtCur = (val) => '$' + Number(val).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        const fmtNum = (val) => Number(val).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+        // Initialize Page
+        function init() {
+            renderKPIs();
+            renderRevenueChart();
+            renderBubbleChart();
+            renderHeatmap();
+            renderChannelTable();
+            renderPathsTable();
+            renderSimulator();
+        }
+
+        // Switch Attribution Model
+        function switchModel(modelKey) {
+            currentModel = modelKey;
+            
+            // Update active button
+            const btns = document.querySelectorAll('.btn-model');
+            btns.forEach(btn => {
+                if (btn.innerText.includes(modelKey.replace('_', '-')) || 
+                   (modelKey === 'Linear' && btn.innerText.includes('Linear')) ||
+                   (modelKey === 'Position_Based' && btn.innerText.includes('Position')) ||
+                   (modelKey === 'Time_Decay' && btn.innerText.includes('Time')) ||
+                   (modelKey === 'Markov' && btn.innerText.includes('Markov'))) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+
+            document.getElementById('kpi-model-name').innerText = currentModel.replace('_', ' ');
+            document.getElementById('chart-model-label').innerText = currentModel.replace('_', ' ');
+
+            renderKPIs();
+            renderRevenueChart();
+        }
+
+        // Render KPI Cards
+        function renderKPIs() {
+            let totSpend = 0;
+            let totRev = 0;
+            channelData.forEach(d => {
+                totSpend += d.Spend;
+                totRev += d[currentModel + '_Revenue'];
+            });
+            const totProfit = totRev - totSpend;
+            const roas = totRev / totSpend;
+
+            document.getElementById('kpi-spend').innerText = fmtCur(totSpend);
+            document.getElementById('kpi-rev').innerText = fmtCur(totRev);
+            document.getElementById('kpi-roas').innerText = roas.toFixed(2) + 'x';
+            document.getElementById('kpi-profit').innerText = fmtCur(totProfit);
+        }
+
+        // Render Revenue Comparison Chart
+        function renderRevenueChart() {
+            const channels = channelData.map(d => d.Channel);
+            const revenues = channelData.map(d => d[currentModel + '_Revenue']);
+            const spends = channelData.map(d => d.Spend);
+
+            const traceRev = {
+                x: channels,
+                y: revenues,
+                name: modelNames[currentModel] + ' Revenue',
+                type: 'bar',
+                marker: { color: '#2563eb' },
+                hovertemplate: '<b>%{x}</b><br>Attributed Revenue: $%{y:,.2f}<extra></extra>'
+            };
+
+            const traceSpend = {
+                x: channels,
+                y: spends,
+                name: 'Marketing Spend',
+                type: 'bar',
+                marker: { color: '#94a3b8' },
+                hovertemplate: '<b>%{x}</b><br>Spend: $%{y:,.2f}<extra></extra>'
+            };
+
+            const layout = {
+                barmode: 'group',
+                xaxis: { title: '<b>Marketing Channel</b>' },
+                yaxis: { title: '<b>Amount ($)</b>', tickprefix: '$', tickformat: ',.0f' },
+                margin: { t: 20, r: 20, l: 60, b: 60 },
+                legend: { orientation: 'h', y: 1.15, x: 1, xanchor: 'right' },
+                template: 'plotly_white'
+            };
+
+            Plotly.newPlot('chart-channel-revenue', [traceRev, traceSpend], layout, { responsive: true });
+        }
+
+        // Render Spend vs ROAS Bubble Chart
+        function renderBubbleChart() {
+            const channels = channelData.map(d => d.Channel);
+            const spends = channelData.map(d => d.Spend);
+            const roas = channelData.map(d => d.Linear_ROAS);
+            const convs = channelData.map(d => d.Linear_Conversions);
+
+            const trace = {
+                x: spends,
+                y: roas,
+                text: channels,
+                mode: 'markers+text',
+                textposition: 'top center',
+                marker: {
+                    size: convs.map(c => c * 3.5),
+                    color: roas,
+                    colorscale: 'Viridis',
+                    showscale: true,
+                    colorbar: { title: 'ROAS (x)' },
+                    line: { color: '#334155', width: 1.5 }
+                },
+                hovertemplate: '<b>%{text}</b><br>Spend: $%{x:,.2f}<br>Linear ROAS: %{y:.2f}x<br>Attributed Conversions: %{marker.size:,.1f}<extra></extra>'
+            };
+
+            const layout = {
+                xaxis: { title: '<b>Channel Spend ($)</b>', tickprefix: '$', tickformat: ',.0f' },
+                yaxis: { title: '<b>Linear ROAS (Log Scale)</b>', type: 'log', tickformat: '.1f' },
+                margin: { t: 20, r: 20, l: 60, b: 60 },
+                template: 'plotly_white'
+            };
+
+            Plotly.newPlot('chart-bubble', [trace], layout, { responsive: true });
+        }
+
+        // Render Markov Transition Heatmap
+        function renderHeatmap() {
+            const trace = {
+                z: matrixData.matrix,
+                x: matrixData.states,
+                y: matrixData.states,
+                type: 'heatmap',
+                colorscale: 'Blues',
+                showscale: true,
+                colorbar: { title: 'Prob' }
+            };
+
+            const layout = {
+                xaxis: { title: '<b>Next State</b>', tickangle: -45 },
+                yaxis: { title: '<b>Current State</b>' },
+                margin: { t: 20, r: 20, l: 90, b: 90 },
+                template: 'plotly_white'
+            };
+
+            Plotly.newPlot('chart-heatmap', [trace], layout, { responsive: true });
+        }
+
+        // Render Channel Performance Table
+        function renderChannelTable() {
+            const tbody = document.getElementById('channel-table-body');
+            tbody.innerHTML = '';
+
+            channelData.forEach(d => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td style="text-align: left; font-weight: 700;">${d.Channel}</td>
+                    <td>${fmtCur(d.Spend)}</td>
+                    <td>${d.Spend_Share_Pct.toFixed(1)}%</td>
+                    <td>${fmtCur(d.First_Touch_Revenue)}</td>
+                    <td>${fmtCur(d.Last_Touch_Revenue)}</td>
+                    <td style="font-weight: 700; color: #16a34a;">${fmtCur(d.Linear_Revenue)}</td>
+                    <td>${fmtCur(d.Markov_Revenue)}</td>
+                    <td>${d.First_Touch_ROAS.toFixed(2)}x</td>
+                    <td>${d.Last_Touch_ROAS.toFixed(2)}x</td>
+                    <td style="font-weight: 700; color: #2563eb;">${d.Linear_ROAS.toFixed(2)}x</td>
+                    <td>${d.Markov_ROAS.toFixed(2)}x</td>
+                    <td>${fmtCur(d.Linear_CAC)}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // Render Customer Journey Paths Table
+        function renderPathsTable() {
+            const tbody = document.getElementById('paths-table-body');
+            tbody.innerHTML = '';
+
+            pathsData.forEach(d => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td style="text-align: left; font-weight: 600; color: #1e3a8a;">${d.Path}</td>
+                    <td>${d.Total_Customers}</td>
+                    <td style="font-weight: 700;">${d.Conversions}</td>
+                    <td><span class="status-pill pill-blue">${d.Conversion_Rate_Pct.toFixed(1)}%</span></td>
+                    <td>${d.Avg_Path_Length.toFixed(1)}</td>
+                    <td style="font-weight: 700; color: #16a34a;">${fmtCur(d.Total_Revenue)}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // Interactive What-If Budget Simulator
+        const simSpendMultipliers = {};
+        channelData.forEach(d => simSpendMultipliers[d.Channel] = 1.0);
+
+        function renderSimulator() {
+            const container = document.getElementById('sim-sliders-container');
+            container.innerHTML = '';
+
+            channelData.forEach(d => {
+                const ch = d.Channel;
+                const div = document.createElement('div');
+                div.className = 'sim-channel';
+                div.innerHTML = `
+                    <div class="sim-channel-header">
+                        <span class="sim-channel-name">${ch}</span>
+                        <span class="sim-channel-spend" id="sim-val-${ch.replace(/\s+/g, '-')}">${fmtCur(d.Spend)}</span>
+                    </div>
+                    <input type="range" class="sim-slider" min="0.5" max="1.5" step="0.05" value="1.0"
+                           id="slider-${ch.replace(/\s+/g, '-')}"
+                           oninput="updateSimulator('${ch}', this.value)">
+                    <div class="sim-slider-val">
+                        <span>-50%</span>
+                        <span id="slider-pct-${ch.replace(/\s+/g, '-')}">Current (0%)</span>
+                        <span>+50%</span>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+            recalculateSimulation();
+        }
+
+        function updateSimulator(channel, val) {
+            simSpendMultipliers[channel] = parseFloat(val);
+            const deltaPct = ((parseFloat(val) - 1.0) * 100).toFixed(0);
+            const chId = channel.replace(/\s+/g, '-');
+            const orig = channelData.find(d => d.Channel === channel).Spend;
+            const newSpend = orig * parseFloat(val);
+
+            document.getElementById('sim-val-' + chId).innerText = fmtCur(newSpend);
+            document.getElementById('slider-pct-' + chId).innerText = (deltaPct >= 0 ? '+' : '') + deltaPct + '%';
+
+            recalculateSimulation();
+        }
+
+        function recalculateSimulation() {
+            let simTotalRev = 0;
+            const baseRev = 1926331.12;
+
+            channelData.forEach(d => {
+                const mult = simSpendMultipliers[d.Channel] || 1.0;
+                // Linear ROAS assumption
+                simTotalRev += (d.Spend * mult) * d.Linear_ROAS;
+            });
+
+            const upliftPct = ((simTotalRev - baseRev) / baseRev) * 100;
+            document.getElementById('sim-total-rev').innerText = fmtCur(simTotalRev);
+            const badge = document.getElementById('sim-uplift-badge');
+            badge.innerText = (upliftPct >= 0 ? '+' : '') + upliftPct.toFixed(2) + '%';
+            badge.className = 'status-pill ' + (upliftPct >= 0 ? 'pill-green' : 'pill-red');
+        }
+
+        // Run initialization
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

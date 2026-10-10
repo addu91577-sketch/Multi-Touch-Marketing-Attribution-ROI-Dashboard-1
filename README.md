@@ -140,28 +140,44 @@ By pairing Markov Removal Effects and Linear ROAS, our optimization algorithm sy
 
 ## 6. Interactive Dashboards & Deliverables
 
-### A. Standalone Interactive HTML Dashboard
-A zero-dependency, self-contained dashboard built with Plotly.
-* **File:** [`reports/interactive_dashboard.html`](file:///C:/Users/Iba%20Zaidi/Desktop/Multiouch%20marketingA/reports/interactive_dashboard.html)
-* **Features:** Executive KPI cards, multi-model grouped revenue bars, Spend vs. ROAS log-scaled bubble chart, Markov transition probability heatmap, budget reallocation waterfall chart, and interactive data tables.
-* **How to open:** Double-click the file to open instantly in any web browser!
+### A. Live Interactive Web Dashboard (GitHub Pages Ready)
+A responsive, standalone executive web application built with HTML5, CSS3, JavaScript, and Plotly.js.
+* **Root Entrypoint:** [`index.html`](file:///C:/Users/Iba%20Zaidi/Desktop/Multiouch%20marketingA/index.html)
+* **Dashboard Folder:** [`dashboard/index.html`](file:///C:/Users/Iba%20Zaidi/Desktop/Multiouch%20marketingA/dashboard/index.html)
+* **Key Interactive Features:**
+  * **Dynamic Attribution Model Switcher:** Instantly toggle between **Linear, First-Touch, Last-Touch, Position-Based (U-Shaped), Time-Decay, and Markov Chain** models. Watch all KPI cards, revenue breakdowns, and charts update dynamically in real time.
+  * **Interactive What-If Budget Simulator:** Move channel budget sliders (-50% to +50%) and observe immediate mathematical recalculations of projected portfolio revenue and uplift percentage.
+  * **Markov State Transition Heatmap:** Explore transition probabilities between initial discovery, intermediate touchpoints, and conversion.
+  * **Customer Journey Path Explorer:** Sortable and searchable table of top customer journey paths with conversion rates and touchpoint sequences.
+* **How to View:**
+  * **Locally:** Simply double-click [`index.html`](file:///C:/Users/Iba%20Zaidi/Desktop/Multiouch%20marketingA/index.html) in your browser.
+  * **On GitHub:** Enable **GitHub Pages** (Settings -> Pages -> Deploy from Branch: `main` / root) to host the dashboard live on the web!
 
-### B. Streamlit Web Application
+### B. Visual Intelligence Previews
+| Multi-Model Attributed Revenue | Spend vs. Multi-Touch ROAS Efficiency |
+| :---: | :---: |
+| ![Model Comparison](reports/figures/attribution_model_comparison.png) | ![ROAS vs Spend](reports/figures/channel_roas_vs_spend.png) |
+
+| Markov State Transition Probability Matrix | Algorithmic Budget Optimization Waterfall |
+| :---: | :---: |
+| ![Markov Heatmap](reports/figures/markov_transition_heatmap.png) | ![Budget Waterfall](reports/figures/budget_optimization_waterfall.png) |
+
+### C. Streamlit Web Application
 An interactive analytics app with real-time filtering by Country, Customer Segment, Product Category, and Attribution Model.
 * **File:** [`app.py`](file:///C:/Users/Iba%20Zaidi/Desktop/Multiouch%20marketingA/app.py)
 * **Command:** `streamlit run app.py`
 
-### C. Power BI Star Schema & Dynamic DAX Switcher
+### D. Power BI Star Schema & Dynamic DAX Switcher
 * **Guide:** [`powerbi/PowerBI_DAX_Measures.md`](file:///C:/Users/Iba%20Zaidi/Desktop/Multiouch%20marketingA/powerbi/PowerBI_DAX_Measures.md)
 * **Master Fact Data:** [`powerbi/Multi_Touch_Marketing_Attribution_Master_Cleaned.csv`](file:///C:/Users/Iba%20Zaidi/Desktop/Multiouch%20marketingA/powerbi/Multi_Touch_Marketing_Attribution_Master_Cleaned.csv)
 * **Channel Aggregate Data:** [`powerbi/Channel_Attribution_ROI_Summary.csv`](file:///C:/Users/Iba%20Zaidi/Desktop/Multiouch%20marketingA/powerbi/Channel_Attribution_ROI_Summary.csv)
 * **Highlights:** Includes ready-to-use DAX measures for dynamic single-slicer attribution switching, Star Schema modeling, and canvas layout blueprints.
 
-### D. Production SQL Pipeline
+### E. Production SQL Pipeline
 * **File:** [`sql/multi_touch_attribution.sql`](file:///C:/Users/Iba%20Zaidi/Desktop/Multiouch%20marketingA/sql/multi_touch_attribution.sql)
 * **Capabilities:** Robust ANSI/MySQL script fixing date sorting, window-function journey re-indexing, customer conversion aggregation, and financial metrics across 5 deterministic models.
 
-### E. Executed Master Jupyter Notebook
+### F. Executed Master Jupyter Notebook
 * **File:** [`Multi_Touch_Marketing_Attribution_ROI_Master.ipynb`](file:///C:/Users/Iba%20Zaidi/Desktop/Multiouch%20marketingA/Multi_Touch_Marketing_Attribution_ROI_Master.ipynb)
 * **Status:** Fully executed with all code, mathematical formulations, diagnostic tables, and visual plots persisted directly in the file.
 
