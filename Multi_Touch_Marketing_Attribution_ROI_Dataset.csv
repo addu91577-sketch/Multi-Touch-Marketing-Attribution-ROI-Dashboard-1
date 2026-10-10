@@ -1,0 +1,1051 @@
+Customer_ID,Touchpoint_Date,Touchpoint_Order,Channel,Touchpoint_Type,Device,Country,Customer_Segment,Product_Category,Product_Name,Cost,Conversion_Flag,Revenue,Customer_Converted,Touchpoints_Per_Customer,First_Touch_Flag,Last_Touch_Flag,Linear_Attribution_Share,Linear_Attributed_Revenue,Attributed_Profit,ROI_Percent
+CUST1001,2026-02-05,1,Facebook Ads,App Visit,Tablet,India,New Customer,Home Loan,Home Loan,61.92,0,0.0,0,3,1,0,0.0,0.0,-61.92,-100.0
+CUST1001,2026-02-13,2,YouTube,Email,Tablet,India,New Customer,Home Loan,Home Loan,461.21,0,0.0,0,3,0,0,0.0,0.0,-461.21,-100.0
+CUST1001,2026-02-12,3,YouTube,App Visit,Tablet,India,New Customer,Home Loan,Home Loan,369.53,0,0.0,0,3,0,1,0.0,0.0,-369.53,-100.0
+CUST1002,2026-02-10,1,Organic Search,Social Ad,Mobile,India,Premium,Insurance,Health Insurance,19.0,0,0.0,1,4,1,0,0.25,3328.88,3309.88,17420.42
+CUST1002,2026-02-18,2,Organic Search,Website Visit,Mobile,India,Premium,Insurance,Health Insurance,13.23,0,0.0,1,4,0,0,0.25,3328.88,3315.65,25061.6
+CUST1002,2026-02-26,3,Google Ads,Remarketing,Mobile,India,Premium,Insurance,Health Insurance,144.91,0,0.0,1,4,0,0,0.25,3328.88,3183.9700000000003,2197.21
+CUST1002,2026-02-26,4,Website,Social Ad,Mobile,India,Premium,Insurance,Health Insurance,26.99,1,13315.52,1,4,0,1,0.25,3328.88,3301.8900000000003,12233.75
+CUST1003,2026-07-18,1,Facebook Ads,Email,Mobile,Australia,Premium,Credit Card,Rewards Card,202.05,0,0.0,1,3,1,0,0.3333333333333333,1819.7833333333333,1617.7333333333333,800.66
+CUST1003,2026-07-19,2,Mobile App,Website Visit,Mobile,Australia,Premium,Credit Card,Rewards Card,29.06,0,0.0,1,3,0,0,0.3333333333333333,1819.7833333333333,1790.7233333333334,6162.16
+CUST1003,2026-08-07,3,YouTube,Organic Search,Mobile,Australia,Premium,Credit Card,Rewards Card,488.82,1,5459.35,1,3,0,1,0.3333333333333333,1819.7833333333333,1330.9633333333334,272.28
+CUST1004,2026-04-08,1,YouTube,Website Visit,Tablet,Australia,Regular,Personal Loan,Personal Loan,237.43,0,0.0,1,5,1,0,0.2,2997.0020000000004,2759.5720000000006,1162.27
+CUST1004,2026-04-14,2,Google Ads,Website Visit,Tablet,Australia,Regular,Personal Loan,Personal Loan,219.23,0,0.0,1,5,0,0,0.2,2997.0020000000004,2777.7720000000004,1267.06
+CUST1004,2026-04-14,3,YouTube,Website Visit,Tablet,Australia,Regular,Personal Loan,Personal Loan,493.26,0,0.0,1,5,0,0,0.2,2997.0020000000004,2503.742,507.59
+CUST1004,2026-04-12,4,Website,Remarketing,Tablet,Australia,Regular,Personal Loan,Personal Loan,24.87,0,0.0,1,5,0,0,0.2,2997.0020000000004,2972.1320000000005,11950.67
+CUST1004,2026-05-05,5,YouTube,Organic Search,Tablet,Australia,Regular,Personal Loan,Personal Loan,638.69,1,14985.01,1,5,0,1,0.2,2997.0020000000004,2358.3120000000004,369.24
+CUST1005,2026-01-30,1,Instagram,App Visit,Tablet,USA,Regular,Insurance,Life Insurance,159.28,0,0.0,1,2,1,0,0.5,1103.33,944.05,592.7
+CUST1005,2026-02-06,2,Mobile App,Organic Search,Tablet,USA,Regular,Insurance,Life Insurance,60.95,1,2206.66,1,2,0,1,0.5,1103.33,1042.3799999999999,1710.22
+CUST1006,2026-04-24,1,Google Ads,Organic Search,Desktop,Australia,New Customer,Home Loan,Home Loan,343.99,0,0.0,1,4,1,0,0.25,23493.345,23149.355,6729.66
+CUST1006,2026-05-05,2,Facebook Ads,Organic Search,Desktop,Australia,New Customer,Home Loan,Home Loan,305.58,0,0.0,1,4,0,0,0.25,23493.345,23187.765,7588.12
+CUST1006,2026-05-03,3,YouTube,Video Ad,Desktop,Australia,New Customer,Home Loan,Home Loan,557.51,0,0.0,1,4,0,0,0.25,23493.345,22935.835000000003,4113.98
+CUST1006,2026-05-07,4,Google Ads,Website Visit,Desktop,Australia,New Customer,Home Loan,Home Loan,90.13,1,93973.38,1,4,0,1,0.25,23493.345,23403.215,25966.07
+CUST1007,2026-07-09,1,Facebook Ads,Video Ad,Mobile,USA,Premium,Personal Loan,Personal Loan,313.9,0,0.0,0,2,1,0,0.0,0.0,-313.9,-100.0
+CUST1007,2026-07-15,2,Instagram,Organic Search,Mobile,USA,Premium,Personal Loan,Personal Loan,310.45,0,0.0,0,2,0,1,0.0,0.0,-310.45,-100.0
+CUST1008,2026-06-22,1,Mobile App,Remarketing,Tablet,USA,Returning,Personal Loan,Instant Personal Loan,21.11,0,0.0,0,5,1,0,0.0,0.0,-21.11,-100.0
+CUST1008,2026-06-21,2,Facebook Ads,Website Visit,Tablet,USA,Returning,Personal Loan,Instant Personal Loan,285.32,0,0.0,0,5,0,0,0.0,0.0,-285.32,-100.0
+CUST1008,2026-06-21,3,YouTube,Email,Tablet,USA,Returning,Personal Loan,Instant Personal Loan,142.6,0,0.0,0,5,0,0,0.0,0.0,-142.6,-100.0
+CUST1008,2026-06-23,4,Google Ads,Email,Tablet,USA,Returning,Personal Loan,Instant Personal Loan,550.82,0,0.0,0,5,0,0,0.0,0.0,-550.82,-100.0
+CUST1008,2026-07-23,5,Organic Search,Social Ad,Tablet,USA,Returning,Personal Loan,Instant Personal Loan,11.9,0,0.0,0,5,0,1,0.0,0.0,-11.9,-100.0
+CUST1009,2026-07-21,1,Website,Email,Tablet,USA,Returning,Personal Loan,Instant Personal Loan,12.27,0,0.0,0,3,1,0,0.0,0.0,-12.27,-100.0
+CUST1009,2026-07-26,2,Website,Website Visit,Tablet,USA,Returning,Personal Loan,Instant Personal Loan,35.83,0,0.0,0,3,0,0,0.0,0.0,-35.83,-100.0
+CUST1009,2026-07-21,3,Google Ads,Social Ad,Tablet,USA,Returning,Personal Loan,Instant Personal Loan,289.36,0,0.0,0,3,0,1,0.0,0.0,-289.36,-100.0
+CUST1010,2026-02-08,1,Email,Remarketing,Mobile,India,Premium,Personal Loan,Personal Loan,88.7,0,0.0,0,5,1,0,0.0,0.0,-88.7,-100.0
+CUST1010,2026-02-17,2,Facebook Ads,Remarketing,Mobile,India,Premium,Personal Loan,Personal Loan,394.54,0,0.0,0,5,0,0,0.0,0.0,-394.54,-100.0
+CUST1010,2026-02-25,3,Facebook Ads,Paid Ad,Mobile,India,Premium,Personal Loan,Personal Loan,449.71,0,0.0,0,5,0,0,0.0,0.0,-449.71,-100.0
+CUST1010,2026-03-01,4,Google Ads,Social Ad,Mobile,India,Premium,Personal Loan,Personal Loan,521.32,0,0.0,0,5,0,0,0.0,0.0,-521.32,-100.0
+CUST1010,2026-03-08,5,Instagram,App Visit,Mobile,India,Premium,Personal Loan,Personal Loan,189.22,0,0.0,0,5,0,1,0.0,0.0,-189.22,-100.0
+CUST1011,2026-03-15,1,Mobile App,Organic Search,Mobile,India,Returning,Insurance,Life Insurance,50.28,0,0.0,0,5,1,0,0.0,0.0,-50.28,-100.0
+CUST1011,2026-03-12,2,Mobile App,Video Ad,Mobile,India,Returning,Insurance,Life Insurance,24.29,0,0.0,0,5,0,0,0.0,0.0,-24.29,-100.0
+CUST1011,2026-03-19,3,Google Ads,Paid Ad,Mobile,India,Returning,Insurance,Life Insurance,109.73,0,0.0,0,5,0,0,0.0,0.0,-109.73,-100.0
+CUST1011,2026-03-10,4,Mobile App,Video Ad,Mobile,India,Returning,Insurance,Life Insurance,67.45,0,0.0,0,5,0,0,0.0,0.0,-67.45,-100.0
+CUST1011,2026-03-13,5,Facebook Ads,Video Ad,Mobile,India,Returning,Insurance,Life Insurance,288.01,0,0.0,0,5,0,1,0.0,0.0,-288.01,-100.0
+CUST1012,2026-06-11,1,Organic Search,Organic Search,Mobile,Canada,Regular,Investment,Mutual Fund,33.49,0,0.0,1,2,1,0,0.5,8560.285,8526.795,25460.72
+CUST1012,2026-06-12,2,Organic Search,Email,Mobile,Canada,Regular,Investment,Mutual Fund,19.79,1,17120.57,1,2,0,1,0.5,8560.285,8540.494999999999,43155.61
+CUST1013,2026-06-12,1,Facebook Ads,Social Ad,Desktop,Canada,Premium,Credit Card,Rewards Card,252.35,0,0.0,0,5,1,0,0.0,0.0,-252.35,-100.0
+CUST1013,2026-06-23,2,Instagram,Website Visit,Desktop,Canada,Premium,Credit Card,Rewards Card,61.33,0,0.0,0,5,0,0,0.0,0.0,-61.33,-100.0
+CUST1013,2026-06-18,3,YouTube,Website Visit,Desktop,Canada,Premium,Credit Card,Rewards Card,194.65,0,0.0,0,5,0,0,0.0,0.0,-194.65,-100.0
+CUST1013,2026-06-30,4,Email,Paid Ad,Desktop,Canada,Premium,Credit Card,Rewards Card,83.54,0,0.0,0,5,0,0,0.0,0.0,-83.54,-100.0
+CUST1013,2026-06-17,5,Email,Social Ad,Desktop,Canada,Premium,Credit Card,Rewards Card,33.8,0,0.0,0,5,0,1,0.0,0.0,-33.8,-100.0
+CUST1014,2026-07-07,1,Email,Remarketing,Mobile,Australia,New Customer,Home Loan,Home Loan Balance Transfer,91.48,0,0.0,1,3,1,0,0.3333333333333333,8706.556666666665,8615.076666666666,9417.44
+CUST1014,2026-07-13,2,Google Ads,Social Ad,Mobile,Australia,New Customer,Home Loan,Home Loan Balance Transfer,300.26,0,0.0,1,3,0,0,0.3333333333333333,8706.556666666665,8406.296666666665,2799.67
+CUST1014,2026-07-03,3,Email,Paid Ad,Mobile,Australia,New Customer,Home Loan,Home Loan Balance Transfer,40.02,1,26119.67,1,3,0,1,0.3333333333333333,8706.556666666665,8666.536666666665,21655.51
+CUST1015,2026-05-24,1,Facebook Ads,Video Ad,Tablet,USA,Premium,Insurance,Motor Insurance,383.84,0,0.0,1,5,1,0,0.2,3914.342,3530.502,919.78
+CUST1015,2026-05-26,2,Instagram,App Visit,Tablet,USA,Premium,Insurance,Motor Insurance,52.97,0,0.0,1,5,0,0,0.2,3914.342,3861.3720000000003,7289.73
+CUST1015,2026-06-04,3,Organic Search,Paid Ad,Tablet,USA,Premium,Insurance,Motor Insurance,10.5,0,0.0,1,5,0,0,0.2,3914.342,3903.842,37179.45
+CUST1015,2026-06-04,4,YouTube,Social Ad,Tablet,USA,Premium,Insurance,Motor Insurance,568.07,0,0.0,1,5,0,0,0.2,3914.342,3346.272,589.06
+CUST1015,2026-06-08,5,Website,Video Ad,Tablet,USA,Premium,Insurance,Motor Insurance,69.85,1,19571.71,1,5,0,1,0.2,3914.342,3844.492,5503.93
+CUST1016,2026-07-27,1,YouTube,Organic Search,Mobile,Canada,Regular,Personal Loan,Instant Personal Loan,572.42,0,0.0,0,5,1,0,0.0,0.0,-572.42,-100.0
+CUST1016,2026-08-07,2,Facebook Ads,App Visit,Mobile,Canada,Regular,Personal Loan,Instant Personal Loan,65.49,0,0.0,0,5,0,0,0.0,0.0,-65.49,-100.0
+CUST1016,2026-07-31,3,Mobile App,Email,Mobile,Canada,Regular,Personal Loan,Instant Personal Loan,58.08,0,0.0,0,5,0,0,0.0,0.0,-58.08,-100.0
+CUST1016,2026-08-03,4,Mobile App,Website Visit,Mobile,Canada,Regular,Personal Loan,Instant Personal Loan,58.33,0,0.0,0,5,0,0,0.0,0.0,-58.33,-100.0
+CUST1016,2026-07-26,5,YouTube,Email,Mobile,Canada,Regular,Personal Loan,Instant Personal Loan,496.02,0,0.0,0,5,0,1,0.0,0.0,-496.02,-100.0
+CUST1017,2026-06-15,1,Organic Search,Paid Ad,Desktop,UK,Returning,Credit Card,Travel Card,43.85,0,0.0,0,4,1,0,0.0,0.0,-43.85,-100.0
+CUST1017,2026-06-23,2,Email,Video Ad,Desktop,UK,Returning,Credit Card,Travel Card,96.63,0,0.0,0,4,0,0,0.0,0.0,-96.63,-100.0
+CUST1017,2026-06-17,3,Email,Paid Ad,Desktop,UK,Returning,Credit Card,Travel Card,63.69,0,0.0,0,4,0,0,0.0,0.0,-63.69,-100.0
+CUST1017,2026-06-27,4,Organic Search,Website Visit,Desktop,UK,Returning,Credit Card,Travel Card,30.31,0,0.0,0,4,0,1,0.0,0.0,-30.31,-100.0
+CUST1018,2026-07-07,1,YouTube,Website Visit,Tablet,Canada,New Customer,Personal Loan,Instant Personal Loan,141.98,0,0.0,0,2,1,0,0.0,0.0,-141.98,-100.0
+CUST1018,2026-07-11,2,Organic Search,Website Visit,Tablet,Canada,New Customer,Personal Loan,Instant Personal Loan,42.4,0,0.0,0,2,0,1,0.0,0.0,-42.4,-100.0
+CUST1019,2026-07-04,1,Instagram,Email,Desktop,Australia,Premium,Insurance,Health Insurance,246.13,0,0.0,1,5,1,0,0.2,1421.632,1175.502,477.59
+CUST1019,2026-07-07,2,Website,Video Ad,Desktop,Australia,Premium,Insurance,Health Insurance,47.68,0,0.0,1,5,0,0,0.2,1421.632,1373.952,2881.61
+CUST1019,2026-07-07,3,Website,Paid Ad,Desktop,Australia,Premium,Insurance,Health Insurance,26.52,0,0.0,1,5,0,0,0.2,1421.632,1395.112,5260.6
+CUST1019,2026-07-12,4,Website,Website Visit,Desktop,Australia,Premium,Insurance,Health Insurance,38.13,0,0.0,1,5,0,0,0.2,1421.632,1383.502,3628.38
+CUST1019,2026-07-08,5,YouTube,Remarketing,Desktop,Australia,Premium,Insurance,Health Insurance,495.31,1,7108.16,1,5,0,1,0.2,1421.632,926.3220000000001,187.02
+CUST1020,2026-02-08,1,YouTube,Remarketing,Mobile,India,Premium,Home Loan,Home Loan,373.25,0,0.0,1,3,1,0,0.3333333333333333,11200.5,10827.25,2900.8
+CUST1020,2026-02-14,2,YouTube,App Visit,Mobile,India,Premium,Home Loan,Home Loan,339.79,0,0.0,1,3,0,0,0.3333333333333333,11200.5,10860.71,3196.3
+CUST1020,2026-02-10,3,Instagram,Paid Ad,Mobile,India,Premium,Home Loan,Home Loan,281.31,1,33601.5,1,3,0,1,0.3333333333333333,11200.5,10919.19,3881.55
+CUST1021,2026-02-10,1,Organic Search,Remarketing,Tablet,India,Returning,Personal Loan,Personal Loan,41.53,0,0.0,0,5,1,0,0.0,0.0,-41.53,-100.0
+CUST1021,2026-02-15,2,Mobile App,Video Ad,Tablet,India,Returning,Personal Loan,Personal Loan,61.0,0,0.0,0,5,0,0,0.0,0.0,-61.0,-100.0
+CUST1021,2026-02-11,3,Mobile App,Organic Search,Tablet,India,Returning,Personal Loan,Personal Loan,59.59,0,0.0,0,5,0,0,0.0,0.0,-59.59,-100.0
+CUST1021,2026-02-24,4,Email,Remarketing,Tablet,India,Returning,Personal Loan,Personal Loan,31.53,0,0.0,0,5,0,0,0.0,0.0,-31.53,-100.0
+CUST1021,2026-02-22,5,Mobile App,Social Ad,Tablet,India,Returning,Personal Loan,Personal Loan,20.24,0,0.0,0,5,0,1,0.0,0.0,-20.24,-100.0
+CUST1022,2026-03-02,1,Instagram,Email,Tablet,UK,Premium,Credit Card,Rewards Card,168.61,0,0.0,0,3,1,0,0.0,0.0,-168.61,-100.0
+CUST1022,2026-03-07,2,Organic Search,Remarketing,Tablet,UK,Premium,Credit Card,Rewards Card,3.11,0,0.0,0,3,0,0,0.0,0.0,-3.11,-100.0
+CUST1022,2026-03-19,3,Website,App Visit,Tablet,UK,Premium,Credit Card,Rewards Card,75.95,0,0.0,0,3,0,1,0.0,0.0,-75.95,-100.0
+CUST1023,2026-03-25,1,Website,Email,Desktop,Australia,New Customer,Insurance,Life Insurance,21.46,0,0.0,0,4,1,0,0.0,0.0,-21.46,-100.0
+CUST1023,2026-03-18,2,Website,Remarketing,Desktop,Australia,New Customer,Insurance,Life Insurance,34.16,0,0.0,0,4,0,0,0.0,0.0,-34.16,-100.0
+CUST1023,2026-04-01,3,Website,Video Ad,Desktop,Australia,New Customer,Insurance,Life Insurance,73.97,0,0.0,0,4,0,0,0.0,0.0,-73.97,-100.0
+CUST1023,2026-04-05,4,Google Ads,App Visit,Desktop,Australia,New Customer,Insurance,Life Insurance,373.48,0,0.0,0,4,0,1,0.0,0.0,-373.48,-100.0
+CUST1024,2026-02-19,1,Website,Website Visit,Tablet,India,New Customer,Insurance,Life Insurance,39.1,0,0.0,1,5,1,0,0.2,473.36800000000005,434.26800000000003,1110.66
+CUST1024,2026-02-20,2,Organic Search,App Visit,Tablet,India,New Customer,Insurance,Life Insurance,37.6,0,0.0,1,5,0,0,0.2,473.36800000000005,435.76800000000003,1158.96
+CUST1024,2026-02-18,3,Website,Organic Search,Tablet,India,New Customer,Insurance,Life Insurance,40.27,0,0.0,1,5,0,0,0.2,473.36800000000005,433.09800000000007,1075.49
+CUST1024,2026-02-23,4,Google Ads,Website Visit,Tablet,India,New Customer,Insurance,Life Insurance,418.07,0,0.0,1,5,0,0,0.2,473.36800000000005,55.29800000000006,13.23
+CUST1024,2026-03-03,5,Google Ads,Paid Ad,Tablet,India,New Customer,Insurance,Life Insurance,183.67,1,2366.84,1,5,0,1,0.2,473.36800000000005,289.6980000000001,157.73
+CUST1025,2026-05-30,1,Mobile App,Organic Search,Mobile,USA,Regular,Insurance,Motor Insurance,15.91,0,0.0,0,2,1,0,0.0,0.0,-15.91,-100.0
+CUST1025,2026-05-29,2,Facebook Ads,Video Ad,Mobile,USA,Regular,Insurance,Motor Insurance,93.24,0,0.0,0,2,0,1,0.0,0.0,-93.24,-100.0
+CUST1026,2026-01-24,1,YouTube,Social Ad,Tablet,UK,New Customer,Insurance,Health Insurance,610.18,0,0.0,0,3,1,0,0.0,0.0,-610.18,-100.0
+CUST1026,2026-01-25,2,Facebook Ads,Paid Ad,Tablet,UK,New Customer,Insurance,Health Insurance,263.1,0,0.0,0,3,0,0,0.0,0.0,-263.1,-100.0
+CUST1026,2026-02-05,3,Organic Search,Social Ad,Tablet,UK,New Customer,Insurance,Health Insurance,32.38,0,0.0,0,3,0,1,0.0,0.0,-32.38,-100.0
+CUST1027,2026-06-18,1,Mobile App,Video Ad,Desktop,Canada,New Customer,Credit Card,Travel Card,16.45,0,0.0,0,4,1,0,0.0,0.0,-16.45,-100.0
+CUST1027,2026-06-19,2,Email,Remarketing,Desktop,Canada,New Customer,Credit Card,Travel Card,49.2,0,0.0,0,4,0,0,0.0,0.0,-49.2,-100.0
+CUST1027,2026-06-19,3,Email,Website Visit,Desktop,Canada,New Customer,Credit Card,Travel Card,84.77,0,0.0,0,4,0,0,0.0,0.0,-84.77,-100.0
+CUST1027,2026-07-10,4,Facebook Ads,Organic Search,Desktop,Canada,New Customer,Credit Card,Travel Card,230.32,0,0.0,0,4,0,1,0.0,0.0,-230.32,-100.0
+CUST1028,2026-05-10,1,Instagram,Remarketing,Tablet,Australia,Returning,Insurance,Health Insurance,150.0,0,0.0,0,2,1,0,0.0,0.0,-150.0,-100.0
+CUST1028,2026-05-11,2,Email,Website Visit,Tablet,Australia,Returning,Insurance,Health Insurance,89.23,0,0.0,0,2,0,1,0.0,0.0,-89.23,-100.0
+CUST1029,2026-03-10,1,Mobile App,Email,Mobile,Australia,Premium,Investment,Mutual Fund,46.98,0,0.0,0,2,1,0,0.0,0.0,-46.98,-100.0
+CUST1029,2026-03-15,2,Mobile App,Remarketing,Mobile,Australia,Premium,Investment,Mutual Fund,6.12,0,0.0,0,2,0,1,0.0,0.0,-6.12,-100.0
+CUST1030,2026-05-07,1,Organic Search,App Visit,Desktop,USA,Premium,Personal Loan,Instant Personal Loan,17.59,0,0.0,0,4,1,0,0.0,0.0,-17.59,-100.0
+CUST1030,2026-05-06,2,Mobile App,Organic Search,Desktop,USA,Premium,Personal Loan,Instant Personal Loan,21.34,0,0.0,0,4,0,0,0.0,0.0,-21.34,-100.0
+CUST1030,2026-05-12,3,Facebook Ads,Email,Desktop,USA,Premium,Personal Loan,Instant Personal Loan,97.82,0,0.0,0,4,0,0,0.0,0.0,-97.82,-100.0
+CUST1030,2026-05-08,4,Instagram,Email,Desktop,USA,Premium,Personal Loan,Instant Personal Loan,268.97,0,0.0,0,4,0,1,0.0,0.0,-268.97,-100.0
+CUST1031,2026-02-23,1,Organic Search,Video Ad,Tablet,Australia,Premium,Investment,Fixed Deposit,0.71,0,0.0,1,2,1,0,0.5,7140.31,7139.6,1005577.46
+CUST1031,2026-02-19,2,Instagram,Organic Search,Tablet,Australia,Premium,Investment,Fixed Deposit,342.03,1,14280.62,1,2,0,1,0.5,7140.31,6798.280000000001,1987.63
+CUST1032,2026-05-01,1,Organic Search,Video Ad,Mobile,Canada,Regular,Credit Card,Cashback Card,12.62,0,0.0,0,4,1,0,0.0,0.0,-12.62,-100.0
+CUST1032,2026-05-14,2,Mobile App,Social Ad,Mobile,Canada,Regular,Credit Card,Cashback Card,9.25,0,0.0,0,4,0,0,0.0,0.0,-9.25,-100.0
+CUST1032,2026-05-19,3,Mobile App,Social Ad,Mobile,Canada,Regular,Credit Card,Cashback Card,45.91,0,0.0,0,4,0,0,0.0,0.0,-45.91,-100.0
+CUST1032,2026-05-05,4,Google Ads,Video Ad,Mobile,Canada,Regular,Credit Card,Cashback Card,501.79,0,0.0,0,4,0,1,0.0,0.0,-501.79,-100.0
+CUST1033,2026-06-12,1,YouTube,App Visit,Mobile,India,Premium,Credit Card,Cashback Card,645.1,0,0.0,0,5,1,0,0.0,0.0,-645.1,-100.0
+CUST1033,2026-06-09,2,Email,App Visit,Mobile,India,Premium,Credit Card,Cashback Card,61.18,0,0.0,0,5,0,0,0.0,0.0,-61.18,-100.0
+CUST1033,2026-06-11,3,Google Ads,Social Ad,Mobile,India,Premium,Credit Card,Cashback Card,405.27,0,0.0,0,5,0,0,0.0,0.0,-405.27,-100.0
+CUST1033,2026-06-10,4,Email,Social Ad,Mobile,India,Premium,Credit Card,Cashback Card,31.59,0,0.0,0,5,0,0,0.0,0.0,-31.59,-100.0
+CUST1033,2026-06-05,5,Facebook Ads,Video Ad,Mobile,India,Premium,Credit Card,Cashback Card,213.41,0,0.0,0,5,0,1,0.0,0.0,-213.41,-100.0
+CUST1034,2026-07-03,1,Facebook Ads,Email,Mobile,UK,Returning,Personal Loan,Instant Personal Loan,365.13,0,0.0,0,4,1,0,0.0,0.0,-365.13,-100.0
+CUST1034,2026-06-30,2,YouTube,App Visit,Mobile,UK,Returning,Personal Loan,Instant Personal Loan,426.74,0,0.0,0,4,0,0,0.0,0.0,-426.74,-100.0
+CUST1034,2026-07-03,3,Instagram,Organic Search,Mobile,UK,Returning,Personal Loan,Instant Personal Loan,62.14,0,0.0,0,4,0,0,0.0,0.0,-62.14,-100.0
+CUST1034,2026-07-18,4,Instagram,Organic Search,Mobile,UK,Returning,Personal Loan,Instant Personal Loan,272.18,0,0.0,0,4,0,1,0.0,0.0,-272.18,-100.0
+CUST1035,2026-07-06,1,Email,Remarketing,Mobile,Canada,Premium,Insurance,Motor Insurance,17.24,0,0.0,0,4,1,0,0.0,0.0,-17.24,-100.0
+CUST1035,2026-07-10,2,Google Ads,App Visit,Mobile,Canada,Premium,Insurance,Motor Insurance,247.61,0,0.0,0,4,0,0,0.0,0.0,-247.61,-100.0
+CUST1035,2026-07-01,3,Email,Paid Ad,Mobile,Canada,Premium,Insurance,Motor Insurance,30.6,0,0.0,0,4,0,0,0.0,0.0,-30.6,-100.0
+CUST1035,2026-07-17,4,Google Ads,Organic Search,Mobile,Canada,Premium,Insurance,Motor Insurance,100.92,0,0.0,0,4,0,1,0.0,0.0,-100.92,-100.0
+CUST1036,2026-06-06,1,Mobile App,Social Ad,Tablet,Canada,Regular,Insurance,Health Insurance,27.62,0,0.0,0,3,1,0,0.0,0.0,-27.62,-100.0
+CUST1036,2026-06-09,2,Organic Search,Website Visit,Tablet,Canada,Regular,Insurance,Health Insurance,5.23,0,0.0,0,3,0,0,0.0,0.0,-5.23,-100.0
+CUST1036,2026-06-12,3,Instagram,Website Visit,Tablet,Canada,Regular,Insurance,Health Insurance,255.04,0,0.0,0,3,0,1,0.0,0.0,-255.04,-100.0
+CUST1037,2026-03-22,1,Facebook Ads,App Visit,Tablet,Canada,Premium,Credit Card,Travel Card,313.06,0,0.0,1,2,1,0,0.5,1925.785,1612.7250000000001,515.15
+CUST1037,2026-03-22,2,Mobile App,App Visit,Tablet,Canada,Premium,Credit Card,Travel Card,17.19,1,3851.57,1,2,0,1,0.5,1925.785,1908.595,11102.94
+CUST1038,2026-03-15,1,Mobile App,Social Ad,Mobile,Canada,Returning,Personal Loan,Instant Personal Loan,68.25,0,0.0,0,3,1,0,0.0,0.0,-68.25,-100.0
+CUST1038,2026-03-19,2,YouTube,Video Ad,Mobile,Canada,Returning,Personal Loan,Instant Personal Loan,430.5,0,0.0,0,3,0,0,0.0,0.0,-430.5,-100.0
+CUST1038,2026-03-22,3,Website,Social Ad,Mobile,Canada,Returning,Personal Loan,Instant Personal Loan,79.42,0,0.0,0,3,0,1,0.0,0.0,-79.42,-100.0
+CUST1039,2026-05-18,1,Website,Remarketing,Mobile,Canada,New Customer,Personal Loan,Instant Personal Loan,23.28,0,0.0,0,4,1,0,0.0,0.0,-23.28,-100.0
+CUST1039,2026-05-14,2,Instagram,App Visit,Mobile,Canada,New Customer,Personal Loan,Instant Personal Loan,325.78,0,0.0,0,4,0,0,0.0,0.0,-325.78,-100.0
+CUST1039,2026-05-19,3,Instagram,Social Ad,Mobile,Canada,New Customer,Personal Loan,Instant Personal Loan,279.53,0,0.0,0,4,0,0,0.0,0.0,-279.53,-100.0
+CUST1039,2026-06-05,4,Website,Website Visit,Mobile,Canada,New Customer,Personal Loan,Instant Personal Loan,43.08,0,0.0,0,4,0,1,0.0,0.0,-43.08,-100.0
+CUST1040,2026-05-01,1,Organic Search,Website Visit,Tablet,UK,New Customer,Home Loan,Home Loan Balance Transfer,22.77,0,0.0,0,3,1,0,0.0,0.0,-22.77,-100.0
+CUST1040,2026-05-06,2,Organic Search,Email,Tablet,UK,New Customer,Home Loan,Home Loan Balance Transfer,11.94,0,0.0,0,3,0,0,0.0,0.0,-11.94,-100.0
+CUST1040,2026-05-08,3,Website,Email,Tablet,UK,New Customer,Home Loan,Home Loan Balance Transfer,8.27,0,0.0,0,3,0,1,0.0,0.0,-8.27,-100.0
+CUST1041,2026-02-09,1,Organic Search,Social Ad,Desktop,Canada,Returning,Personal Loan,Instant Personal Loan,4.99,0,0.0,0,2,1,0,0.0,0.0,-4.99,-100.0
+CUST1041,2026-02-13,2,Mobile App,Paid Ad,Desktop,Canada,Returning,Personal Loan,Instant Personal Loan,14.37,0,0.0,0,2,0,1,0.0,0.0,-14.37,-100.0
+CUST1042,2026-06-21,1,Organic Search,App Visit,Desktop,India,Regular,Home Loan,Home Loan Balance Transfer,31.34,0,0.0,1,5,1,0,0.2,3954.0260000000003,3922.686,12516.55
+CUST1042,2026-06-25,2,Mobile App,Paid Ad,Desktop,India,Regular,Home Loan,Home Loan Balance Transfer,9.45,0,0.0,1,5,0,0,0.2,3954.0260000000003,3944.5760000000005,41741.54
+CUST1042,2026-06-18,3,Email,Email,Desktop,India,Regular,Home Loan,Home Loan Balance Transfer,49.06,0,0.0,1,5,0,0,0.2,3954.0260000000003,3904.9660000000003,7959.57
+CUST1042,2026-06-30,4,Facebook Ads,Social Ad,Desktop,India,Regular,Home Loan,Home Loan Balance Transfer,116.55,0,0.0,1,5,0,0,0.2,3954.0260000000003,3837.476,3292.56
+CUST1042,2026-06-18,5,Email,Paid Ad,Desktop,India,Regular,Home Loan,Home Loan Balance Transfer,39.19,1,19770.13,1,5,0,1,0.2,3954.0260000000003,3914.8360000000002,9989.37
+CUST1043,2026-05-27,1,Instagram,Video Ad,Desktop,UK,Premium,Personal Loan,Personal Loan,64.48,0,0.0,0,5,1,0,0.0,0.0,-64.48,-100.0
+CUST1043,2026-06-01,2,Website,Email,Desktop,UK,Premium,Personal Loan,Personal Loan,73.46,0,0.0,0,5,0,0,0.0,0.0,-73.46,-100.0
+CUST1043,2026-06-08,3,Instagram,Email,Desktop,UK,Premium,Personal Loan,Personal Loan,237.75,0,0.0,0,5,0,0,0.0,0.0,-237.75,-100.0
+CUST1043,2026-06-15,4,Mobile App,Organic Search,Desktop,UK,Premium,Personal Loan,Personal Loan,5.61,0,0.0,0,5,0,0,0.0,0.0,-5.61,-100.0
+CUST1043,2026-06-28,5,Mobile App,Organic Search,Desktop,UK,Premium,Personal Loan,Personal Loan,15.27,0,0.0,0,5,0,1,0.0,0.0,-15.27,-100.0
+CUST1044,2026-05-04,1,YouTube,App Visit,Tablet,UK,Returning,Home Loan,Home Loan Balance Transfer,163.99,0,0.0,0,4,1,0,0.0,0.0,-163.99,-100.0
+CUST1044,2026-05-06,2,Website,Website Visit,Tablet,UK,Returning,Home Loan,Home Loan Balance Transfer,27.19,0,0.0,0,4,0,0,0.0,0.0,-27.19,-100.0
+CUST1044,2026-05-18,3,Email,Paid Ad,Tablet,UK,Returning,Home Loan,Home Loan Balance Transfer,45.62,0,0.0,0,4,0,0,0.0,0.0,-45.62,-100.0
+CUST1044,2026-05-16,4,Google Ads,Paid Ad,Tablet,UK,Returning,Home Loan,Home Loan Balance Transfer,467.49,0,0.0,0,4,0,1,0.0,0.0,-467.49,-100.0
+CUST1045,2026-06-08,1,Instagram,Social Ad,Tablet,USA,Premium,Home Loan,Home Loan,135.77,0,0.0,1,3,1,0,0.3333333333333333,16772.586666666666,16636.816666666666,12253.68
+CUST1045,2026-06-17,2,Mobile App,Paid Ad,Tablet,USA,Premium,Home Loan,Home Loan,28.72,0,0.0,1,3,0,0,0.3333333333333333,16772.586666666666,16743.866666666665,58300.37
+CUST1045,2026-06-17,3,Instagram,Social Ad,Tablet,USA,Premium,Home Loan,Home Loan,141.28,1,50317.76,1,3,0,1,0.3333333333333333,16772.586666666666,16631.306666666667,11771.88
+CUST1046,2026-03-12,1,Mobile App,Organic Search,Tablet,USA,Regular,Home Loan,Home Loan Balance Transfer,57.28,0,0.0,0,3,1,0,0.0,0.0,-57.28,-100.0
+CUST1046,2026-03-09,2,Mobile App,Social Ad,Tablet,USA,Regular,Home Loan,Home Loan Balance Transfer,54.02,0,0.0,0,3,0,0,0.0,0.0,-54.02,-100.0
+CUST1046,2026-03-24,3,YouTube,App Visit,Tablet,USA,Regular,Home Loan,Home Loan Balance Transfer,319.47,0,0.0,0,3,0,1,0.0,0.0,-319.47,-100.0
+CUST1047,2026-04-10,1,Email,App Visit,Desktop,India,Returning,Investment,Mutual Fund,19.75,0,0.0,0,5,1,0,0.0,0.0,-19.75,-100.0
+CUST1047,2026-04-05,2,YouTube,Remarketing,Desktop,India,Returning,Investment,Mutual Fund,471.73,0,0.0,0,5,0,0,0.0,0.0,-471.73,-100.0
+CUST1047,2026-04-25,3,Organic Search,Email,Desktop,India,Returning,Investment,Mutual Fund,3.16,0,0.0,0,5,0,0,0.0,0.0,-3.16,-100.0
+CUST1047,2026-04-25,4,Mobile App,Organic Search,Desktop,India,Returning,Investment,Mutual Fund,31.54,0,0.0,0,5,0,0,0.0,0.0,-31.54,-100.0
+CUST1047,2026-04-07,5,Instagram,Paid Ad,Desktop,India,Returning,Investment,Mutual Fund,134.35,0,0.0,0,5,0,1,0.0,0.0,-134.35,-100.0
+CUST1048,2026-05-03,1,Website,Video Ad,Mobile,India,Returning,Personal Loan,Personal Loan,54.12,0,0.0,1,5,1,0,0.2,1949.042,1894.922,3501.33
+CUST1048,2026-05-01,2,Mobile App,App Visit,Mobile,India,Returning,Personal Loan,Personal Loan,7.13,0,0.0,1,5,0,0,0.2,1949.042,1941.9119999999998,27235.79
+CUST1048,2026-05-11,3,Organic Search,Email,Mobile,India,Returning,Personal Loan,Personal Loan,22.23,0,0.0,1,5,0,0,0.2,1949.042,1926.812,8667.62
+CUST1048,2026-04-30,4,YouTube,Website Visit,Mobile,India,Returning,Personal Loan,Personal Loan,688.56,0,0.0,1,5,0,0,0.2,1949.042,1260.482,183.06
+CUST1048,2026-04-30,5,Organic Search,Website Visit,Mobile,India,Returning,Personal Loan,Personal Loan,19.91,1,9745.21,1,5,0,1,0.2,1949.042,1929.1319999999998,9689.26
+CUST1049,2026-07-22,1,Instagram,Email,Mobile,Canada,New Customer,Personal Loan,Personal Loan,297.24,0,0.0,1,2,1,0,0.5,6606.995,6309.755,2122.78
+CUST1049,2026-08-03,2,YouTube,Email,Mobile,Canada,New Customer,Personal Loan,Personal Loan,621.82,1,13213.99,1,2,0,1,0.5,6606.995,5985.175,962.53
+CUST1050,2026-05-19,1,Instagram,Social Ad,Mobile,Australia,Regular,Home Loan,Home Loan,80.86,0,0.0,1,3,1,0,0.3333333333333333,16927.216666666667,16846.356666666667,20833.98
+CUST1050,2026-05-28,2,Organic Search,Email,Mobile,Australia,Regular,Home Loan,Home Loan,16.19,0,0.0,1,3,0,0,0.3333333333333333,16927.216666666667,16911.02666666667,104453.53
+CUST1050,2026-05-20,3,Instagram,Organic Search,Mobile,Australia,Regular,Home Loan,Home Loan,79.3,1,50781.65,1,3,0,1,0.3333333333333333,16927.216666666667,16847.916666666668,21245.8
+CUST1051,2026-05-03,1,Google Ads,Organic Search,Desktop,India,New Customer,Insurance,Health Insurance,414.54,0,0.0,0,2,1,0,0.0,0.0,-414.54,-100.0
+CUST1051,2026-05-03,2,Google Ads,Paid Ad,Desktop,India,New Customer,Insurance,Health Insurance,520.6,0,0.0,0,2,0,1,0.0,0.0,-520.6,-100.0
+CUST1052,2026-03-28,1,Facebook Ads,Video Ad,Desktop,India,Returning,Insurance,Life Insurance,299.73,0,0.0,0,2,1,0,0.0,0.0,-299.73,-100.0
+CUST1052,2026-04-02,2,Organic Search,App Visit,Desktop,India,Returning,Insurance,Life Insurance,26.53,0,0.0,0,2,0,1,0.0,0.0,-26.53,-100.0
+CUST1053,2026-06-24,1,YouTube,App Visit,Tablet,Australia,Returning,Insurance,Life Insurance,632.85,0,0.0,0,2,1,0,0.0,0.0,-632.85,-100.0
+CUST1053,2026-06-30,2,Website,Website Visit,Tablet,Australia,Returning,Insurance,Life Insurance,39.01,0,0.0,0,2,0,1,0.0,0.0,-39.01,-100.0
+CUST1054,2026-04-07,1,Mobile App,Social Ad,Desktop,India,Returning,Insurance,Health Insurance,59.07,0,0.0,0,4,1,0,0.0,0.0,-59.07,-100.0
+CUST1054,2026-04-07,2,Facebook Ads,App Visit,Desktop,India,Returning,Insurance,Health Insurance,347.84,0,0.0,0,4,0,0,0.0,0.0,-347.84,-100.0
+CUST1054,2026-04-23,3,Organic Search,Video Ad,Desktop,India,Returning,Insurance,Health Insurance,3.0,0,0.0,0,4,0,0,0.0,0.0,-3.0,-100.0
+CUST1054,2026-04-19,4,Organic Search,Social Ad,Desktop,India,Returning,Insurance,Health Insurance,17.68,0,0.0,0,4,0,1,0.0,0.0,-17.68,-100.0
+CUST1055,2026-02-03,1,YouTube,Video Ad,Desktop,India,Returning,Investment,Fixed Deposit,234.55,0,0.0,0,4,1,0,0.0,0.0,-234.55,-100.0
+CUST1055,2026-02-09,2,Facebook Ads,Website Visit,Desktop,India,Returning,Investment,Fixed Deposit,272.51,0,0.0,0,4,0,0,0.0,0.0,-272.51,-100.0
+CUST1055,2026-02-14,3,Facebook Ads,Organic Search,Desktop,India,Returning,Investment,Fixed Deposit,140.46,0,0.0,0,4,0,0,0.0,0.0,-140.46,-100.0
+CUST1055,2026-02-15,4,Website,Paid Ad,Desktop,India,Returning,Investment,Fixed Deposit,74.68,0,0.0,0,4,0,1,0.0,0.0,-74.68,-100.0
+CUST1056,2026-04-01,1,Instagram,App Visit,Mobile,India,Premium,Home Loan,Home Loan Balance Transfer,83.98,0,0.0,1,4,1,0,0.25,23754.9075,23670.9275,28186.39
+CUST1056,2026-04-11,2,Google Ads,Social Ad,Mobile,India,Premium,Home Loan,Home Loan Balance Transfer,355.85,0,0.0,1,4,0,0,0.25,23754.9075,23399.057500000003,6575.54
+CUST1056,2026-04-14,3,Website,App Visit,Mobile,India,Premium,Home Loan,Home Loan Balance Transfer,30.57,0,0.0,1,4,0,0,0.25,23754.9075,23724.3375,77606.6
+CUST1056,2026-04-23,4,Organic Search,Organic Search,Mobile,India,Premium,Home Loan,Home Loan Balance Transfer,16.22,1,95019.63,1,4,0,1,0.25,23754.9075,23738.6875,146354.42
+CUST1057,2026-03-18,1,Website,Remarketing,Mobile,India,New Customer,Personal Loan,Personal Loan,36.06,0,0.0,0,2,1,0,0.0,0.0,-36.06,-100.0
+CUST1057,2026-03-16,2,YouTube,Social Ad,Mobile,India,New Customer,Personal Loan,Personal Loan,357.95,0,0.0,0,2,0,1,0.0,0.0,-357.95,-100.0
+CUST1058,2026-01-15,1,Google Ads,Paid Ad,Desktop,Australia,Premium,Investment,Investment Plan,236.74,0,0.0,1,4,1,0,0.25,4472.0275,4235.2875,1789.0
+CUST1058,2026-01-24,2,YouTube,Video Ad,Desktop,Australia,Premium,Investment,Investment Plan,253.31,0,0.0,1,4,0,0,0.25,4472.0275,4218.7175,1665.44
+CUST1058,2026-01-12,3,Organic Search,Social Ad,Desktop,Australia,Premium,Investment,Investment Plan,24.87,0,0.0,1,4,0,0,0.25,4472.0275,4447.1575,17881.61
+CUST1058,2026-01-16,4,Website,Video Ad,Desktop,Australia,Premium,Investment,Investment Plan,33.52,1,17888.11,1,4,0,1,0.25,4472.0275,4438.5075,13241.37
+CUST1059,2026-05-04,1,Organic Search,App Visit,Desktop,India,Premium,Credit Card,Travel Card,35.47,0,0.0,0,2,1,0,0.0,0.0,-35.47,-100.0
+CUST1059,2026-04-29,2,Website,Organic Search,Desktop,India,Premium,Credit Card,Travel Card,35.38,0,0.0,0,2,0,1,0.0,0.0,-35.38,-100.0
+CUST1060,2026-01-29,1,Facebook Ads,Email,Tablet,USA,Premium,Insurance,Motor Insurance,285.55,0,0.0,0,4,1,0,0.0,0.0,-285.55,-100.0
+CUST1060,2026-02-05,2,Facebook Ads,App Visit,Tablet,USA,Premium,Insurance,Motor Insurance,174.11,0,0.0,0,4,0,0,0.0,0.0,-174.11,-100.0
+CUST1060,2026-02-02,3,Organic Search,Email,Tablet,USA,Premium,Insurance,Motor Insurance,38.96,0,0.0,0,4,0,0,0.0,0.0,-38.96,-100.0
+CUST1060,2026-02-08,4,Facebook Ads,Social Ad,Tablet,USA,Premium,Insurance,Motor Insurance,253.98,0,0.0,0,4,0,1,0.0,0.0,-253.98,-100.0
+CUST1061,2026-02-08,1,Instagram,Video Ad,Tablet,UK,Premium,Personal Loan,Personal Loan,94.92,0,0.0,1,2,1,0,0.5,9743.35,9648.43,10164.8
+CUST1061,2026-02-19,2,Mobile App,Remarketing,Tablet,UK,Premium,Personal Loan,Personal Loan,41.64,1,19486.7,1,2,0,1,0.5,9743.35,9701.710000000001,23299.02
+CUST1062,2026-04-29,1,Email,Paid Ad,Mobile,UK,Premium,Insurance,Life Insurance,55.66,0,0.0,0,5,1,0,0.0,0.0,-55.66,-100.0
+CUST1062,2026-05-01,2,Email,Remarketing,Mobile,UK,Premium,Insurance,Life Insurance,13.38,0,0.0,0,5,0,0,0.0,0.0,-13.38,-100.0
+CUST1062,2026-04-26,3,Organic Search,Organic Search,Mobile,UK,Premium,Insurance,Life Insurance,32.23,0,0.0,0,5,0,0,0.0,0.0,-32.23,-100.0
+CUST1062,2026-05-08,4,Facebook Ads,App Visit,Mobile,UK,Premium,Insurance,Life Insurance,282.13,0,0.0,0,5,0,0,0.0,0.0,-282.13,-100.0
+CUST1062,2026-05-06,5,Google Ads,Remarketing,Mobile,UK,Premium,Insurance,Life Insurance,247.19,0,0.0,0,5,0,1,0.0,0.0,-247.19,-100.0
+CUST1063,2026-07-29,1,Organic Search,Social Ad,Mobile,Australia,Returning,Credit Card,Travel Card,1.96,0,0.0,0,2,1,0,0.0,0.0,-1.96,-100.0
+CUST1063,2026-08-04,2,Mobile App,Remarketing,Mobile,Australia,Returning,Credit Card,Travel Card,38.98,0,0.0,0,2,0,1,0.0,0.0,-38.98,-100.0
+CUST1064,2026-07-19,1,Google Ads,Website Visit,Desktop,UK,Regular,Home Loan,Home Loan Balance Transfer,251.44,0,0.0,1,5,1,0,0.2,9403.548,9152.108,3639.88
+CUST1064,2026-07-22,2,Website,Organic Search,Desktop,UK,Regular,Home Loan,Home Loan Balance Transfer,59.28,0,0.0,1,5,0,0,0.2,9403.548,9344.268,15762.94
+CUST1064,2026-07-20,3,Instagram,Website Visit,Desktop,UK,Regular,Home Loan,Home Loan Balance Transfer,220.65,0,0.0,1,5,0,0,0.2,9403.548,9182.898000000001,4161.75
+CUST1064,2026-07-27,4,Instagram,Website Visit,Desktop,UK,Regular,Home Loan,Home Loan Balance Transfer,339.99,0,0.0,1,5,0,0,0.2,9403.548,9063.558,2665.83
+CUST1064,2026-07-23,5,Website,Video Ad,Desktop,UK,Regular,Home Loan,Home Loan Balance Transfer,28.22,1,47017.74,1,5,0,1,0.2,9403.548,9375.328000000001,33222.28
+CUST1065,2026-05-13,1,Organic Search,Organic Search,Tablet,USA,Premium,Investment,Mutual Fund,47.56,0,0.0,1,5,1,0,0.2,4190.456,4142.896,8710.88
+CUST1065,2026-05-14,2,Organic Search,Remarketing,Tablet,USA,Premium,Investment,Mutual Fund,11.33,0,0.0,1,5,0,0,0.2,4190.456,4179.126,36885.49
+CUST1065,2026-05-13,3,Instagram,Video Ad,Tablet,USA,Premium,Investment,Mutual Fund,131.7,0,0.0,1,5,0,0,0.2,4190.456,4058.7560000000003,3081.82
+CUST1065,2026-06-01,4,Facebook Ads,Paid Ad,Tablet,USA,Premium,Investment,Mutual Fund,184.71,0,0.0,1,5,0,0,0.2,4190.456,4005.746,2168.67
+CUST1065,2026-05-20,5,Instagram,App Visit,Tablet,USA,Premium,Investment,Mutual Fund,90.3,1,20952.28,1,5,0,1,0.2,4190.456,4100.156,4540.59
+CUST1066,2026-04-27,1,Mobile App,Email,Mobile,Canada,Regular,Insurance,Health Insurance,25.12,0,0.0,0,3,1,0,0.0,0.0,-25.12,-100.0
+CUST1066,2026-04-29,2,Mobile App,Email,Mobile,Canada,Regular,Insurance,Health Insurance,49.09,0,0.0,0,3,0,0,0.0,0.0,-49.09,-100.0
+CUST1066,2026-05-03,3,Mobile App,Remarketing,Mobile,Canada,Regular,Insurance,Health Insurance,55.58,0,0.0,0,3,0,1,0.0,0.0,-55.58,-100.0
+CUST1067,2026-01-15,1,Organic Search,Social Ad,Mobile,USA,Returning,Investment,Mutual Fund,14.25,0,0.0,0,4,1,0,0.0,0.0,-14.25,-100.0
+CUST1067,2026-01-21,2,Instagram,Organic Search,Mobile,USA,Returning,Investment,Mutual Fund,320.64,0,0.0,0,4,0,0,0.0,0.0,-320.64,-100.0
+CUST1067,2026-01-16,3,Instagram,App Visit,Mobile,USA,Returning,Investment,Mutual Fund,333.39,0,0.0,0,4,0,0,0.0,0.0,-333.39,-100.0
+CUST1067,2026-02-11,4,YouTube,Remarketing,Mobile,USA,Returning,Investment,Mutual Fund,309.75,0,0.0,0,4,0,1,0.0,0.0,-309.75,-100.0
+CUST1068,2026-03-05,1,Facebook Ads,Website Visit,Mobile,Canada,New Customer,Insurance,Motor Insurance,61.28,0,0.0,0,4,1,0,0.0,0.0,-61.28,-100.0
+CUST1068,2026-03-14,2,Facebook Ads,Website Visit,Mobile,Canada,New Customer,Insurance,Motor Insurance,108.42,0,0.0,0,4,0,0,0.0,0.0,-108.42,-100.0
+CUST1068,2026-03-17,3,Google Ads,Organic Search,Mobile,Canada,New Customer,Insurance,Motor Insurance,441.96,0,0.0,0,4,0,0,0.0,0.0,-441.96,-100.0
+CUST1068,2026-03-16,4,Instagram,Remarketing,Mobile,Canada,New Customer,Insurance,Motor Insurance,230.76,0,0.0,0,4,0,1,0.0,0.0,-230.76,-100.0
+CUST1069,2026-01-30,1,YouTube,Organic Search,Desktop,India,New Customer,Personal Loan,Personal Loan,128.65,0,0.0,0,5,1,0,0.0,0.0,-128.65,-100.0
+CUST1069,2026-01-30,2,Website,Remarketing,Desktop,India,New Customer,Personal Loan,Personal Loan,13.31,0,0.0,0,5,0,0,0.0,0.0,-13.31,-100.0
+CUST1069,2026-02-18,3,Mobile App,Paid Ad,Desktop,India,New Customer,Personal Loan,Personal Loan,38.5,0,0.0,0,5,0,0,0.0,0.0,-38.5,-100.0
+CUST1069,2026-02-07,4,YouTube,Video Ad,Desktop,India,New Customer,Personal Loan,Personal Loan,357.54,0,0.0,0,5,0,0,0.0,0.0,-357.54,-100.0
+CUST1069,2026-02-24,5,Organic Search,Email,Desktop,India,New Customer,Personal Loan,Personal Loan,9.37,0,0.0,0,5,0,1,0.0,0.0,-9.37,-100.0
+CUST1070,2026-04-15,1,Google Ads,App Visit,Desktop,Australia,New Customer,Credit Card,Cashback Card,211.9,0,0.0,0,2,1,0,0.0,0.0,-211.9,-100.0
+CUST1070,2026-04-22,2,Google Ads,Website Visit,Desktop,Australia,New Customer,Credit Card,Cashback Card,115.13,0,0.0,0,2,0,1,0.0,0.0,-115.13,-100.0
+CUST1071,2026-04-08,1,Instagram,Remarketing,Tablet,India,Regular,Home Loan,Home Loan,235.84,0,0.0,0,2,1,0,0.0,0.0,-235.84,-100.0
+CUST1071,2026-04-12,2,Instagram,Social Ad,Tablet,India,Regular,Home Loan,Home Loan,280.62,0,0.0,0,2,0,1,0.0,0.0,-280.62,-100.0
+CUST1072,2026-01-18,1,Email,App Visit,Desktop,India,Returning,Personal Loan,Personal Loan,32.8,0,0.0,1,3,1,0,0.3333333333333333,4733.493333333333,4700.693333333333,14331.38
+CUST1072,2026-01-16,2,YouTube,Organic Search,Desktop,India,Returning,Personal Loan,Personal Loan,617.28,0,0.0,1,3,0,0,0.3333333333333333,4733.493333333333,4116.213333333333,666.83
+CUST1072,2026-01-19,3,Google Ads,Website Visit,Desktop,India,Returning,Personal Loan,Personal Loan,144.73,1,14200.48,1,3,0,1,0.3333333333333333,4733.493333333333,4588.763333333333,3170.57
+CUST1073,2026-07-03,1,Email,Social Ad,Desktop,Canada,Returning,Home Loan,Home Loan,17.1,0,0.0,0,5,1,0,0.0,0.0,-17.1,-100.0
+CUST1073,2026-07-02,2,Instagram,Organic Search,Desktop,Canada,Returning,Home Loan,Home Loan,71.81,0,0.0,0,5,0,0,0.0,0.0,-71.81,-100.0
+CUST1073,2026-07-06,3,Organic Search,Organic Search,Desktop,Canada,Returning,Home Loan,Home Loan,22.3,0,0.0,0,5,0,0,0.0,0.0,-22.3,-100.0
+CUST1073,2026-07-19,4,Website,Video Ad,Desktop,Canada,Returning,Home Loan,Home Loan,38.29,0,0.0,0,5,0,0,0.0,0.0,-38.29,-100.0
+CUST1073,2026-07-19,5,Mobile App,Paid Ad,Desktop,Canada,Returning,Home Loan,Home Loan,44.97,0,0.0,0,5,0,1,0.0,0.0,-44.97,-100.0
+CUST1074,2026-04-06,1,Instagram,Paid Ad,Tablet,UK,Returning,Credit Card,Rewards Card,303.09,0,0.0,0,5,1,0,0.0,0.0,-303.09,-100.0
+CUST1074,2026-04-06,2,Mobile App,Paid Ad,Tablet,UK,Returning,Credit Card,Rewards Card,9.37,0,0.0,0,5,0,0,0.0,0.0,-9.37,-100.0
+CUST1074,2026-04-16,3,Organic Search,Website Visit,Tablet,UK,Returning,Credit Card,Rewards Card,47.47,0,0.0,0,5,0,0,0.0,0.0,-47.47,-100.0
+CUST1074,2026-04-25,4,Google Ads,Video Ad,Tablet,UK,Returning,Credit Card,Rewards Card,313.96,0,0.0,0,5,0,0,0.0,0.0,-313.96,-100.0
+CUST1074,2026-05-02,5,Organic Search,Website Visit,Tablet,UK,Returning,Credit Card,Rewards Card,38.15,0,0.0,0,5,0,1,0.0,0.0,-38.15,-100.0
+CUST1075,2026-03-12,1,Google Ads,Video Ad,Desktop,Australia,Regular,Insurance,Health Insurance,349.23,0,0.0,0,4,1,0,0.0,0.0,-349.23,-100.0
+CUST1075,2026-03-17,2,Facebook Ads,Organic Search,Desktop,Australia,Regular,Insurance,Health Insurance,154.12,0,0.0,0,4,0,0,0.0,0.0,-154.12,-100.0
+CUST1075,2026-03-24,3,Mobile App,Email,Desktop,Australia,Regular,Insurance,Health Insurance,23.56,0,0.0,0,4,0,0,0.0,0.0,-23.56,-100.0
+CUST1075,2026-03-08,4,Mobile App,Email,Desktop,Australia,Regular,Insurance,Health Insurance,13.82,0,0.0,0,4,0,1,0.0,0.0,-13.82,-100.0
+CUST1076,2026-06-24,1,Facebook Ads,Organic Search,Mobile,Canada,New Customer,Insurance,Life Insurance,390.54,0,0.0,1,4,1,0,0.25,2603.3275,2212.7875,566.6
+CUST1076,2026-06-28,2,Instagram,Website Visit,Mobile,Canada,New Customer,Insurance,Life Insurance,109.51,0,0.0,1,4,0,0,0.25,2603.3275,2493.8174999999997,2277.25
+CUST1076,2026-06-27,3,YouTube,Video Ad,Mobile,Canada,New Customer,Insurance,Life Insurance,574.22,0,0.0,1,4,0,0,0.25,2603.3275,2029.1074999999998,353.37
+CUST1076,2026-07-07,4,Google Ads,Website Visit,Mobile,Canada,New Customer,Insurance,Life Insurance,377.58,1,10413.31,1,4,0,1,0.25,2603.3275,2225.7475,589.48
+CUST1077,2026-07-04,1,Website,App Visit,Mobile,Australia,Regular,Credit Card,Travel Card,14.4,0,0.0,0,5,1,0,0.0,0.0,-14.4,-100.0
+CUST1077,2026-07-10,2,Organic Search,Social Ad,Mobile,Australia,Regular,Credit Card,Travel Card,23.29,0,0.0,0,5,0,0,0.0,0.0,-23.29,-100.0
+CUST1077,2026-07-20,3,Organic Search,Video Ad,Mobile,Australia,Regular,Credit Card,Travel Card,31.99,0,0.0,0,5,0,0,0.0,0.0,-31.99,-100.0
+CUST1077,2026-07-16,4,Instagram,Video Ad,Mobile,Australia,Regular,Credit Card,Travel Card,195.89,0,0.0,0,5,0,0,0.0,0.0,-195.89,-100.0
+CUST1077,2026-08-05,5,Google Ads,Social Ad,Mobile,Australia,Regular,Credit Card,Travel Card,159.57,0,0.0,0,5,0,1,0.0,0.0,-159.57,-100.0
+CUST1078,2026-01-25,1,Email,Video Ad,Desktop,USA,Regular,Personal Loan,Instant Personal Loan,65.3,0,0.0,1,4,1,0,0.25,1757.6425,1692.3425,2591.64
+CUST1078,2026-01-30,2,Facebook Ads,Video Ad,Desktop,USA,Regular,Personal Loan,Instant Personal Loan,426.64,0,0.0,1,4,0,0,0.25,1757.6425,1331.0025,311.97
+CUST1078,2026-02-11,3,Instagram,Video Ad,Desktop,USA,Regular,Personal Loan,Instant Personal Loan,233.59,0,0.0,1,4,0,0,0.25,1757.6425,1524.0525,652.45
+CUST1078,2026-02-16,4,Organic Search,Paid Ad,Desktop,USA,Regular,Personal Loan,Instant Personal Loan,43.19,1,7030.57,1,4,0,1,0.25,1757.6425,1714.4524999999999,3969.56
+CUST1079,2026-05-15,1,Email,Organic Search,Tablet,USA,Premium,Insurance,Motor Insurance,32.04,0,0.0,0,2,1,0,0.0,0.0,-32.04,-100.0
+CUST1079,2026-05-15,2,Website,Organic Search,Tablet,USA,Premium,Insurance,Motor Insurance,10.47,0,0.0,0,2,0,1,0.0,0.0,-10.47,-100.0
+CUST1080,2026-02-27,1,Instagram,Website Visit,Desktop,USA,New Customer,Insurance,Health Insurance,267.6,0,0.0,1,5,1,0,0.2,1905.286,1637.6860000000001,611.99
+CUST1080,2026-02-24,2,Organic Search,App Visit,Desktop,USA,New Customer,Insurance,Health Insurance,38.03,0,0.0,1,5,0,0,0.2,1905.286,1867.256,4909.96
+CUST1080,2026-03-01,3,Facebook Ads,Website Visit,Desktop,USA,New Customer,Insurance,Health Insurance,236.59,0,0.0,1,5,0,0,0.2,1905.286,1668.6960000000001,705.31
+CUST1080,2026-03-01,4,Email,Remarketing,Desktop,USA,New Customer,Insurance,Health Insurance,22.68,0,0.0,1,5,0,0,0.2,1905.286,1882.606,8300.73
+CUST1080,2026-03-18,5,Google Ads,Organic Search,Desktop,USA,New Customer,Insurance,Health Insurance,529.37,1,9526.43,1,5,0,1,0.2,1905.286,1375.9160000000002,259.92
+CUST1081,2026-05-12,1,Mobile App,Remarketing,Tablet,UK,Regular,Home Loan,Home Loan,37.33,0,0.0,0,3,1,0,0.0,0.0,-37.33,-100.0
+CUST1081,2026-05-16,2,Facebook Ads,App Visit,Tablet,UK,Regular,Home Loan,Home Loan,232.89,0,0.0,0,3,0,0,0.0,0.0,-232.89,-100.0
+CUST1081,2026-05-26,3,YouTube,Email,Tablet,UK,Regular,Home Loan,Home Loan,311.74,0,0.0,0,3,0,1,0.0,0.0,-311.74,-100.0
+CUST1082,2026-03-17,1,Facebook Ads,App Visit,Desktop,UK,New Customer,Investment,Investment Plan,402.98,0,0.0,0,5,1,0,0.0,0.0,-402.98,-100.0
+CUST1082,2026-03-20,2,Organic Search,App Visit,Desktop,UK,New Customer,Investment,Investment Plan,2.26,0,0.0,0,5,0,0,0.0,0.0,-2.26,-100.0
+CUST1082,2026-03-26,3,Google Ads,Email,Desktop,UK,New Customer,Investment,Investment Plan,367.68,0,0.0,0,5,0,0,0.0,0.0,-367.68,-100.0
+CUST1082,2026-03-31,4,Facebook Ads,App Visit,Desktop,UK,New Customer,Investment,Investment Plan,230.14,0,0.0,0,5,0,0,0.0,0.0,-230.14,-100.0
+CUST1082,2026-03-23,5,Email,Social Ad,Desktop,UK,New Customer,Investment,Investment Plan,97.76,0,0.0,0,5,0,1,0.0,0.0,-97.76,-100.0
+CUST1083,2026-02-20,1,Website,Paid Ad,Desktop,UK,Returning,Investment,Fixed Deposit,7.92,0,0.0,0,3,1,0,0.0,0.0,-7.92,-100.0
+CUST1083,2026-02-28,2,Organic Search,Remarketing,Desktop,UK,Returning,Investment,Fixed Deposit,22.85,0,0.0,0,3,0,0,0.0,0.0,-22.85,-100.0
+CUST1083,2026-03-11,3,Instagram,Website Visit,Desktop,UK,Returning,Investment,Fixed Deposit,138.74,0,0.0,0,3,0,1,0.0,0.0,-138.74,-100.0
+CUST1084,2026-07-06,1,Mobile App,Paid Ad,Tablet,Australia,Returning,Home Loan,Home Loan Balance Transfer,26.53,0,0.0,0,5,1,0,0.0,0.0,-26.53,-100.0
+CUST1084,2026-07-10,2,Facebook Ads,App Visit,Tablet,Australia,Returning,Home Loan,Home Loan Balance Transfer,173.07,0,0.0,0,5,0,0,0.0,0.0,-173.07,-100.0
+CUST1084,2026-07-09,3,Google Ads,Remarketing,Tablet,Australia,Returning,Home Loan,Home Loan Balance Transfer,582.88,0,0.0,0,5,0,0,0.0,0.0,-582.88,-100.0
+CUST1084,2026-07-19,4,YouTube,Paid Ad,Tablet,Australia,Returning,Home Loan,Home Loan Balance Transfer,388.27,0,0.0,0,5,0,0,0.0,0.0,-388.27,-100.0
+CUST1084,2026-07-16,5,Website,Video Ad,Tablet,Australia,Returning,Home Loan,Home Loan Balance Transfer,7.37,0,0.0,0,5,0,1,0.0,0.0,-7.37,-100.0
+CUST1085,2026-02-15,1,YouTube,App Visit,Mobile,USA,New Customer,Insurance,Health Insurance,623.69,0,0.0,0,5,1,0,0.0,0.0,-623.69,-100.0
+CUST1085,2026-02-16,2,Google Ads,Video Ad,Mobile,USA,New Customer,Insurance,Health Insurance,187.82,0,0.0,0,5,0,0,0.0,0.0,-187.82,-100.0
+CUST1085,2026-02-24,3,Organic Search,Remarketing,Mobile,USA,New Customer,Insurance,Health Insurance,18.84,0,0.0,0,5,0,0,0.0,0.0,-18.84,-100.0
+CUST1085,2026-02-25,4,Instagram,Remarketing,Mobile,USA,New Customer,Insurance,Health Insurance,146.12,0,0.0,0,5,0,0,0.0,0.0,-146.12,-100.0
+CUST1085,2026-03-10,5,Organic Search,Organic Search,Mobile,USA,New Customer,Insurance,Health Insurance,9.61,0,0.0,0,5,0,1,0.0,0.0,-9.61,-100.0
+CUST1086,2026-07-22,1,YouTube,Remarketing,Tablet,UK,Regular,Home Loan,Home Loan,387.88,0,0.0,1,4,1,0,0.25,18925.5025,18537.622499999998,4779.22
+CUST1086,2026-07-18,2,Email,Organic Search,Tablet,UK,Regular,Home Loan,Home Loan,61.61,0,0.0,1,4,0,0,0.25,18925.5025,18863.892499999998,30618.23
+CUST1086,2026-07-28,3,Website,App Visit,Tablet,UK,Regular,Home Loan,Home Loan,76.6,0,0.0,1,4,0,0,0.25,18925.5025,18848.9025,24606.92
+CUST1086,2026-07-18,4,Instagram,Organic Search,Tablet,UK,Regular,Home Loan,Home Loan,129.17,1,75702.01,1,4,0,1,0.25,18925.5025,18796.3325,14551.62
+CUST1087,2026-02-23,1,Email,Organic Search,Tablet,Canada,Premium,Home Loan,Home Loan Balance Transfer,19.83,0,0.0,0,3,1,0,0.0,0.0,-19.83,-100.0
+CUST1087,2026-02-21,2,YouTube,Email,Tablet,Canada,Premium,Home Loan,Home Loan Balance Transfer,501.9,0,0.0,0,3,0,0,0.0,0.0,-501.9,-100.0
+CUST1087,2026-02-22,3,YouTube,Email,Tablet,Canada,Premium,Home Loan,Home Loan Balance Transfer,160.12,0,0.0,0,3,0,1,0.0,0.0,-160.12,-100.0
+CUST1088,2026-04-18,1,Mobile App,Remarketing,Mobile,Canada,Premium,Personal Loan,Personal Loan,54.13,0,0.0,0,3,1,0,0.0,0.0,-54.13,-100.0
+CUST1088,2026-04-19,2,Email,Website Visit,Mobile,Canada,Premium,Personal Loan,Personal Loan,68.13,0,0.0,0,3,0,0,0.0,0.0,-68.13,-100.0
+CUST1088,2026-05-02,3,Facebook Ads,Email,Mobile,Canada,Premium,Personal Loan,Personal Loan,345.47,0,0.0,0,3,0,1,0.0,0.0,-345.47,-100.0
+CUST1089,2026-07-21,1,Email,Paid Ad,Desktop,USA,New Customer,Personal Loan,Personal Loan,36.86,0,0.0,0,5,1,0,0.0,0.0,-36.86,-100.0
+CUST1089,2026-07-25,2,Facebook Ads,Website Visit,Desktop,USA,New Customer,Personal Loan,Personal Loan,231.74,0,0.0,0,5,0,0,0.0,0.0,-231.74,-100.0
+CUST1089,2026-08-06,3,Mobile App,Video Ad,Desktop,USA,New Customer,Personal Loan,Personal Loan,35.42,0,0.0,0,5,0,0,0.0,0.0,-35.42,-100.0
+CUST1089,2026-07-31,4,YouTube,Social Ad,Desktop,USA,New Customer,Personal Loan,Personal Loan,197.5,0,0.0,0,5,0,0,0.0,0.0,-197.5,-100.0
+CUST1089,2026-08-01,5,Mobile App,Organic Search,Desktop,USA,New Customer,Personal Loan,Personal Loan,5.92,0,0.0,0,5,0,1,0.0,0.0,-5.92,-100.0
+CUST1090,2026-04-21,1,Facebook Ads,App Visit,Tablet,UK,Premium,Personal Loan,Personal Loan,123.91,0,0.0,0,5,1,0,0.0,0.0,-123.91,-100.0
+CUST1090,2026-04-25,2,Instagram,Remarketing,Tablet,UK,Premium,Personal Loan,Personal Loan,330.11,0,0.0,0,5,0,0,0.0,0.0,-330.11,-100.0
+CUST1090,2026-05-02,3,Google Ads,Organic Search,Tablet,UK,Premium,Personal Loan,Personal Loan,202.47,0,0.0,0,5,0,0,0.0,0.0,-202.47,-100.0
+CUST1090,2026-04-29,4,Email,Website Visit,Tablet,UK,Premium,Personal Loan,Personal Loan,62.42,0,0.0,0,5,0,0,0.0,0.0,-62.42,-100.0
+CUST1090,2026-05-13,5,Google Ads,Organic Search,Tablet,UK,Premium,Personal Loan,Personal Loan,440.24,0,0.0,0,5,0,1,0.0,0.0,-440.24,-100.0
+CUST1091,2026-06-29,1,Email,Social Ad,Desktop,India,New Customer,Home Loan,Home Loan,43.08,0,0.0,0,5,1,0,0.0,0.0,-43.08,-100.0
+CUST1091,2026-06-27,2,YouTube,Email,Desktop,India,New Customer,Home Loan,Home Loan,386.91,0,0.0,0,5,0,0,0.0,0.0,-386.91,-100.0
+CUST1091,2026-07-08,3,Mobile App,Website Visit,Desktop,India,New Customer,Home Loan,Home Loan,50.63,0,0.0,0,5,0,0,0.0,0.0,-50.63,-100.0
+CUST1091,2026-07-19,4,Mobile App,Email,Desktop,India,New Customer,Home Loan,Home Loan,21.09,0,0.0,0,5,0,0,0.0,0.0,-21.09,-100.0
+CUST1091,2026-07-28,5,Facebook Ads,Remarketing,Desktop,India,New Customer,Home Loan,Home Loan,331.51,0,0.0,0,5,0,1,0.0,0.0,-331.51,-100.0
+CUST1092,2026-06-03,1,Instagram,Website Visit,Mobile,Australia,New Customer,Credit Card,Cashback Card,76.03,0,0.0,0,3,1,0,0.0,0.0,-76.03,-100.0
+CUST1092,2026-05-28,2,YouTube,Remarketing,Mobile,Australia,New Customer,Credit Card,Cashback Card,639.33,0,0.0,0,3,0,0,0.0,0.0,-639.33,-100.0
+CUST1092,2026-06-10,3,Mobile App,Paid Ad,Mobile,Australia,New Customer,Credit Card,Cashback Card,13.58,0,0.0,0,3,0,1,0.0,0.0,-13.58,-100.0
+CUST1093,2026-06-26,1,Google Ads,App Visit,Tablet,Canada,Returning,Credit Card,Cashback Card,504.56,0,0.0,0,5,1,0,0.0,0.0,-504.56,-100.0
+CUST1093,2026-06-22,2,YouTube,Social Ad,Tablet,Canada,Returning,Credit Card,Cashback Card,354.22,0,0.0,0,5,0,0,0.0,0.0,-354.22,-100.0
+CUST1093,2026-06-24,3,Facebook Ads,Paid Ad,Tablet,Canada,Returning,Credit Card,Cashback Card,444.45,0,0.0,0,5,0,0,0.0,0.0,-444.45,-100.0
+CUST1093,2026-07-01,4,Mobile App,Paid Ad,Tablet,Canada,Returning,Credit Card,Cashback Card,31.58,0,0.0,0,5,0,0,0.0,0.0,-31.58,-100.0
+CUST1093,2026-07-15,5,Instagram,App Visit,Tablet,Canada,Returning,Credit Card,Cashback Card,347.79,0,0.0,0,5,0,1,0.0,0.0,-347.79,-100.0
+CUST1094,2026-06-23,1,Facebook Ads,Video Ad,Desktop,Canada,Returning,Insurance,Life Insurance,261.54,0,0.0,0,3,1,0,0.0,0.0,-261.54,-100.0
+CUST1094,2026-06-29,2,YouTube,Paid Ad,Desktop,Canada,Returning,Insurance,Life Insurance,113.64,0,0.0,0,3,0,0,0.0,0.0,-113.64,-100.0
+CUST1094,2026-07-08,3,Email,Remarketing,Desktop,Canada,Returning,Insurance,Life Insurance,74.72,0,0.0,0,3,0,1,0.0,0.0,-74.72,-100.0
+CUST1095,2026-03-30,1,YouTube,Social Ad,Desktop,Australia,Returning,Personal Loan,Personal Loan,585.69,0,0.0,1,5,1,0,0.2,5318.652,4732.9619999999995,808.1
+CUST1095,2026-04-02,2,Website,Paid Ad,Desktop,Australia,Returning,Personal Loan,Personal Loan,20.46,0,0.0,1,5,0,0,0.2,5318.652,5298.192,25895.37
+CUST1095,2026-04-13,3,Facebook Ads,Paid Ad,Desktop,Australia,Returning,Personal Loan,Personal Loan,289.11,0,0.0,1,5,0,0,0.2,5318.652,5029.542,1739.66
+CUST1095,2026-04-22,4,Google Ads,Email,Desktop,Australia,Returning,Personal Loan,Personal Loan,103.0,0,0.0,1,5,0,0,0.2,5318.652,5215.652,5063.74
+CUST1095,2026-05-03,5,Mobile App,Email,Desktop,Australia,Returning,Personal Loan,Personal Loan,19.12,1,26593.26,1,5,0,1,0.2,5318.652,5299.532,27717.22
+CUST1096,2026-06-01,1,Organic Search,Email,Tablet,USA,New Customer,Home Loan,Home Loan,43.81,0,0.0,0,4,1,0,0.0,0.0,-43.81,-100.0
+CUST1096,2026-06-01,2,YouTube,App Visit,Tablet,USA,New Customer,Home Loan,Home Loan,265.09,0,0.0,0,4,0,0,0.0,0.0,-265.09,-100.0
+CUST1096,2026-06-14,3,Instagram,App Visit,Tablet,USA,New Customer,Home Loan,Home Loan,193.64,0,0.0,0,4,0,0,0.0,0.0,-193.64,-100.0
+CUST1096,2026-06-22,4,Organic Search,App Visit,Tablet,USA,New Customer,Home Loan,Home Loan,26.22,0,0.0,0,4,0,1,0.0,0.0,-26.22,-100.0
+CUST1097,2026-07-17,1,YouTube,Email,Mobile,Canada,Returning,Home Loan,Home Loan Balance Transfer,614.52,0,0.0,0,3,1,0,0.0,0.0,-614.52,-100.0
+CUST1097,2026-07-27,2,Instagram,Remarketing,Mobile,Canada,Returning,Home Loan,Home Loan Balance Transfer,57.86,0,0.0,0,3,0,0,0.0,0.0,-57.86,-100.0
+CUST1097,2026-07-30,3,Website,App Visit,Mobile,Canada,Returning,Home Loan,Home Loan Balance Transfer,44.75,0,0.0,0,3,0,1,0.0,0.0,-44.75,-100.0
+CUST1098,2026-04-26,1,Facebook Ads,Email,Desktop,USA,Returning,Personal Loan,Instant Personal Loan,157.38,0,0.0,0,2,1,0,0.0,0.0,-157.38,-100.0
+CUST1098,2026-04-29,2,Google Ads,Social Ad,Desktop,USA,Returning,Personal Loan,Instant Personal Loan,498.42,0,0.0,0,2,0,1,0.0,0.0,-498.42,-100.0
+CUST1099,2026-02-27,1,Facebook Ads,Remarketing,Mobile,Canada,Regular,Home Loan,Home Loan Balance Transfer,328.25,0,0.0,0,2,1,0,0.0,0.0,-328.25,-100.0
+CUST1099,2026-03-10,2,YouTube,App Visit,Mobile,Canada,Regular,Home Loan,Home Loan Balance Transfer,243.6,0,0.0,0,2,0,1,0.0,0.0,-243.6,-100.0
+CUST1100,2026-03-21,1,Mobile App,Remarketing,Desktop,UK,Premium,Insurance,Motor Insurance,57.18,0,0.0,1,4,1,0,0.25,4706.4125,4649.2325,8130.87
+CUST1100,2026-04-03,2,Mobile App,Website Visit,Desktop,UK,Premium,Insurance,Motor Insurance,18.2,0,0.0,1,4,0,0,0.25,4706.4125,4688.212500000001,25759.41
+CUST1100,2026-03-21,3,Organic Search,App Visit,Desktop,UK,Premium,Insurance,Motor Insurance,28.13,0,0.0,1,4,0,0,0.25,4706.4125,4678.2825,16630.94
+CUST1100,2026-03-20,4,YouTube,Video Ad,Desktop,UK,Premium,Insurance,Motor Insurance,256.46,1,18825.65,1,4,0,1,0.25,4706.4125,4449.9525,1735.14
+CUST1101,2026-04-13,1,YouTube,Remarketing,Mobile,UK,Returning,Personal Loan,Instant Personal Loan,254.4,0,0.0,0,3,1,0,0.0,0.0,-254.4,-100.0
+CUST1101,2026-04-15,2,Mobile App,Remarketing,Mobile,UK,Returning,Personal Loan,Instant Personal Loan,15.94,0,0.0,0,3,0,0,0.0,0.0,-15.94,-100.0
+CUST1101,2026-04-12,3,Organic Search,Video Ad,Mobile,UK,Returning,Personal Loan,Instant Personal Loan,36.02,0,0.0,0,3,0,1,0.0,0.0,-36.02,-100.0
+CUST1102,2026-01-26,1,Google Ads,Paid Ad,Tablet,USA,Returning,Credit Card,Cashback Card,151.5,0,0.0,0,2,1,0,0.0,0.0,-151.5,-100.0
+CUST1102,2026-01-31,2,YouTube,Social Ad,Tablet,USA,Returning,Credit Card,Cashback Card,190.62,0,0.0,0,2,0,1,0.0,0.0,-190.62,-100.0
+CUST1103,2026-06-18,1,Google Ads,App Visit,Desktop,Australia,Regular,Home Loan,Home Loan,88.7,0,0.0,0,5,1,0,0.0,0.0,-88.7,-100.0
+CUST1103,2026-06-18,2,Email,Organic Search,Desktop,Australia,Regular,Home Loan,Home Loan,55.2,0,0.0,0,5,0,0,0.0,0.0,-55.2,-100.0
+CUST1103,2026-06-21,3,Website,Video Ad,Desktop,Australia,Regular,Home Loan,Home Loan,73.85,0,0.0,0,5,0,0,0.0,0.0,-73.85,-100.0
+CUST1103,2026-06-24,4,Instagram,Email,Desktop,Australia,Regular,Home Loan,Home Loan,232.13,0,0.0,0,5,0,0,0.0,0.0,-232.13,-100.0
+CUST1103,2026-07-05,5,Email,Website Visit,Desktop,Australia,Regular,Home Loan,Home Loan,81.54,0,0.0,0,5,0,1,0.0,0.0,-81.54,-100.0
+CUST1104,2026-06-29,1,Facebook Ads,Paid Ad,Desktop,UK,New Customer,Insurance,Motor Insurance,212.11,0,0.0,1,3,1,0,0.3333333333333333,4536.11,4324.0,2038.56
+CUST1104,2026-06-28,2,Website,Remarketing,Desktop,UK,New Customer,Insurance,Motor Insurance,52.76,0,0.0,1,3,0,0,0.3333333333333333,4536.11,4483.349999999999,8497.63
+CUST1104,2026-07-13,3,Instagram,Social Ad,Desktop,UK,New Customer,Insurance,Motor Insurance,302.05,1,13608.33,1,3,0,1,0.3333333333333333,4536.11,4234.0599999999995,1401.77
+CUST1105,2026-02-24,1,Mobile App,Organic Search,Mobile,Australia,Premium,Investment,Mutual Fund,65.07,0,0.0,0,3,1,0,0.0,0.0,-65.07,-100.0
+CUST1105,2026-02-26,2,Email,Paid Ad,Mobile,Australia,Premium,Investment,Mutual Fund,93.59,0,0.0,0,3,0,0,0.0,0.0,-93.59,-100.0
+CUST1105,2026-03-02,3,Organic Search,Paid Ad,Mobile,Australia,Premium,Investment,Mutual Fund,29.35,0,0.0,0,3,0,1,0.0,0.0,-29.35,-100.0
+CUST1106,2026-06-25,1,Organic Search,App Visit,Desktop,India,Returning,Personal Loan,Personal Loan,39.52,0,0.0,0,5,1,0,0.0,0.0,-39.52,-100.0
+CUST1106,2026-06-23,2,Facebook Ads,Website Visit,Desktop,India,Returning,Personal Loan,Personal Loan,89.07,0,0.0,0,5,0,0,0.0,0.0,-89.07,-100.0
+CUST1106,2026-07-03,3,YouTube,Social Ad,Desktop,India,Returning,Personal Loan,Personal Loan,463.1,0,0.0,0,5,0,0,0.0,0.0,-463.1,-100.0
+CUST1106,2026-06-23,4,Website,Website Visit,Desktop,India,Returning,Personal Loan,Personal Loan,52.56,0,0.0,0,5,0,0,0.0,0.0,-52.56,-100.0
+CUST1106,2026-07-07,5,Mobile App,Remarketing,Desktop,India,Returning,Personal Loan,Personal Loan,28.13,0,0.0,0,5,0,1,0.0,0.0,-28.13,-100.0
+CUST1107,2026-01-23,1,Email,Email,Mobile,Canada,Returning,Investment,Investment Plan,17.38,0,0.0,0,5,1,0,0.0,0.0,-17.38,-100.0
+CUST1107,2026-02-02,2,Instagram,App Visit,Mobile,Canada,Returning,Investment,Investment Plan,283.01,0,0.0,0,5,0,0,0.0,0.0,-283.01,-100.0
+CUST1107,2026-02-01,3,Instagram,App Visit,Mobile,Canada,Returning,Investment,Investment Plan,151.82,0,0.0,0,5,0,0,0.0,0.0,-151.82,-100.0
+CUST1107,2026-01-31,4,Facebook Ads,Paid Ad,Mobile,Canada,Returning,Investment,Investment Plan,227.89,0,0.0,0,5,0,0,0.0,0.0,-227.89,-100.0
+CUST1107,2026-01-30,5,Email,Social Ad,Mobile,Canada,Returning,Investment,Investment Plan,17.86,0,0.0,0,5,0,1,0.0,0.0,-17.86,-100.0
+CUST1108,2026-02-01,1,Organic Search,Social Ad,Tablet,Canada,Returning,Investment,Investment Plan,43.19,0,0.0,1,5,1,0,0.2,2286.446,2243.256,5193.92
+CUST1108,2026-02-02,2,Google Ads,Organic Search,Tablet,Canada,Returning,Investment,Investment Plan,281.66,0,0.0,1,5,0,0,0.2,2286.446,2004.7859999999998,711.78
+CUST1108,2026-02-14,3,Facebook Ads,Email,Tablet,Canada,Returning,Investment,Investment Plan,258.44,0,0.0,1,5,0,0,0.2,2286.446,2028.0059999999999,784.71
+CUST1108,2026-01-31,4,Website,Video Ad,Tablet,Canada,Returning,Investment,Investment Plan,25.17,0,0.0,1,5,0,0,0.2,2286.446,2261.276,8984.01
+CUST1108,2026-02-05,5,Email,Remarketing,Tablet,Canada,Returning,Investment,Investment Plan,15.69,1,11432.23,1,5,0,1,0.2,2286.446,2270.756,14472.63
+CUST1109,2026-03-12,1,Mobile App,Email,Desktop,UK,Returning,Credit Card,Travel Card,11.95,0,0.0,0,4,1,0,0.0,0.0,-11.95,-100.0
+CUST1109,2026-03-11,2,Email,Paid Ad,Desktop,UK,Returning,Credit Card,Travel Card,39.9,0,0.0,0,4,0,0,0.0,0.0,-39.9,-100.0
+CUST1109,2026-03-19,3,Website,Website Visit,Desktop,UK,Returning,Credit Card,Travel Card,30.11,0,0.0,0,4,0,0,0.0,0.0,-30.11,-100.0
+CUST1109,2026-03-15,4,Instagram,Organic Search,Desktop,UK,Returning,Credit Card,Travel Card,227.0,0,0.0,0,4,0,1,0.0,0.0,-227.0,-100.0
+CUST1110,2026-03-21,1,Mobile App,Email,Desktop,Canada,Regular,Personal Loan,Instant Personal Loan,29.44,0,0.0,0,4,1,0,0.0,0.0,-29.44,-100.0
+CUST1110,2026-03-17,2,Website,Website Visit,Desktop,Canada,Regular,Personal Loan,Instant Personal Loan,74.91,0,0.0,0,4,0,0,0.0,0.0,-74.91,-100.0
+CUST1110,2026-04-06,3,YouTube,Video Ad,Desktop,Canada,Regular,Personal Loan,Instant Personal Loan,560.57,0,0.0,0,4,0,0,0.0,0.0,-560.57,-100.0
+CUST1110,2026-04-07,4,Google Ads,Remarketing,Desktop,Canada,Regular,Personal Loan,Instant Personal Loan,189.02,0,0.0,0,4,0,1,0.0,0.0,-189.02,-100.0
+CUST1111,2026-03-09,1,Instagram,App Visit,Desktop,India,Premium,Insurance,Life Insurance,62.93,0,0.0,1,4,1,0,0.25,3491.1225,3428.1925,5447.63
+CUST1111,2026-03-11,2,Mobile App,App Visit,Desktop,India,Premium,Insurance,Life Insurance,37.93,0,0.0,1,4,0,0,0.25,3491.1225,3453.1925,9104.12
+CUST1111,2026-03-14,3,Website,Paid Ad,Desktop,India,Premium,Insurance,Life Insurance,57.62,0,0.0,1,4,0,0,0.25,3491.1225,3433.5025,5958.87
+CUST1111,2026-03-27,4,Facebook Ads,Social Ad,Desktop,India,Premium,Insurance,Life Insurance,149.29,1,13964.49,1,4,0,1,0.25,3491.1225,3341.8325,2238.48
+CUST1112,2026-07-12,1,Website,Social Ad,Mobile,Australia,Regular,Investment,Investment Plan,12.4,0,0.0,1,5,1,0,0.2,1846.7200000000003,1834.3200000000002,14792.9
+CUST1112,2026-07-19,2,YouTube,Email,Mobile,Australia,Regular,Investment,Investment Plan,324.47,0,0.0,1,5,0,0,0.2,1846.7200000000003,1522.2500000000002,469.15
+CUST1112,2026-07-23,3,Mobile App,Video Ad,Mobile,Australia,Regular,Investment,Investment Plan,69.85,0,0.0,1,5,0,0,0.2,1846.7200000000003,1776.8700000000003,2543.84
+CUST1112,2026-07-21,4,Mobile App,Social Ad,Mobile,Australia,Regular,Investment,Investment Plan,32.04,0,0.0,1,5,0,0,0.2,1846.7200000000003,1814.6800000000003,5663.8
+CUST1112,2026-07-21,5,Facebook Ads,Social Ad,Mobile,Australia,Regular,Investment,Investment Plan,189.33,1,9233.6,1,5,0,1,0.2,1846.7200000000003,1657.3900000000003,875.4
+CUST1113,2026-04-24,1,Mobile App,Website Visit,Desktop,Australia,Regular,Home Loan,Home Loan Balance Transfer,24.52,0,0.0,0,2,1,0,0.0,0.0,-24.52,-100.0
+CUST1113,2026-05-06,2,Facebook Ads,Paid Ad,Desktop,Australia,Regular,Home Loan,Home Loan Balance Transfer,187.23,0,0.0,0,2,0,1,0.0,0.0,-187.23,-100.0
+CUST1114,2026-04-01,1,Mobile App,Email,Tablet,USA,New Customer,Personal Loan,Personal Loan,45.93,0,0.0,0,3,1,0,0.0,0.0,-45.93,-100.0
+CUST1114,2026-04-01,2,Instagram,App Visit,Tablet,USA,New Customer,Personal Loan,Personal Loan,49.05,0,0.0,0,3,0,0,0.0,0.0,-49.05,-100.0
+CUST1114,2026-04-13,3,YouTube,Remarketing,Tablet,USA,New Customer,Personal Loan,Personal Loan,357.73,0,0.0,0,3,0,1,0.0,0.0,-357.73,-100.0
+CUST1115,2026-07-29,1,Instagram,Website Visit,Mobile,USA,New Customer,Home Loan,Home Loan,101.09,0,0.0,0,2,1,0,0.0,0.0,-101.09,-100.0
+CUST1115,2026-08-03,2,Facebook Ads,Organic Search,Mobile,USA,New Customer,Home Loan,Home Loan,395.05,0,0.0,0,2,0,1,0.0,0.0,-395.05,-100.0
+CUST1116,2026-04-04,1,Mobile App,Video Ad,Desktop,Australia,Premium,Investment,Fixed Deposit,64.71,0,0.0,1,2,1,0,0.5,4164.56,4099.85,6335.73
+CUST1116,2026-04-05,2,Facebook Ads,Video Ad,Desktop,Australia,Premium,Investment,Fixed Deposit,97.14,1,8329.12,1,2,0,1,0.5,4164.56,4067.4200000000005,4187.17
+CUST1117,2026-06-04,1,Website,App Visit,Tablet,UK,Regular,Personal Loan,Instant Personal Loan,41.5,0,0.0,1,5,1,0,0.2,3078.152,3036.652,7317.23
+CUST1117,2026-06-09,2,Instagram,Video Ad,Tablet,UK,Regular,Personal Loan,Instant Personal Loan,129.54,0,0.0,1,5,0,0,0.2,3078.152,2948.612,2276.22
+CUST1117,2026-06-16,3,Instagram,Website Visit,Tablet,UK,Regular,Personal Loan,Instant Personal Loan,232.02,0,0.0,1,5,0,0,0.2,3078.152,2846.132,1226.68
+CUST1117,2026-06-17,4,Organic Search,Paid Ad,Tablet,UK,Regular,Personal Loan,Instant Personal Loan,6.83,0,0.0,1,5,0,0,0.2,3078.152,3071.322,44968.11
+CUST1117,2026-06-28,5,Website,Remarketing,Tablet,UK,Regular,Personal Loan,Instant Personal Loan,56.35,1,15390.76,1,5,0,1,0.2,3078.152,3021.802,5362.56
+CUST1118,2026-07-27,1,Email,Paid Ad,Mobile,Canada,Returning,Credit Card,Cashback Card,30.24,0,0.0,0,2,1,0,0.0,0.0,-30.24,-100.0
+CUST1118,2026-08-04,2,Email,Video Ad,Mobile,Canada,Returning,Credit Card,Cashback Card,51.16,0,0.0,0,2,0,1,0.0,0.0,-51.16,-100.0
+CUST1119,2026-03-17,1,Organic Search,Paid Ad,Tablet,Australia,Returning,Credit Card,Cashback Card,27.32,0,0.0,0,2,1,0,0.0,0.0,-27.32,-100.0
+CUST1119,2026-03-21,2,Website,Social Ad,Tablet,Australia,Returning,Credit Card,Cashback Card,67.26,0,0.0,0,2,0,1,0.0,0.0,-67.26,-100.0
+CUST1120,2026-08-01,1,Facebook Ads,Email,Mobile,UK,Regular,Insurance,Health Insurance,374.28,0,0.0,1,4,1,0,0.25,1816.855,1442.575,385.43
+CUST1120,2026-07-31,2,Organic Search,App Visit,Mobile,UK,Regular,Insurance,Health Insurance,30.81,0,0.0,1,4,0,0,0.25,1816.855,1786.045,5796.97
+CUST1120,2026-07-30,3,YouTube,Email,Mobile,UK,Regular,Insurance,Health Insurance,442.04,0,0.0,1,4,0,0,0.25,1816.855,1374.815,311.02
+CUST1120,2026-08-08,4,Email,Video Ad,Mobile,UK,Regular,Insurance,Health Insurance,98.11,1,7267.42,1,4,0,1,0.25,1816.855,1718.7450000000001,1751.86
+CUST1121,2026-01-19,1,Instagram,Video Ad,Tablet,Australia,Premium,Credit Card,Rewards Card,85.34,0,0.0,0,5,1,0,0.0,0.0,-85.34,-100.0
+CUST1121,2026-01-28,2,Organic Search,Email,Tablet,Australia,Premium,Credit Card,Rewards Card,42.18,0,0.0,0,5,0,0,0.0,0.0,-42.18,-100.0
+CUST1121,2026-01-20,3,Website,Remarketing,Tablet,Australia,Premium,Credit Card,Rewards Card,48.31,0,0.0,0,5,0,0,0.0,0.0,-48.31,-100.0
+CUST1121,2026-01-28,4,Email,App Visit,Tablet,Australia,Premium,Credit Card,Rewards Card,50.68,0,0.0,0,5,0,0,0.0,0.0,-50.68,-100.0
+CUST1121,2026-02-17,5,Facebook Ads,App Visit,Tablet,Australia,Premium,Credit Card,Rewards Card,349.92,0,0.0,0,5,0,1,0.0,0.0,-349.92,-100.0
+CUST1122,2026-07-13,1,Organic Search,Social Ad,Desktop,Canada,Premium,Home Loan,Home Loan,10.89,0,0.0,0,2,1,0,0.0,0.0,-10.89,-100.0
+CUST1122,2026-07-14,2,Website,Email,Desktop,Canada,Premium,Home Loan,Home Loan,25.14,0,0.0,0,2,0,1,0.0,0.0,-25.14,-100.0
+CUST1123,2026-07-22,1,Google Ads,Paid Ad,Tablet,UK,Premium,Investment,Mutual Fund,405.61,0,0.0,1,5,1,0,0.2,1930.0900000000001,1524.48,375.85
+CUST1123,2026-07-22,2,Mobile App,Paid Ad,Tablet,UK,Premium,Investment,Mutual Fund,65.41,0,0.0,1,5,0,0,0.2,1930.0900000000001,1864.68,2850.76
+CUST1123,2026-08-04,3,Instagram,Remarketing,Tablet,UK,Premium,Investment,Mutual Fund,40.21,0,0.0,1,5,0,0,0.2,1930.0900000000001,1889.88,4700.02
+CUST1123,2026-08-12,4,Website,Email,Tablet,UK,Premium,Investment,Mutual Fund,73.21,0,0.0,1,5,0,0,0.2,1930.0900000000001,1856.88,2536.37
+CUST1123,2026-08-07,5,Email,Video Ad,Tablet,UK,Premium,Investment,Mutual Fund,18.4,1,9650.45,1,5,0,1,0.2,1930.0900000000001,1911.69,10389.62
+CUST1124,2026-06-11,1,YouTube,App Visit,Tablet,UK,New Customer,Personal Loan,Personal Loan,522.22,0,0.0,1,5,1,0,0.2,1446.656,924.4359999999999,177.02
+CUST1124,2026-06-17,2,Google Ads,Email,Tablet,UK,New Customer,Personal Loan,Personal Loan,120.53,0,0.0,1,5,0,0,0.2,1446.656,1326.126,1100.25
+CUST1124,2026-06-10,3,YouTube,Remarketing,Tablet,UK,New Customer,Personal Loan,Personal Loan,104.84,0,0.0,1,5,0,0,0.2,1446.656,1341.816,1279.87
+CUST1124,2026-07-07,4,Organic Search,Social Ad,Tablet,UK,New Customer,Personal Loan,Personal Loan,21.12,0,0.0,1,5,0,0,0.2,1446.656,1425.536,6749.7
+CUST1124,2026-06-14,5,Instagram,Remarketing,Tablet,UK,New Customer,Personal Loan,Personal Loan,110.97,1,7233.28,1,5,0,1,0.2,1446.656,1335.686,1203.65
+CUST1125,2026-04-09,1,Instagram,Video Ad,Desktop,India,New Customer,Home Loan,Home Loan Balance Transfer,204.46,0,0.0,0,3,1,0,0.0,0.0,-204.46,-100.0
+CUST1125,2026-04-15,2,Google Ads,Video Ad,Desktop,India,New Customer,Home Loan,Home Loan Balance Transfer,262.62,0,0.0,0,3,0,0,0.0,0.0,-262.62,-100.0
+CUST1125,2026-04-21,3,YouTube,Video Ad,Desktop,India,New Customer,Home Loan,Home Loan Balance Transfer,469.65,0,0.0,0,3,0,1,0.0,0.0,-469.65,-100.0
+CUST1126,2026-06-05,1,Organic Search,App Visit,Mobile,USA,Returning,Credit Card,Rewards Card,39.55,0,0.0,0,2,1,0,0.0,0.0,-39.55,-100.0
+CUST1126,2026-06-10,2,YouTube,Organic Search,Mobile,USA,Returning,Credit Card,Rewards Card,150.55,0,0.0,0,2,0,1,0.0,0.0,-150.55,-100.0
+CUST1127,2026-07-18,1,Google Ads,Email,Tablet,India,Premium,Home Loan,Home Loan,280.66,0,0.0,0,3,1,0,0.0,0.0,-280.66,-100.0
+CUST1127,2026-07-21,2,YouTube,Remarketing,Tablet,India,Premium,Home Loan,Home Loan,456.36,0,0.0,0,3,0,0,0.0,0.0,-456.36,-100.0
+CUST1127,2026-07-21,3,Google Ads,Website Visit,Tablet,India,Premium,Home Loan,Home Loan,148.63,0,0.0,0,3,0,1,0.0,0.0,-148.63,-100.0
+CUST1128,2026-01-08,1,Google Ads,Organic Search,Tablet,UK,Returning,Personal Loan,Instant Personal Loan,100.71,0,0.0,0,2,1,0,0.0,0.0,-100.71,-100.0
+CUST1128,2026-01-13,2,Google Ads,App Visit,Tablet,UK,Returning,Personal Loan,Instant Personal Loan,228.97,0,0.0,0,2,0,1,0.0,0.0,-228.97,-100.0
+CUST1129,2026-03-15,1,Facebook Ads,Email,Tablet,Canada,Returning,Insurance,Life Insurance,264.56,0,0.0,1,3,1,0,0.3333333333333333,3273.5666666666666,3009.0066666666667,1137.36
+CUST1129,2026-03-17,2,Website,Social Ad,Tablet,Canada,Returning,Insurance,Life Insurance,57.4,0,0.0,1,3,0,0,0.3333333333333333,3273.5666666666666,3216.1666666666665,5603.08
+CUST1129,2026-03-20,3,YouTube,Paid Ad,Tablet,Canada,Returning,Insurance,Life Insurance,151.73,1,9820.7,1,3,0,1,0.3333333333333333,3273.5666666666666,3121.8366666666666,2057.49
+CUST1130,2026-02-02,1,Instagram,Paid Ad,Tablet,Australia,Returning,Credit Card,Travel Card,193.89,0,0.0,1,3,1,0,0.3333333333333333,1430.2033333333331,1236.313333333333,637.64
+CUST1130,2026-02-02,2,Organic Search,Organic Search,Tablet,Australia,Returning,Credit Card,Travel Card,18.59,0,0.0,1,3,0,0,0.3333333333333333,1430.2033333333331,1411.6133333333332,7593.4
+CUST1130,2026-01-31,3,Email,Social Ad,Tablet,Australia,Returning,Credit Card,Travel Card,40.15,1,4290.61,1,3,0,1,0.3333333333333333,1430.2033333333331,1390.053333333333,3462.15
+CUST1131,2026-05-15,1,Organic Search,Paid Ad,Tablet,UK,New Customer,Investment,Investment Plan,42.97,0,0.0,0,2,1,0,0.0,0.0,-42.97,-100.0
+CUST1131,2026-05-10,2,Instagram,Website Visit,Tablet,UK,New Customer,Investment,Investment Plan,119.09,0,0.0,0,2,0,1,0.0,0.0,-119.09,-100.0
+CUST1132,2026-01-12,1,Google Ads,Email,Tablet,Australia,New Customer,Credit Card,Rewards Card,325.32,0,0.0,0,2,1,0,0.0,0.0,-325.32,-100.0
+CUST1132,2026-01-14,2,Website,Video Ad,Tablet,Australia,New Customer,Credit Card,Rewards Card,74.84,0,0.0,0,2,0,1,0.0,0.0,-74.84,-100.0
+CUST1133,2026-03-06,1,Organic Search,Organic Search,Tablet,Australia,New Customer,Insurance,Life Insurance,28.58,0,0.0,0,4,1,0,0.0,0.0,-28.58,-100.0
+CUST1133,2026-03-07,2,Facebook Ads,Paid Ad,Tablet,Australia,New Customer,Insurance,Life Insurance,139.27,0,0.0,0,4,0,0,0.0,0.0,-139.27,-100.0
+CUST1133,2026-03-07,3,Google Ads,App Visit,Tablet,Australia,New Customer,Insurance,Life Insurance,536.04,0,0.0,0,4,0,0,0.0,0.0,-536.04,-100.0
+CUST1133,2026-03-15,4,Email,Organic Search,Tablet,Australia,New Customer,Insurance,Life Insurance,17.77,0,0.0,0,4,0,1,0.0,0.0,-17.77,-100.0
+CUST1134,2026-07-16,1,Mobile App,Website Visit,Desktop,India,Returning,Personal Loan,Instant Personal Loan,69.86,0,0.0,0,4,1,0,0.0,0.0,-69.86,-100.0
+CUST1134,2026-07-11,2,YouTube,Email,Desktop,India,Returning,Personal Loan,Instant Personal Loan,103.83,0,0.0,0,4,0,0,0.0,0.0,-103.83,-100.0
+CUST1134,2026-07-16,3,Website,Paid Ad,Desktop,India,Returning,Personal Loan,Instant Personal Loan,45.62,0,0.0,0,4,0,0,0.0,0.0,-45.62,-100.0
+CUST1134,2026-07-09,4,Google Ads,Website Visit,Desktop,India,Returning,Personal Loan,Instant Personal Loan,474.64,0,0.0,0,4,0,1,0.0,0.0,-474.64,-100.0
+CUST1135,2026-05-07,1,Instagram,Organic Search,Mobile,UK,Returning,Personal Loan,Personal Loan,53.61,0,0.0,0,5,1,0,0.0,0.0,-53.61,-100.0
+CUST1135,2026-05-17,2,YouTube,App Visit,Mobile,UK,Returning,Personal Loan,Personal Loan,637.35,0,0.0,0,5,0,0,0.0,0.0,-637.35,-100.0
+CUST1135,2026-05-24,3,Mobile App,Social Ad,Mobile,UK,Returning,Personal Loan,Personal Loan,11.21,0,0.0,0,5,0,0,0.0,0.0,-11.21,-100.0
+CUST1135,2026-05-08,4,Instagram,App Visit,Mobile,UK,Returning,Personal Loan,Personal Loan,223.49,0,0.0,0,5,0,0,0.0,0.0,-223.49,-100.0
+CUST1135,2026-05-14,5,Google Ads,App Visit,Mobile,UK,Returning,Personal Loan,Personal Loan,203.12,0,0.0,0,5,0,1,0.0,0.0,-203.12,-100.0
+CUST1136,2026-03-12,1,YouTube,Video Ad,Desktop,UK,Premium,Home Loan,Home Loan Balance Transfer,193.25,0,0.0,1,5,1,0,0.2,17561.746,17368.496,8987.58
+CUST1136,2026-03-18,2,Instagram,Remarketing,Desktop,UK,Premium,Home Loan,Home Loan Balance Transfer,137.35,0,0.0,1,5,0,0,0.2,17561.746,17424.396,12686.13
+CUST1136,2026-03-17,3,Facebook Ads,Website Visit,Desktop,UK,Premium,Home Loan,Home Loan Balance Transfer,230.77,0,0.0,1,5,0,0,0.2,17561.746,17330.976,7510.06
+CUST1136,2026-04-07,4,Mobile App,Organic Search,Desktop,UK,Premium,Home Loan,Home Loan Balance Transfer,12.79,0,0.0,1,5,0,0,0.2,17561.746,17548.956,137208.41
+CUST1136,2026-03-13,5,Instagram,Organic Search,Desktop,UK,Premium,Home Loan,Home Loan Balance Transfer,106.66,1,87808.73,1,5,0,1,0.2,17561.746,17455.086,16365.17
+CUST1137,2026-05-14,1,Email,Organic Search,Tablet,India,Regular,Personal Loan,Instant Personal Loan,12.8,0,0.0,1,5,1,0,0.2,2861.1980000000003,2848.398,22253.11
+CUST1137,2026-05-20,2,Website,Remarketing,Tablet,India,Regular,Personal Loan,Instant Personal Loan,61.11,0,0.0,1,5,0,0,0.2,2861.1980000000003,2800.088,4582.05
+CUST1137,2026-05-26,3,YouTube,Social Ad,Tablet,India,Regular,Personal Loan,Instant Personal Loan,161.14,0,0.0,1,5,0,0,0.2,2861.1980000000003,2700.0580000000004,1675.6
+CUST1137,2026-05-12,4,Instagram,Social Ad,Tablet,India,Regular,Personal Loan,Instant Personal Loan,59.12,0,0.0,1,5,0,0,0.2,2861.1980000000003,2802.0780000000004,4739.64
+CUST1137,2026-05-24,5,YouTube,Video Ad,Tablet,India,Regular,Personal Loan,Instant Personal Loan,594.2,1,14305.99,1,5,0,1,0.2,2861.1980000000003,2266.9980000000005,381.52
+CUST1138,2026-01-18,1,Mobile App,Video Ad,Tablet,Australia,New Customer,Home Loan,Home Loan,63.83,0,0.0,1,2,1,0,0.5,9652.1,9588.27,15021.57
+CUST1138,2026-01-17,2,Organic Search,Social Ad,Tablet,Australia,New Customer,Home Loan,Home Loan,47.11,1,19304.2,1,2,0,1,0.5,9652.1,9604.99,20388.43
+CUST1139,2026-02-18,1,Instagram,Organic Search,Desktop,Canada,Returning,Credit Card,Travel Card,178.26,0,0.0,1,5,1,0,0.2,1336.3580000000002,1158.0980000000002,649.67
+CUST1139,2026-02-23,2,Instagram,Paid Ad,Desktop,Canada,Returning,Credit Card,Travel Card,231.94,0,0.0,1,5,0,0,0.2,1336.3580000000002,1104.4180000000001,476.17
+CUST1139,2026-03-01,3,YouTube,Organic Search,Desktop,Canada,Returning,Credit Card,Travel Card,347.2,0,0.0,1,5,0,0,0.2,1336.3580000000002,989.1580000000001,284.9
+CUST1139,2026-02-16,4,Mobile App,Paid Ad,Desktop,Canada,Returning,Credit Card,Travel Card,23.19,0,0.0,1,5,0,0,0.2,1336.3580000000002,1313.1680000000001,5662.65
+CUST1139,2026-02-26,5,Instagram,App Visit,Desktop,Canada,Returning,Credit Card,Travel Card,239.22,1,6681.79,1,5,0,1,0.2,1336.3580000000002,1097.1380000000001,458.63
+CUST1140,2026-05-08,1,Mobile App,Website Visit,Mobile,Australia,Regular,Insurance,Motor Insurance,30.24,0,0.0,0,4,1,0,0.0,0.0,-30.24,-100.0
+CUST1140,2026-05-08,2,Instagram,Paid Ad,Mobile,Australia,Regular,Insurance,Motor Insurance,225.11,0,0.0,0,4,0,0,0.0,0.0,-225.11,-100.0
+CUST1140,2026-05-04,3,Google Ads,Organic Search,Mobile,Australia,Regular,Insurance,Motor Insurance,500.5,0,0.0,0,4,0,0,0.0,0.0,-500.5,-100.0
+CUST1140,2026-05-27,4,Mobile App,Website Visit,Mobile,Australia,Regular,Insurance,Motor Insurance,42.96,0,0.0,0,4,0,1,0.0,0.0,-42.96,-100.0
+CUST1141,2026-05-23,1,Google Ads,Email,Mobile,USA,Regular,Personal Loan,Personal Loan,264.5,0,0.0,0,4,1,0,0.0,0.0,-264.5,-100.0
+CUST1141,2026-05-20,2,Instagram,Video Ad,Mobile,USA,Regular,Personal Loan,Personal Loan,223.68,0,0.0,0,4,0,0,0.0,0.0,-223.68,-100.0
+CUST1141,2026-05-28,3,Organic Search,Paid Ad,Mobile,USA,Regular,Personal Loan,Personal Loan,47.38,0,0.0,0,4,0,0,0.0,0.0,-47.38,-100.0
+CUST1141,2026-06-12,4,Instagram,Email,Mobile,USA,Regular,Personal Loan,Personal Loan,346.28,0,0.0,0,4,0,1,0.0,0.0,-346.28,-100.0
+CUST1142,2026-01-31,1,YouTube,Paid Ad,Desktop,Australia,Returning,Personal Loan,Instant Personal Loan,100.41,0,0.0,1,2,1,0,0.5,13984.76,13884.35,13827.66
+CUST1142,2026-01-29,2,YouTube,Video Ad,Desktop,Australia,Returning,Personal Loan,Instant Personal Loan,530.16,1,27969.52,1,2,0,1,0.5,13984.76,13454.6,2537.84
+CUST1143,2026-05-21,1,Facebook Ads,Website Visit,Mobile,India,Premium,Personal Loan,Personal Loan,284.41,0,0.0,0,2,1,0,0.0,0.0,-284.41,-100.0
+CUST1143,2026-05-20,2,Organic Search,Organic Search,Mobile,India,Premium,Personal Loan,Personal Loan,6.82,0,0.0,0,2,0,1,0.0,0.0,-6.82,-100.0
+CUST1144,2026-02-16,1,Organic Search,Email,Tablet,Canada,Regular,Insurance,Motor Insurance,18.92,0,0.0,0,4,1,0,0.0,0.0,-18.92,-100.0
+CUST1144,2026-02-16,2,Email,Video Ad,Tablet,Canada,Regular,Insurance,Motor Insurance,75.59,0,0.0,0,4,0,0,0.0,0.0,-75.59,-100.0
+CUST1144,2026-02-19,3,Website,Paid Ad,Tablet,Canada,Regular,Insurance,Motor Insurance,50.18,0,0.0,0,4,0,0,0.0,0.0,-50.18,-100.0
+CUST1144,2026-03-01,4,YouTube,Social Ad,Tablet,Canada,Regular,Insurance,Motor Insurance,184.39,0,0.0,0,4,0,1,0.0,0.0,-184.39,-100.0
+CUST1145,2026-07-30,1,Organic Search,Remarketing,Desktop,USA,New Customer,Home Loan,Home Loan,13.26,0,0.0,0,2,1,0,0.0,0.0,-13.26,-100.0
+CUST1145,2026-08-04,2,YouTube,Social Ad,Desktop,USA,New Customer,Home Loan,Home Loan,253.99,0,0.0,0,2,0,1,0.0,0.0,-253.99,-100.0
+CUST1146,2026-02-17,1,Mobile App,App Visit,Mobile,India,New Customer,Insurance,Health Insurance,40.49,0,0.0,0,5,1,0,0.0,0.0,-40.49,-100.0
+CUST1146,2026-02-24,2,Facebook Ads,Remarketing,Mobile,India,New Customer,Insurance,Health Insurance,395.62,0,0.0,0,5,0,0,0.0,0.0,-395.62,-100.0
+CUST1146,2026-02-26,3,YouTube,Video Ad,Mobile,India,New Customer,Insurance,Health Insurance,144.23,0,0.0,0,5,0,0,0.0,0.0,-144.23,-100.0
+CUST1146,2026-02-12,4,Google Ads,Organic Search,Mobile,India,New Customer,Insurance,Health Insurance,245.73,0,0.0,0,5,0,0,0.0,0.0,-245.73,-100.0
+CUST1146,2026-03-05,5,Facebook Ads,Social Ad,Mobile,India,New Customer,Insurance,Health Insurance,118.04,0,0.0,0,5,0,1,0.0,0.0,-118.04,-100.0
+CUST1147,2026-04-03,1,Mobile App,Paid Ad,Tablet,USA,Returning,Credit Card,Cashback Card,66.26,0,0.0,0,2,1,0,0.0,0.0,-66.26,-100.0
+CUST1147,2026-03-30,2,Instagram,App Visit,Tablet,USA,Returning,Credit Card,Cashback Card,56.6,0,0.0,0,2,0,1,0.0,0.0,-56.6,-100.0
+CUST1148,2026-06-19,1,YouTube,Social Ad,Mobile,USA,Premium,Insurance,Motor Insurance,335.74,0,0.0,1,4,1,0,0.25,1268.745,933.0049999999999,277.9
+CUST1148,2026-06-19,2,Mobile App,Video Ad,Mobile,USA,Premium,Insurance,Motor Insurance,28.45,0,0.0,1,4,0,0,0.25,1268.745,1240.2949999999998,4359.56
+CUST1148,2026-06-28,3,Website,Social Ad,Mobile,USA,Premium,Insurance,Motor Insurance,66.79,0,0.0,1,4,0,0,0.25,1268.745,1201.955,1799.6
+CUST1148,2026-06-22,4,Mobile App,Email,Mobile,USA,Premium,Insurance,Motor Insurance,6.67,1,5074.98,1,4,0,1,0.25,1268.745,1262.0749999999998,18921.66
+CUST1149,2026-05-07,1,Email,Social Ad,Desktop,India,Premium,Credit Card,Travel Card,26.64,0,0.0,0,5,1,0,0.0,0.0,-26.64,-100.0
+CUST1149,2026-05-03,2,Website,Website Visit,Desktop,India,Premium,Credit Card,Travel Card,38.43,0,0.0,0,5,0,0,0.0,0.0,-38.43,-100.0
+CUST1149,2026-05-15,3,Email,Remarketing,Desktop,India,Premium,Credit Card,Travel Card,33.71,0,0.0,0,5,0,0,0.0,0.0,-33.71,-100.0
+CUST1149,2026-05-05,4,Email,Paid Ad,Desktop,India,Premium,Credit Card,Travel Card,77.7,0,0.0,0,5,0,0,0.0,0.0,-77.7,-100.0
+CUST1149,2026-05-23,5,Facebook Ads,Social Ad,Desktop,India,Premium,Credit Card,Travel Card,373.27,0,0.0,0,5,0,1,0.0,0.0,-373.27,-100.0
+CUST1150,2026-08-05,1,Mobile App,Email,Mobile,Australia,Returning,Investment,Mutual Fund,24.43,0,0.0,0,5,1,0,0.0,0.0,-24.43,-100.0
+CUST1150,2026-08-06,2,Website,Paid Ad,Mobile,Australia,Returning,Investment,Mutual Fund,47.84,0,0.0,0,5,0,0,0.0,0.0,-47.84,-100.0
+CUST1150,2026-08-12,3,Instagram,Social Ad,Mobile,Australia,Returning,Investment,Mutual Fund,93.59,0,0.0,0,5,0,0,0.0,0.0,-93.59,-100.0
+CUST1150,2026-08-23,4,Instagram,Email,Mobile,Australia,Returning,Investment,Mutual Fund,99.75,0,0.0,0,5,0,0,0.0,0.0,-99.75,-100.0
+CUST1150,2026-08-03,5,Google Ads,App Visit,Mobile,Australia,Returning,Investment,Mutual Fund,593.91,0,0.0,0,5,0,1,0.0,0.0,-593.91,-100.0
+CUST1151,2026-07-12,1,Facebook Ads,Social Ad,Tablet,USA,Returning,Personal Loan,Instant Personal Loan,272.55,0,0.0,0,4,1,0,0.0,0.0,-272.55,-100.0
+CUST1151,2026-07-14,2,Organic Search,Organic Search,Tablet,USA,Returning,Personal Loan,Instant Personal Loan,22.91,0,0.0,0,4,0,0,0.0,0.0,-22.91,-100.0
+CUST1151,2026-07-09,3,Google Ads,App Visit,Tablet,USA,Returning,Personal Loan,Instant Personal Loan,295.51,0,0.0,0,4,0,0,0.0,0.0,-295.51,-100.0
+CUST1151,2026-07-09,4,Instagram,Social Ad,Tablet,USA,Returning,Personal Loan,Instant Personal Loan,214.43,0,0.0,0,4,0,1,0.0,0.0,-214.43,-100.0
+CUST1152,2026-04-11,1,Mobile App,Paid Ad,Tablet,UK,New Customer,Home Loan,Home Loan Balance Transfer,22.9,0,0.0,0,4,1,0,0.0,0.0,-22.9,-100.0
+CUST1152,2026-04-09,2,Instagram,App Visit,Tablet,UK,New Customer,Home Loan,Home Loan Balance Transfer,162.7,0,0.0,0,4,0,0,0.0,0.0,-162.7,-100.0
+CUST1152,2026-04-10,3,Organic Search,Email,Tablet,UK,New Customer,Home Loan,Home Loan Balance Transfer,37.29,0,0.0,0,4,0,0,0.0,0.0,-37.29,-100.0
+CUST1152,2026-04-09,4,Email,Website Visit,Tablet,UK,New Customer,Home Loan,Home Loan Balance Transfer,40.41,0,0.0,0,4,0,1,0.0,0.0,-40.41,-100.0
+CUST1153,2026-03-04,1,Mobile App,Website Visit,Desktop,UK,Premium,Insurance,Motor Insurance,52.37,0,0.0,1,2,1,0,0.5,8415.725,8363.355,15969.74
+CUST1153,2026-03-07,2,Facebook Ads,Email,Desktop,UK,Premium,Insurance,Motor Insurance,134.56,1,16831.45,1,2,0,1,0.5,8415.725,8281.165,6154.25
+CUST1154,2026-01-17,1,Website,Video Ad,Desktop,Australia,Returning,Credit Card,Cashback Card,18.03,0,0.0,1,3,1,0,0.3333333333333333,2284.2633333333333,2266.233333333333,12569.24
+CUST1154,2026-01-20,2,YouTube,Paid Ad,Desktop,Australia,Returning,Credit Card,Cashback Card,119.84,0,0.0,1,3,0,0,0.3333333333333333,2284.2633333333333,2164.423333333333,1806.09
+CUST1154,2026-01-23,3,Google Ads,Website Visit,Desktop,Australia,Returning,Credit Card,Cashback Card,222.47,1,6852.79,1,3,0,1,0.3333333333333333,2284.2633333333333,2061.7933333333335,926.77
+CUST1155,2026-05-11,1,Instagram,Remarketing,Tablet,India,Returning,Credit Card,Rewards Card,146.72,0,0.0,0,4,1,0,0.0,0.0,-146.72,-100.0
+CUST1155,2026-05-10,2,Email,Social Ad,Tablet,India,Returning,Credit Card,Rewards Card,12.47,0,0.0,0,4,0,0,0.0,0.0,-12.47,-100.0
+CUST1155,2026-05-24,3,Google Ads,Video Ad,Tablet,India,Returning,Credit Card,Rewards Card,485.51,0,0.0,0,4,0,0,0.0,0.0,-485.51,-100.0
+CUST1155,2026-05-26,4,YouTube,Email,Tablet,India,Returning,Credit Card,Rewards Card,235.07,0,0.0,0,4,0,1,0.0,0.0,-235.07,-100.0
+CUST1156,2026-07-21,1,Google Ads,Remarketing,Tablet,UK,Regular,Insurance,Motor Insurance,416.63,0,0.0,0,2,1,0,0.0,0.0,-416.63,-100.0
+CUST1156,2026-07-23,2,Google Ads,Email,Tablet,UK,Regular,Insurance,Motor Insurance,396.34,0,0.0,0,2,0,1,0.0,0.0,-396.34,-100.0
+CUST1157,2026-03-07,1,Email,App Visit,Desktop,UK,Premium,Insurance,Health Insurance,10.66,0,0.0,1,5,1,0,0.2,1265.088,1254.4279999999999,11767.62
+CUST1157,2026-03-10,2,Organic Search,Organic Search,Desktop,UK,Premium,Insurance,Health Insurance,34.22,0,0.0,1,5,0,0,0.2,1265.088,1230.868,3596.93
+CUST1157,2026-03-16,3,Mobile App,Social Ad,Desktop,UK,Premium,Insurance,Health Insurance,69.24,0,0.0,1,5,0,0,0.2,1265.088,1195.848,1727.11
+CUST1157,2026-03-14,4,Organic Search,Organic Search,Desktop,UK,Premium,Insurance,Health Insurance,32.81,0,0.0,1,5,0,0,0.2,1265.088,1232.278,3755.8
+CUST1157,2026-03-15,5,Email,Email,Desktop,UK,Premium,Insurance,Health Insurance,56.56,1,6325.44,1,5,0,1,0.2,1265.088,1208.528,2136.72
+CUST1158,2026-06-23,1,Email,Organic Search,Desktop,Australia,New Customer,Home Loan,Home Loan,46.41,0,0.0,0,2,1,0,0.0,0.0,-46.41,-100.0
+CUST1158,2026-06-22,2,Google Ads,Email,Desktop,Australia,New Customer,Home Loan,Home Loan,457.81,0,0.0,0,2,0,1,0.0,0.0,-457.81,-100.0
+CUST1159,2026-05-14,1,Instagram,Video Ad,Tablet,Australia,Regular,Insurance,Motor Insurance,70.26,0,0.0,1,4,1,0,0.25,2392.1275,2321.8675,3304.68
+CUST1159,2026-05-21,2,Instagram,Organic Search,Tablet,Australia,Regular,Insurance,Motor Insurance,290.59,0,0.0,1,4,0,0,0.25,2392.1275,2101.5375,723.2
+CUST1159,2026-05-30,3,Instagram,Website Visit,Tablet,Australia,Regular,Insurance,Motor Insurance,67.68,0,0.0,1,4,0,0,0.25,2392.1275,2324.4475,3434.47
+CUST1159,2026-06-02,4,Organic Search,Email,Tablet,Australia,Regular,Insurance,Motor Insurance,43.57,1,9568.51,1,4,0,1,0.25,2392.1275,2348.5575,5390.31
+CUST1160,2026-02-03,1,Facebook Ads,Remarketing,Desktop,UK,Premium,Investment,Fixed Deposit,250.19,0,0.0,0,5,1,0,0.0,0.0,-250.19,-100.0
+CUST1160,2026-02-06,2,Website,Organic Search,Desktop,UK,Premium,Investment,Fixed Deposit,9.05,0,0.0,0,5,0,0,0.0,0.0,-9.05,-100.0
+CUST1160,2026-02-06,3,Instagram,Video Ad,Desktop,UK,Premium,Investment,Fixed Deposit,146.23,0,0.0,0,5,0,0,0.0,0.0,-146.23,-100.0
+CUST1160,2026-02-10,4,Mobile App,Video Ad,Desktop,UK,Premium,Investment,Fixed Deposit,61.06,0,0.0,0,5,0,0,0.0,0.0,-61.06,-100.0
+CUST1160,2026-03-03,5,Instagram,Social Ad,Desktop,UK,Premium,Investment,Fixed Deposit,143.12,0,0.0,0,5,0,1,0.0,0.0,-143.12,-100.0
+CUST1161,2026-03-19,1,Instagram,Video Ad,Tablet,UK,Regular,Credit Card,Rewards Card,283.42,0,0.0,1,5,1,0,0.2,990.344,706.924,249.43
+CUST1161,2026-03-21,2,Facebook Ads,Video Ad,Tablet,UK,Regular,Credit Card,Rewards Card,223.48,0,0.0,1,5,0,0,0.2,990.344,766.864,343.15
+CUST1161,2026-03-25,3,Website,App Visit,Tablet,UK,Regular,Credit Card,Rewards Card,77.4,0,0.0,1,5,0,0,0.2,990.344,912.9440000000001,1179.51
+CUST1161,2026-03-13,4,Website,Paid Ad,Tablet,UK,Regular,Credit Card,Rewards Card,45.03,0,0.0,1,5,0,0,0.2,990.344,945.3140000000001,2099.3
+CUST1161,2026-04-01,5,Organic Search,Paid Ad,Tablet,UK,Regular,Credit Card,Rewards Card,37.84,1,4951.72,1,5,0,1,0.2,990.344,952.504,2517.19
+CUST1162,2026-03-23,1,Website,Organic Search,Tablet,India,New Customer,Personal Loan,Personal Loan,9.9,0,0.0,1,4,1,0,0.25,2280.5225,2270.6225,22935.58
+CUST1162,2026-03-25,2,Google Ads,Organic Search,Tablet,India,New Customer,Personal Loan,Personal Loan,317.08,0,0.0,1,4,0,0,0.25,2280.5225,1963.4425,619.23
+CUST1162,2026-04-11,3,Organic Search,App Visit,Tablet,India,New Customer,Personal Loan,Personal Loan,49.77,0,0.0,1,4,0,0,0.25,2280.5225,2230.7525,4482.12
+CUST1162,2026-04-01,4,Organic Search,Remarketing,Tablet,India,New Customer,Personal Loan,Personal Loan,37.51,1,9122.09,1,4,0,1,0.25,2280.5225,2243.0125,5979.77
+CUST1163,2026-07-12,1,Instagram,Social Ad,Mobile,India,Returning,Personal Loan,Personal Loan,260.44,0,0.0,1,3,1,0,0.3333333333333333,8634.333333333332,8373.893333333332,3215.29
+CUST1163,2026-07-21,2,Google Ads,App Visit,Mobile,India,Returning,Personal Loan,Personal Loan,412.97,0,0.0,1,3,0,0,0.3333333333333333,8634.333333333332,8221.363333333333,1990.79
+CUST1163,2026-07-28,3,Google Ads,Paid Ad,Mobile,India,Returning,Personal Loan,Personal Loan,136.22,1,25903.0,1,3,0,1,0.3333333333333333,8634.333333333332,8498.113333333333,6238.52
+CUST1164,2026-05-21,1,Instagram,Email,Desktop,India,New Customer,Insurance,Health Insurance,133.35,0,0.0,1,2,1,0,0.5,2234.47,2101.12,1575.64
+CUST1164,2026-05-30,2,Facebook Ads,Organic Search,Desktop,India,New Customer,Insurance,Health Insurance,292.25,1,4468.94,1,2,0,1,0.5,2234.47,1942.2199999999998,664.57
+CUST1165,2026-02-02,1,Mobile App,Email,Tablet,Australia,New Customer,Investment,Mutual Fund,55.57,0,0.0,0,4,1,0,0.0,0.0,-55.57,-100.0
+CUST1165,2026-02-10,2,YouTube,Website Visit,Tablet,Australia,New Customer,Investment,Mutual Fund,345.85,0,0.0,0,4,0,0,0.0,0.0,-345.85,-100.0
+CUST1165,2026-02-16,3,Instagram,Paid Ad,Tablet,Australia,New Customer,Investment,Mutual Fund,193.87,0,0.0,0,4,0,0,0.0,0.0,-193.87,-100.0
+CUST1165,2026-02-09,4,YouTube,Remarketing,Tablet,Australia,New Customer,Investment,Mutual Fund,240.7,0,0.0,0,4,0,1,0.0,0.0,-240.7,-100.0
+CUST1166,2026-02-12,1,Facebook Ads,Social Ad,Mobile,India,New Customer,Investment,Investment Plan,307.73,0,0.0,0,5,1,0,0.0,0.0,-307.73,-100.0
+CUST1166,2026-02-12,2,Mobile App,Organic Search,Mobile,India,New Customer,Investment,Investment Plan,35.18,0,0.0,0,5,0,0,0.0,0.0,-35.18,-100.0
+CUST1166,2026-02-09,3,Facebook Ads,Video Ad,Mobile,India,New Customer,Investment,Investment Plan,390.9,0,0.0,0,5,0,0,0.0,0.0,-390.9,-100.0
+CUST1166,2026-02-21,4,Organic Search,Website Visit,Mobile,India,New Customer,Investment,Investment Plan,36.93,0,0.0,0,5,0,0,0.0,0.0,-36.93,-100.0
+CUST1166,2026-02-08,5,Facebook Ads,Paid Ad,Mobile,India,New Customer,Investment,Investment Plan,390.8,0,0.0,0,5,0,1,0.0,0.0,-390.8,-100.0
+CUST1167,2026-07-08,1,Organic Search,Video Ad,Desktop,UK,Regular,Insurance,Motor Insurance,20.04,0,0.0,1,4,1,0,0.25,763.91,743.87,3711.93
+CUST1167,2026-07-20,2,Mobile App,Organic Search,Desktop,UK,Regular,Insurance,Motor Insurance,30.07,0,0.0,1,4,0,0,0.25,763.91,733.8399999999999,2440.44
+CUST1167,2026-07-27,3,Mobile App,App Visit,Desktop,UK,Regular,Insurance,Motor Insurance,62.6,0,0.0,1,4,0,0,0.25,763.91,701.31,1120.3
+CUST1167,2026-07-11,4,Instagram,Social Ad,Desktop,UK,Regular,Insurance,Motor Insurance,255.81,1,3055.64,1,4,0,1,0.25,763.91,508.09999999999997,198.62
+CUST1168,2026-02-18,1,Organic Search,Paid Ad,Desktop,India,Regular,Investment,Fixed Deposit,24.15,0,0.0,0,5,1,0,0.0,0.0,-24.15,-100.0
+CUST1168,2026-03-02,2,Mobile App,Social Ad,Desktop,India,Regular,Investment,Fixed Deposit,31.73,0,0.0,0,5,0,0,0.0,0.0,-31.73,-100.0
+CUST1168,2026-02-24,3,Google Ads,Social Ad,Desktop,India,Regular,Investment,Fixed Deposit,420.59,0,0.0,0,5,0,0,0.0,0.0,-420.59,-100.0
+CUST1168,2026-03-09,4,Google Ads,Email,Desktop,India,Regular,Investment,Fixed Deposit,534.03,0,0.0,0,5,0,0,0.0,0.0,-534.03,-100.0
+CUST1168,2026-03-03,5,Facebook Ads,App Visit,Desktop,India,Regular,Investment,Fixed Deposit,242.77,0,0.0,0,5,0,1,0.0,0.0,-242.77,-100.0
+CUST1169,2026-06-16,1,Mobile App,Remarketing,Tablet,USA,Returning,Investment,Mutual Fund,9.87,0,0.0,0,2,1,0,0.0,0.0,-9.87,-100.0
+CUST1169,2026-06-17,2,Mobile App,Website Visit,Tablet,USA,Returning,Investment,Mutual Fund,26.51,0,0.0,0,2,0,1,0.0,0.0,-26.51,-100.0
+CUST1170,2026-08-05,1,Mobile App,Remarketing,Tablet,India,Premium,Personal Loan,Instant Personal Loan,10.72,0,0.0,1,5,1,0,0.2,2816.712,2805.992,26175.3
+CUST1170,2026-08-03,2,Mobile App,Remarketing,Tablet,India,Premium,Personal Loan,Instant Personal Loan,12.72,0,0.0,1,5,0,0,0.2,2816.712,2803.992,22043.96
+CUST1170,2026-08-01,3,Mobile App,Paid Ad,Tablet,India,Premium,Personal Loan,Instant Personal Loan,31.22,0,0.0,1,5,0,0,0.2,2816.712,2785.492,8922.14
+CUST1170,2026-08-24,4,Google Ads,Paid Ad,Tablet,India,Premium,Personal Loan,Instant Personal Loan,127.27,0,0.0,1,5,0,0,0.2,2816.712,2689.442,2113.18
+CUST1170,2026-08-27,5,Email,Email,Tablet,India,Premium,Personal Loan,Instant Personal Loan,95.53,1,14083.56,1,5,0,1,0.2,2816.712,2721.182,2848.51
+CUST1171,2026-07-03,1,Facebook Ads,Email,Desktop,USA,New Customer,Home Loan,Home Loan Balance Transfer,186.54,0,0.0,0,4,1,0,0.0,0.0,-186.54,-100.0
+CUST1171,2026-07-14,2,Email,Website Visit,Desktop,USA,New Customer,Home Loan,Home Loan Balance Transfer,19.57,0,0.0,0,4,0,0,0.0,0.0,-19.57,-100.0
+CUST1171,2026-07-07,3,Instagram,Remarketing,Desktop,USA,New Customer,Home Loan,Home Loan Balance Transfer,294.77,0,0.0,0,4,0,0,0.0,0.0,-294.77,-100.0
+CUST1171,2026-07-11,4,Website,Social Ad,Desktop,USA,New Customer,Home Loan,Home Loan Balance Transfer,50.81,0,0.0,0,4,0,1,0.0,0.0,-50.81,-100.0
+CUST1172,2026-07-04,1,Website,Paid Ad,Desktop,India,Regular,Personal Loan,Instant Personal Loan,62.91,0,0.0,1,3,1,0,0.3333333333333333,2071.43,2008.5199999999998,3192.69
+CUST1172,2026-07-13,2,Mobile App,Remarketing,Desktop,India,Regular,Personal Loan,Instant Personal Loan,43.31,0,0.0,1,3,0,0,0.3333333333333333,2071.43,2028.12,4682.8
+CUST1172,2026-07-03,3,Instagram,Remarketing,Desktop,India,Regular,Personal Loan,Instant Personal Loan,204.41,1,6214.29,1,3,0,1,0.3333333333333333,2071.43,1867.0199999999998,913.37
+CUST1173,2026-07-12,1,Facebook Ads,App Visit,Desktop,Australia,Returning,Investment,Mutual Fund,251.64,0,0.0,0,3,1,0,0.0,0.0,-251.64,-100.0
+CUST1173,2026-07-16,2,Website,App Visit,Desktop,Australia,Returning,Investment,Mutual Fund,73.69,0,0.0,0,3,0,0,0.0,0.0,-73.69,-100.0
+CUST1173,2026-07-19,3,YouTube,Organic Search,Desktop,Australia,Returning,Investment,Mutual Fund,678.16,0,0.0,0,3,0,1,0.0,0.0,-678.16,-100.0
+CUST1174,2026-07-02,1,Organic Search,Email,Mobile,Canada,Premium,Personal Loan,Instant Personal Loan,10.49,0,0.0,0,4,1,0,0.0,0.0,-10.49,-100.0
+CUST1174,2026-07-13,2,Email,Website Visit,Mobile,Canada,Premium,Personal Loan,Instant Personal Loan,70.51,0,0.0,0,4,0,0,0.0,0.0,-70.51,-100.0
+CUST1174,2026-07-02,3,Instagram,Website Visit,Mobile,Canada,Premium,Personal Loan,Instant Personal Loan,275.84,0,0.0,0,4,0,0,0.0,0.0,-275.84,-100.0
+CUST1174,2026-07-20,4,Mobile App,App Visit,Mobile,Canada,Premium,Personal Loan,Instant Personal Loan,53.61,0,0.0,0,4,0,1,0.0,0.0,-53.61,-100.0
+CUST1175,2026-04-12,1,Google Ads,Email,Mobile,Canada,Premium,Investment,Mutual Fund,470.1,0,0.0,1,2,1,0,0.5,10572.58,10102.48,2149.01
+CUST1175,2026-04-18,2,Instagram,Organic Search,Mobile,Canada,Premium,Investment,Mutual Fund,117.67,1,21145.16,1,2,0,1,0.5,10572.58,10454.91,8884.94
+CUST1176,2026-01-30,1,YouTube,App Visit,Tablet,USA,Premium,Credit Card,Travel Card,406.55,0,0.0,0,5,1,0,0.0,0.0,-406.55,-100.0
+CUST1176,2026-02-10,2,Email,Paid Ad,Tablet,USA,Premium,Credit Card,Travel Card,44.34,0,0.0,0,5,0,0,0.0,0.0,-44.34,-100.0
+CUST1176,2026-02-13,3,Website,Website Visit,Tablet,USA,Premium,Credit Card,Travel Card,9.04,0,0.0,0,5,0,0,0.0,0.0,-9.04,-100.0
+CUST1176,2026-02-15,4,Email,Email,Tablet,USA,Premium,Credit Card,Travel Card,88.2,0,0.0,0,5,0,0,0.0,0.0,-88.2,-100.0
+CUST1176,2026-02-19,5,Mobile App,Email,Tablet,USA,Premium,Credit Card,Travel Card,54.08,0,0.0,0,5,0,1,0.0,0.0,-54.08,-100.0
+CUST1177,2026-02-17,1,Facebook Ads,App Visit,Desktop,USA,Regular,Insurance,Life Insurance,221.4,0,0.0,0,2,1,0,0.0,0.0,-221.4,-100.0
+CUST1177,2026-02-19,2,Email,Video Ad,Desktop,USA,Regular,Insurance,Life Insurance,62.56,0,0.0,0,2,0,1,0.0,0.0,-62.56,-100.0
+CUST1178,2026-01-15,1,Organic Search,Paid Ad,Desktop,India,Premium,Insurance,Motor Insurance,24.53,0,0.0,1,3,1,0,0.3333333333333333,3697.51,3672.98,14973.42
+CUST1178,2026-01-23,2,Organic Search,Social Ad,Desktop,India,Premium,Insurance,Motor Insurance,35.38,0,0.0,1,3,0,0,0.3333333333333333,3697.51,3662.13,10350.85
+CUST1178,2026-01-27,3,YouTube,Video Ad,Desktop,India,Premium,Insurance,Motor Insurance,140.91,1,11092.53,1,3,0,1,0.3333333333333333,3697.51,3556.6000000000004,2524.02
+CUST1179,2026-03-03,1,Organic Search,Website Visit,Tablet,Australia,Returning,Insurance,Life Insurance,14.68,0,0.0,0,4,1,0,0.0,0.0,-14.68,-100.0
+CUST1179,2026-02-27,2,Mobile App,Paid Ad,Tablet,Australia,Returning,Insurance,Life Insurance,48.48,0,0.0,0,4,0,0,0.0,0.0,-48.48,-100.0
+CUST1179,2026-03-18,3,Mobile App,Email,Tablet,Australia,Returning,Insurance,Life Insurance,44.89,0,0.0,0,4,0,0,0.0,0.0,-44.89,-100.0
+CUST1179,2026-03-19,4,YouTube,Paid Ad,Tablet,Australia,Returning,Insurance,Life Insurance,631.4,0,0.0,0,4,0,1,0.0,0.0,-631.4,-100.0
+CUST1180,2026-05-20,1,Organic Search,Remarketing,Desktop,India,Returning,Home Loan,Home Loan Balance Transfer,2.19,0,0.0,0,2,1,0,0.0,0.0,-2.19,-100.0
+CUST1180,2026-05-21,2,YouTube,Website Visit,Desktop,India,Returning,Home Loan,Home Loan Balance Transfer,149.41,0,0.0,0,2,0,1,0.0,0.0,-149.41,-100.0
+CUST1181,2026-02-24,1,YouTube,App Visit,Tablet,USA,New Customer,Investment,Mutual Fund,223.35,0,0.0,0,2,1,0,0.0,0.0,-223.35,-100.0
+CUST1181,2026-03-06,2,Website,Social Ad,Tablet,USA,New Customer,Investment,Mutual Fund,56.45,0,0.0,0,2,0,1,0.0,0.0,-56.45,-100.0
+CUST1182,2026-01-22,1,Email,Social Ad,Tablet,Canada,New Customer,Home Loan,Home Loan,91.99,0,0.0,1,2,1,0,0.5,25903.565,25811.574999999997,28059.11
+CUST1182,2026-01-26,2,Website,App Visit,Tablet,Canada,New Customer,Home Loan,Home Loan,52.27,1,51807.13,1,2,0,1,0.5,25903.565,25851.295,49457.23
+CUST1183,2026-06-15,1,Facebook Ads,Paid Ad,Tablet,Canada,New Customer,Credit Card,Cashback Card,193.08,0,0.0,0,2,1,0,0.0,0.0,-193.08,-100.0
+CUST1183,2026-06-26,2,Facebook Ads,Organic Search,Tablet,Canada,New Customer,Credit Card,Cashback Card,324.35,0,0.0,0,2,0,1,0.0,0.0,-324.35,-100.0
+CUST1184,2026-05-08,1,YouTube,Video Ad,Desktop,UK,New Customer,Insurance,Health Insurance,578.06,0,0.0,1,2,1,0,0.5,9227.52,8649.460000000001,1496.29
+CUST1184,2026-05-06,2,Email,Video Ad,Desktop,UK,New Customer,Insurance,Health Insurance,70.96,1,18455.04,1,2,0,1,0.5,9227.52,9156.560000000001,12903.83
+CUST1185,2026-01-15,1,Website,Social Ad,Tablet,India,Premium,Investment,Mutual Fund,20.75,0,0.0,1,2,1,0,0.5,10717.505,10696.755,51550.63
+CUST1185,2026-01-17,2,Organic Search,Email,Tablet,India,Premium,Investment,Mutual Fund,45.28,1,21435.01,1,2,0,1,0.5,10717.505,10672.224999999999,23569.4
+CUST1186,2026-01-31,1,Google Ads,Remarketing,Mobile,USA,Regular,Personal Loan,Instant Personal Loan,231.14,0,0.0,1,3,1,0,0.3333333333333333,7128.94,6897.799999999999,2984.25
+CUST1186,2026-01-31,2,Facebook Ads,Organic Search,Mobile,USA,Regular,Personal Loan,Instant Personal Loan,128.97,0,0.0,1,3,0,0,0.3333333333333333,7128.94,6999.969999999999,5427.6
+CUST1186,2026-02-10,3,Mobile App,Website Visit,Mobile,USA,Regular,Personal Loan,Instant Personal Loan,13.33,1,21386.82,1,3,0,1,0.3333333333333333,7128.94,7115.61,53380.42
+CUST1187,2026-05-10,1,Email,Video Ad,Tablet,UK,New Customer,Credit Card,Rewards Card,82.69,0,0.0,0,4,1,0,0.0,0.0,-82.69,-100.0
+CUST1187,2026-05-05,2,Website,Video Ad,Tablet,UK,New Customer,Credit Card,Rewards Card,28.49,0,0.0,0,4,0,0,0.0,0.0,-28.49,-100.0
+CUST1187,2026-05-13,3,YouTube,App Visit,Tablet,UK,New Customer,Credit Card,Rewards Card,604.07,0,0.0,0,4,0,0,0.0,0.0,-604.07,-100.0
+CUST1187,2026-06-02,4,Instagram,Website Visit,Tablet,UK,New Customer,Credit Card,Rewards Card,188.79,0,0.0,0,4,0,1,0.0,0.0,-188.79,-100.0
+CUST1188,2026-02-16,1,Facebook Ads,Organic Search,Desktop,UK,Returning,Insurance,Motor Insurance,406.52,0,0.0,0,2,1,0,0.0,0.0,-406.52,-100.0
+CUST1188,2026-02-25,2,YouTube,Organic Search,Desktop,UK,Returning,Insurance,Motor Insurance,631.8,0,0.0,0,2,0,1,0.0,0.0,-631.8,-100.0
+CUST1189,2026-07-28,1,Website,Email,Mobile,India,New Customer,Investment,Investment Plan,46.37,0,0.0,0,2,1,0,0.0,0.0,-46.37,-100.0
+CUST1189,2026-08-02,2,Mobile App,Video Ad,Mobile,India,New Customer,Investment,Investment Plan,30.51,0,0.0,0,2,0,1,0.0,0.0,-30.51,-100.0
+CUST1190,2026-04-14,1,Google Ads,Email,Desktop,USA,Premium,Investment,Investment Plan,473.75,0,0.0,1,2,1,0,0.5,11884.54,11410.79,2408.61
+CUST1190,2026-04-14,2,Instagram,Remarketing,Desktop,USA,Premium,Investment,Investment Plan,95.54,1,23769.08,1,2,0,1,0.5,11884.54,11789.0,12339.33
+CUST1191,2026-03-01,1,Organic Search,Email,Desktop,Canada,Regular,Credit Card,Rewards Card,33.43,0,0.0,1,5,1,0,0.2,1149.338,1115.908,3338.04
+CUST1191,2026-03-08,2,Organic Search,App Visit,Desktop,Canada,Regular,Credit Card,Rewards Card,45.9,0,0.0,1,5,0,0,0.2,1149.338,1103.4379999999999,2404.0
+CUST1191,2026-03-21,3,Google Ads,Paid Ad,Desktop,Canada,Regular,Credit Card,Rewards Card,248.52,0,0.0,1,5,0,0,0.2,1149.338,900.818,362.47
+CUST1191,2026-03-19,4,Email,Organic Search,Desktop,Canada,Regular,Credit Card,Rewards Card,58.99,0,0.0,1,5,0,0,0.2,1149.338,1090.348,1848.36
+CUST1191,2026-03-25,5,Instagram,App Visit,Desktop,Canada,Regular,Credit Card,Rewards Card,153.24,1,5746.69,1,5,0,1,0.2,1149.338,996.098,650.02
+CUST1192,2026-04-08,1,Organic Search,Remarketing,Desktop,Australia,New Customer,Insurance,Life Insurance,44.36,0,0.0,0,5,1,0,0.0,0.0,-44.36,-100.0
+CUST1192,2026-04-08,2,Google Ads,Video Ad,Desktop,Australia,New Customer,Insurance,Life Insurance,166.12,0,0.0,0,5,0,0,0.0,0.0,-166.12,-100.0
+CUST1192,2026-04-07,3,Facebook Ads,Organic Search,Desktop,Australia,New Customer,Insurance,Life Insurance,110.1,0,0.0,0,5,0,0,0.0,0.0,-110.1,-100.0
+CUST1192,2026-04-20,4,Instagram,Website Visit,Desktop,Australia,New Customer,Insurance,Life Insurance,262.36,0,0.0,0,5,0,0,0.0,0.0,-262.36,-100.0
+CUST1192,2026-04-27,5,Facebook Ads,Email,Desktop,Australia,New Customer,Insurance,Life Insurance,374.47,0,0.0,0,5,0,1,0.0,0.0,-374.47,-100.0
+CUST1193,2026-06-04,1,Website,Paid Ad,Tablet,Canada,New Customer,Insurance,Health Insurance,8.24,0,0.0,1,3,1,0,0.3333333333333333,1746.8933333333334,1738.6533333333334,21100.16
+CUST1193,2026-06-11,2,Instagram,Video Ad,Tablet,Canada,New Customer,Insurance,Health Insurance,198.92,0,0.0,1,3,0,0,0.3333333333333333,1746.8933333333334,1547.9733333333334,778.19
+CUST1193,2026-06-06,3,Instagram,Paid Ad,Tablet,Canada,New Customer,Insurance,Health Insurance,120.06,1,5240.68,1,3,0,1,0.3333333333333333,1746.8933333333334,1626.8333333333335,1355.02
+CUST1194,2026-01-24,1,Mobile App,Remarketing,Tablet,Australia,Returning,Credit Card,Cashback Card,19.26,0,0.0,1,4,1,0,0.25,748.4475,729.1875,3786.02
+CUST1194,2026-02-03,2,Website,Video Ad,Tablet,Australia,Returning,Credit Card,Cashback Card,48.7,0,0.0,1,4,0,0,0.25,748.4475,699.7475,1436.85
+CUST1194,2026-01-27,3,Instagram,Organic Search,Tablet,Australia,Returning,Credit Card,Cashback Card,264.5,0,0.0,1,4,0,0,0.25,748.4475,483.9475,182.97
+CUST1194,2026-02-10,4,Organic Search,Remarketing,Tablet,Australia,Returning,Credit Card,Cashback Card,29.53,1,2993.79,1,4,0,1,0.25,748.4475,718.9175,2434.53
+CUST1195,2026-02-08,1,Instagram,Remarketing,Mobile,USA,Returning,Credit Card,Rewards Card,312.1,0,0.0,0,5,1,0,0.0,0.0,-312.1,-100.0
+CUST1195,2026-02-15,2,Facebook Ads,Social Ad,Mobile,USA,Returning,Credit Card,Rewards Card,313.76,0,0.0,0,5,0,0,0.0,0.0,-313.76,-100.0
+CUST1195,2026-02-24,3,Google Ads,App Visit,Mobile,USA,Returning,Credit Card,Rewards Card,298.76,0,0.0,0,5,0,0,0.0,0.0,-298.76,-100.0
+CUST1195,2026-02-15,4,Google Ads,App Visit,Mobile,USA,Returning,Credit Card,Rewards Card,567.98,0,0.0,0,5,0,0,0.0,0.0,-567.98,-100.0
+CUST1195,2026-03-02,5,Mobile App,App Visit,Mobile,USA,Returning,Credit Card,Rewards Card,43.29,0,0.0,0,5,0,1,0.0,0.0,-43.29,-100.0
+CUST1196,2026-01-25,1,Website,Organic Search,Mobile,Canada,New Customer,Home Loan,Home Loan Balance Transfer,5.41,0,0.0,1,3,1,0,0.3333333333333333,9385.393333333333,9379.983333333334,173382.32
+CUST1196,2026-01-30,2,Google Ads,Social Ad,Mobile,Canada,New Customer,Home Loan,Home Loan Balance Transfer,83.74,0,0.0,1,3,0,0,0.3333333333333333,9385.393333333333,9301.653333333334,11107.78
+CUST1196,2026-02-04,3,YouTube,Website Visit,Mobile,Canada,New Customer,Home Loan,Home Loan Balance Transfer,317.36,1,28156.18,1,3,0,1,0.3333333333333333,9385.393333333333,9068.033333333333,2857.33
+CUST1197,2026-06-12,1,Website,Email,Tablet,UK,Premium,Insurance,Motor Insurance,46.41,0,0.0,1,4,1,0,0.25,1035.885,989.475,2132.03
+CUST1197,2026-06-11,2,Mobile App,Video Ad,Tablet,UK,Premium,Insurance,Motor Insurance,41.34,0,0.0,1,4,0,0,0.25,1035.885,994.545,2405.77
+CUST1197,2026-06-15,3,Mobile App,Organic Search,Tablet,UK,Premium,Insurance,Motor Insurance,42.55,0,0.0,1,4,0,0,0.25,1035.885,993.335,2334.51
+CUST1197,2026-07-03,4,Website,Video Ad,Tablet,UK,Premium,Insurance,Motor Insurance,69.79,1,4143.54,1,4,0,1,0.25,1035.885,966.095,1384.29
+CUST1198,2026-05-13,1,Organic Search,Paid Ad,Tablet,Canada,Regular,Personal Loan,Personal Loan,19.46,0,0.0,0,3,1,0,0.0,0.0,-19.46,-100.0
+CUST1198,2026-05-24,2,Google Ads,Social Ad,Tablet,Canada,Regular,Personal Loan,Personal Loan,155.57,0,0.0,0,3,0,0,0.0,0.0,-155.57,-100.0
+CUST1198,2026-05-13,3,Website,Social Ad,Tablet,Canada,Regular,Personal Loan,Personal Loan,24.73,0,0.0,0,3,0,1,0.0,0.0,-24.73,-100.0
+CUST1199,2026-04-15,1,Email,Paid Ad,Tablet,India,Premium,Credit Card,Cashback Card,67.63,0,0.0,0,5,1,0,0.0,0.0,-67.63,-100.0
+CUST1199,2026-04-16,2,Mobile App,Paid Ad,Tablet,India,Premium,Credit Card,Cashback Card,60.29,0,0.0,0,5,0,0,0.0,0.0,-60.29,-100.0
+CUST1199,2026-04-14,3,Email,Email,Tablet,India,Premium,Credit Card,Cashback Card,80.56,0,0.0,0,5,0,0,0.0,0.0,-80.56,-100.0
+CUST1199,2026-05-04,4,YouTube,Video Ad,Tablet,India,Premium,Credit Card,Cashback Card,121.64,0,0.0,0,5,0,0,0.0,0.0,-121.64,-100.0
+CUST1199,2026-04-23,5,YouTube,Paid Ad,Tablet,India,Premium,Credit Card,Cashback Card,152.11,0,0.0,0,5,0,1,0.0,0.0,-152.11,-100.0
+CUST1200,2026-05-17,1,Facebook Ads,Social Ad,Desktop,Canada,Premium,Insurance,Health Insurance,340.46,0,0.0,1,3,1,0,0.3333333333333333,2233.313333333333,1892.853333333333,555.97
+CUST1200,2026-05-26,2,Organic Search,Website Visit,Desktop,Canada,Premium,Insurance,Health Insurance,13.83,0,0.0,1,3,0,0,0.3333333333333333,2233.313333333333,2219.483333333333,16048.32
+CUST1200,2026-05-25,3,YouTube,Remarketing,Desktop,Canada,Premium,Insurance,Health Insurance,444.94,1,6699.94,1,3,0,1,0.3333333333333333,2233.313333333333,1788.373333333333,401.94
+CUST1201,2026-04-05,1,Email,Organic Search,Mobile,Australia,Returning,Investment,Mutual Fund,96.94,0,0.0,0,4,1,0,0.0,0.0,-96.94,-100.0
+CUST1201,2026-04-10,2,Mobile App,Email,Mobile,Australia,Returning,Investment,Mutual Fund,27.08,0,0.0,0,4,0,0,0.0,0.0,-27.08,-100.0
+CUST1201,2026-04-16,3,Mobile App,Remarketing,Mobile,Australia,Returning,Investment,Mutual Fund,61.03,0,0.0,0,4,0,0,0.0,0.0,-61.03,-100.0
+CUST1201,2026-04-06,4,Mobile App,Social Ad,Mobile,Australia,Returning,Investment,Mutual Fund,9.39,0,0.0,0,4,0,1,0.0,0.0,-9.39,-100.0
+CUST1202,2026-06-30,1,YouTube,Organic Search,Desktop,USA,Regular,Insurance,Health Insurance,339.36,0,0.0,0,2,1,0,0.0,0.0,-339.36,-100.0
+CUST1202,2026-07-07,2,Organic Search,Social Ad,Desktop,USA,Regular,Insurance,Health Insurance,46.57,0,0.0,0,2,0,1,0.0,0.0,-46.57,-100.0
+CUST1203,2026-07-14,1,YouTube,Remarketing,Desktop,UK,Returning,Personal Loan,Instant Personal Loan,240.92,0,0.0,0,3,1,0,0.0,0.0,-240.92,-100.0
+CUST1203,2026-07-14,2,YouTube,Organic Search,Desktop,UK,Returning,Personal Loan,Instant Personal Loan,237.52,0,0.0,0,3,0,0,0.0,0.0,-237.52,-100.0
+CUST1203,2026-07-15,3,YouTube,Website Visit,Desktop,UK,Returning,Personal Loan,Instant Personal Loan,567.36,0,0.0,0,3,0,1,0.0,0.0,-567.36,-100.0
+CUST1204,2026-07-20,1,Google Ads,Remarketing,Tablet,India,New Customer,Insurance,Motor Insurance,402.75,0,0.0,0,2,1,0,0.0,0.0,-402.75,-100.0
+CUST1204,2026-07-22,2,Mobile App,Organic Search,Tablet,India,New Customer,Insurance,Motor Insurance,16.89,0,0.0,0,2,0,1,0.0,0.0,-16.89,-100.0
+CUST1205,2026-05-20,1,Mobile App,Paid Ad,Mobile,Canada,Premium,Investment,Mutual Fund,30.59,0,0.0,0,2,1,0,0.0,0.0,-30.59,-100.0
+CUST1205,2026-05-16,2,Instagram,Remarketing,Mobile,Canada,Premium,Investment,Mutual Fund,256.46,0,0.0,0,2,0,1,0.0,0.0,-256.46,-100.0
+CUST1206,2026-04-12,1,Organic Search,Website Visit,Tablet,UK,Returning,Credit Card,Rewards Card,9.36,0,0.0,0,3,1,0,0.0,0.0,-9.36,-100.0
+CUST1206,2026-04-12,2,Email,Email,Tablet,UK,Returning,Credit Card,Rewards Card,52.42,0,0.0,0,3,0,0,0.0,0.0,-52.42,-100.0
+CUST1206,2026-04-13,3,Organic Search,Website Visit,Tablet,UK,Returning,Credit Card,Rewards Card,24.94,0,0.0,0,3,0,1,0.0,0.0,-24.94,-100.0
+CUST1207,2026-03-14,1,Instagram,Email,Tablet,Canada,Regular,Home Loan,Home Loan Balance Transfer,263.45,0,0.0,0,5,1,0,0.0,0.0,-263.45,-100.0
+CUST1207,2026-03-26,2,YouTube,App Visit,Tablet,Canada,Regular,Home Loan,Home Loan Balance Transfer,328.53,0,0.0,0,5,0,0,0.0,0.0,-328.53,-100.0
+CUST1207,2026-03-28,3,Instagram,Video Ad,Tablet,Canada,Regular,Home Loan,Home Loan Balance Transfer,289.76,0,0.0,0,5,0,0,0.0,0.0,-289.76,-100.0
+CUST1207,2026-03-28,4,Instagram,App Visit,Tablet,Canada,Regular,Home Loan,Home Loan Balance Transfer,81.69,0,0.0,0,5,0,0,0.0,0.0,-81.69,-100.0
+CUST1207,2026-04-01,5,Organic Search,Remarketing,Tablet,Canada,Regular,Home Loan,Home Loan Balance Transfer,12.55,0,0.0,0,5,0,1,0.0,0.0,-12.55,-100.0
+CUST1208,2026-08-02,1,Facebook Ads,Remarketing,Mobile,Canada,New Customer,Personal Loan,Personal Loan,153.91,0,0.0,1,3,1,0,0.3333333333333333,3324.65,3170.7400000000002,2060.13
+CUST1208,2026-08-02,2,Organic Search,Organic Search,Mobile,Canada,New Customer,Personal Loan,Personal Loan,0.99,0,0.0,1,3,0,0,0.3333333333333333,3324.65,3323.6600000000003,335723.23
+CUST1208,2026-08-18,3,Facebook Ads,Website Visit,Mobile,Canada,New Customer,Personal Loan,Personal Loan,435.25,1,9973.95,1,3,0,1,0.3333333333333333,3324.65,2889.4,663.85
+CUST1209,2026-01-23,1,Email,Remarketing,Desktop,UK,Regular,Home Loan,Home Loan Balance Transfer,88.14,0,0.0,0,5,1,0,0.0,0.0,-88.14,-100.0
+CUST1209,2026-01-31,2,Organic Search,App Visit,Desktop,UK,Regular,Home Loan,Home Loan Balance Transfer,30.62,0,0.0,0,5,0,0,0.0,0.0,-30.62,-100.0
+CUST1209,2026-01-23,3,Website,Social Ad,Desktop,UK,Regular,Home Loan,Home Loan Balance Transfer,17.15,0,0.0,0,5,0,0,0.0,0.0,-17.15,-100.0
+CUST1209,2026-01-31,4,YouTube,Website Visit,Desktop,UK,Regular,Home Loan,Home Loan Balance Transfer,491.81,0,0.0,0,5,0,0,0.0,0.0,-491.81,-100.0
+CUST1209,2026-02-07,5,Email,App Visit,Desktop,UK,Regular,Home Loan,Home Loan Balance Transfer,89.89,0,0.0,0,5,0,1,0.0,0.0,-89.89,-100.0
+CUST1210,2026-02-21,1,Instagram,Email,Tablet,Australia,Premium,Insurance,Health Insurance,331.54,0,0.0,0,3,1,0,0.0,0.0,-331.54,-100.0
+CUST1210,2026-02-19,2,Facebook Ads,Email,Tablet,Australia,Premium,Insurance,Health Insurance,208.82,0,0.0,0,3,0,0,0.0,0.0,-208.82,-100.0
+CUST1210,2026-03-04,3,Facebook Ads,Social Ad,Tablet,Australia,Premium,Insurance,Health Insurance,269.37,0,0.0,0,3,0,1,0.0,0.0,-269.37,-100.0
+CUST1211,2026-06-11,1,Website,Organic Search,Tablet,Canada,New Customer,Credit Card,Rewards Card,23.55,0,0.0,1,4,1,0,0.25,1253.45,1229.9,5222.51
+CUST1211,2026-06-18,2,Email,Remarketing,Tablet,Canada,New Customer,Credit Card,Rewards Card,21.38,0,0.0,1,4,0,0,0.25,1253.45,1232.07,5762.72
+CUST1211,2026-06-09,3,Instagram,Paid Ad,Tablet,Canada,New Customer,Credit Card,Rewards Card,245.7,0,0.0,1,4,0,0,0.25,1253.45,1007.75,410.15
+CUST1211,2026-06-22,4,Organic Search,Remarketing,Tablet,Canada,New Customer,Credit Card,Rewards Card,48.75,1,5013.8,1,4,0,1,0.25,1253.45,1204.7,2471.18
+CUST1212,2026-06-16,1,Website,Organic Search,Desktop,Australia,Premium,Personal Loan,Personal Loan,41.12,0,0.0,0,5,1,0,0.0,0.0,-41.12,-100.0
+CUST1212,2026-06-18,2,YouTube,Social Ad,Desktop,Australia,Premium,Personal Loan,Personal Loan,284.72,0,0.0,0,5,0,0,0.0,0.0,-284.72,-100.0
+CUST1212,2026-06-15,3,Website,Organic Search,Desktop,Australia,Premium,Personal Loan,Personal Loan,27.77,0,0.0,0,5,0,0,0.0,0.0,-27.77,-100.0
+CUST1212,2026-06-22,4,Google Ads,Video Ad,Desktop,Australia,Premium,Personal Loan,Personal Loan,229.12,0,0.0,0,5,0,0,0.0,0.0,-229.12,-100.0
+CUST1212,2026-07-11,5,Google Ads,Remarketing,Desktop,Australia,Premium,Personal Loan,Personal Loan,235.8,0,0.0,0,5,0,1,0.0,0.0,-235.8,-100.0
+CUST1213,2026-02-21,1,Website,App Visit,Tablet,UK,Returning,Personal Loan,Personal Loan,17.25,0,0.0,0,4,1,0,0.0,0.0,-17.25,-100.0
+CUST1213,2026-02-21,2,Website,App Visit,Tablet,UK,Returning,Personal Loan,Personal Loan,24.72,0,0.0,0,4,0,0,0.0,0.0,-24.72,-100.0
+CUST1213,2026-03-06,3,Website,Email,Tablet,UK,Returning,Personal Loan,Personal Loan,62.34,0,0.0,0,4,0,0,0.0,0.0,-62.34,-100.0
+CUST1213,2026-03-10,4,Email,Organic Search,Tablet,UK,Returning,Personal Loan,Personal Loan,76.86,0,0.0,0,4,0,1,0.0,0.0,-76.86,-100.0
+CUST1214,2026-03-20,1,Mobile App,Remarketing,Mobile,Canada,Premium,Credit Card,Rewards Card,50.53,0,0.0,1,3,1,0,0.3333333333333333,1111.2466666666664,1060.7166666666665,2099.18
+CUST1214,2026-03-21,2,Mobile App,Email,Mobile,Canada,Premium,Credit Card,Rewards Card,6.26,0,0.0,1,3,0,0,0.3333333333333333,1111.2466666666664,1104.9866666666665,17651.54
+CUST1214,2026-03-21,3,Google Ads,Paid Ad,Mobile,Canada,Premium,Credit Card,Rewards Card,585.61,1,3333.74,1,3,0,1,0.3333333333333333,1111.2466666666664,525.6366666666664,89.76
+CUST1215,2026-02-14,1,YouTube,Website Visit,Tablet,Canada,Regular,Credit Card,Rewards Card,286.95,0,0.0,1,2,1,0,0.5,853.145,566.1949999999999,197.31
+CUST1215,2026-02-15,2,Mobile App,Website Visit,Tablet,Canada,Regular,Credit Card,Rewards Card,50.3,1,1706.29,1,2,0,1,0.5,853.145,802.845,1596.11
+CUST1216,2026-05-26,1,YouTube,Organic Search,Mobile,USA,New Customer,Home Loan,Home Loan Balance Transfer,596.95,0,0.0,0,2,1,0,0.0,0.0,-596.95,-100.0
+CUST1216,2026-05-26,2,Facebook Ads,Email,Mobile,USA,New Customer,Home Loan,Home Loan Balance Transfer,358.49,0,0.0,0,2,0,1,0.0,0.0,-358.49,-100.0
+CUST1217,2026-07-14,1,YouTube,Remarketing,Tablet,USA,Returning,Credit Card,Rewards Card,508.87,0,0.0,0,5,1,0,0.0,0.0,-508.87,-100.0
+CUST1217,2026-07-10,2,Email,Website Visit,Tablet,USA,Returning,Credit Card,Rewards Card,66.62,0,0.0,0,5,0,0,0.0,0.0,-66.62,-100.0
+CUST1217,2026-07-16,3,Google Ads,Social Ad,Tablet,USA,Returning,Credit Card,Rewards Card,330.24,0,0.0,0,5,0,0,0.0,0.0,-330.24,-100.0
+CUST1217,2026-07-19,4,Email,Email,Tablet,USA,Returning,Credit Card,Rewards Card,89.88,0,0.0,0,5,0,0,0.0,0.0,-89.88,-100.0
+CUST1217,2026-07-23,5,YouTube,Social Ad,Tablet,USA,Returning,Credit Card,Rewards Card,479.75,0,0.0,0,5,0,1,0.0,0.0,-479.75,-100.0
+CUST1218,2026-07-24,1,Google Ads,Remarketing,Mobile,India,Premium,Home Loan,Home Loan,273.13,0,0.0,1,5,1,0,0.2,3362.9980000000005,3089.8680000000004,1131.28
+CUST1218,2026-07-24,2,Facebook Ads,Email,Mobile,India,Premium,Home Loan,Home Loan,249.97,0,0.0,1,5,0,0,0.2,3362.9980000000005,3113.0280000000007,1245.36
+CUST1218,2026-07-23,3,Organic Search,Paid Ad,Mobile,India,Premium,Home Loan,Home Loan,17.78,0,0.0,1,5,0,0,0.2,3362.9980000000005,3345.2180000000003,18814.5
+CUST1218,2026-07-26,4,Instagram,Social Ad,Mobile,India,Premium,Home Loan,Home Loan,191.23,0,0.0,1,5,0,0,0.2,3362.9980000000005,3171.7680000000005,1658.61
+CUST1218,2026-08-19,5,Organic Search,Website Visit,Mobile,India,Premium,Home Loan,Home Loan,36.66,1,16814.99,1,5,0,1,0.2,3362.9980000000005,3326.3380000000006,9073.48
+CUST1219,2026-05-08,1,Email,Remarketing,Tablet,UK,Returning,Personal Loan,Instant Personal Loan,61.0,0,0.0,0,2,1,0,0.0,0.0,-61.0,-100.0
+CUST1219,2026-05-16,2,Organic Search,Website Visit,Tablet,UK,Returning,Personal Loan,Instant Personal Loan,23.42,0,0.0,0,2,0,1,0.0,0.0,-23.42,-100.0
+CUST1220,2026-07-29,1,Organic Search,Remarketing,Tablet,India,Regular,Personal Loan,Instant Personal Loan,38.8,0,0.0,1,4,1,0,0.25,6035.8375,5997.037499999999,15456.28
+CUST1220,2026-08-12,2,Website,Video Ad,Tablet,India,Regular,Personal Loan,Instant Personal Loan,6.4,0,0.0,1,4,0,0,0.25,6035.8375,6029.4375,94209.96
+CUST1220,2026-08-08,3,Organic Search,Email,Tablet,India,Regular,Personal Loan,Instant Personal Loan,36.05,0,0.0,1,4,0,0,0.25,6035.8375,5999.787499999999,16642.96
+CUST1220,2026-08-14,4,Website,Email,Tablet,India,Regular,Personal Loan,Instant Personal Loan,56.24,1,24143.35,1,4,0,1,0.25,6035.8375,5979.5975,10632.29
+CUST1221,2026-01-31,1,Facebook Ads,Paid Ad,Desktop,Australia,Regular,Home Loan,Home Loan Balance Transfer,121.46,0,0.0,1,4,1,0,0.25,16293.895,16172.435000000001,13315.03
+CUST1221,2026-01-30,2,Google Ads,Email,Desktop,Australia,Regular,Home Loan,Home Loan Balance Transfer,332.39,0,0.0,1,4,0,0,0.25,16293.895,15961.505000000001,4802.04
+CUST1221,2026-02-16,3,Facebook Ads,Paid Ad,Desktop,Australia,Regular,Home Loan,Home Loan Balance Transfer,306.7,0,0.0,1,4,0,0,0.25,16293.895,15987.195,5212.65
+CUST1221,2026-02-14,4,Website,Remarketing,Desktop,Australia,Regular,Home Loan,Home Loan Balance Transfer,51.8,1,65175.58,1,4,0,1,0.25,16293.895,16242.095000000001,31355.4
+CUST1222,2026-01-05,1,YouTube,Remarketing,Mobile,UK,New Customer,Investment,Investment Plan,380.84,0,0.0,0,2,1,0,0.0,0.0,-380.84,-100.0
+CUST1222,2026-01-12,2,Google Ads,Website Visit,Mobile,UK,New Customer,Investment,Investment Plan,466.61,0,0.0,0,2,0,1,0.0,0.0,-466.61,-100.0
+CUST1223,2026-05-17,1,Facebook Ads,Organic Search,Tablet,UK,Returning,Credit Card,Cashback Card,427.84,0,0.0,1,4,1,0,0.25,1049.675,621.835,145.34
+CUST1223,2026-05-27,2,Facebook Ads,Social Ad,Tablet,UK,Returning,Credit Card,Cashback Card,142.41,0,0.0,1,4,0,0,0.25,1049.675,907.265,637.08
+CUST1223,2026-05-22,3,Website,Email,Tablet,UK,Returning,Credit Card,Cashback Card,44.46,0,0.0,1,4,0,0,0.25,1049.675,1005.2149999999999,2260.94
+CUST1223,2026-06-02,4,YouTube,Video Ad,Tablet,UK,Returning,Credit Card,Cashback Card,549.52,1,4198.7,1,4,0,1,0.25,1049.675,500.155,91.02
+CUST1224,2026-02-01,1,Instagram,App Visit,Desktop,Australia,New Customer,Insurance,Motor Insurance,243.83,0,0.0,1,5,1,0,0.2,1314.7200000000003,1070.8900000000003,439.2
+CUST1224,2026-02-10,2,Mobile App,Website Visit,Desktop,Australia,New Customer,Insurance,Motor Insurance,25.49,0,0.0,1,5,0,0,0.2,1314.7200000000003,1289.2300000000002,5057.79
+CUST1224,2026-02-09,3,Organic Search,Website Visit,Desktop,Australia,New Customer,Insurance,Motor Insurance,38.21,0,0.0,1,5,0,0,0.2,1314.7200000000003,1276.5100000000002,3340.77
+CUST1224,2026-02-15,4,Website,Website Visit,Desktop,Australia,New Customer,Insurance,Motor Insurance,23.05,0,0.0,1,5,0,0,0.2,1314.7200000000003,1291.6700000000003,5603.77
+CUST1224,2026-03-03,5,YouTube,App Visit,Desktop,Australia,New Customer,Insurance,Motor Insurance,655.69,1,6573.6,1,5,0,1,0.2,1314.7200000000003,659.0300000000002,100.51
+CUST1225,2026-03-14,1,Instagram,Organic Search,Desktop,Canada,Returning,Credit Card,Cashback Card,133.1,0,0.0,0,2,1,0,0.0,0.0,-133.1,-100.0
+CUST1225,2026-03-27,2,YouTube,Email,Desktop,Canada,Returning,Credit Card,Cashback Card,288.94,0,0.0,0,2,0,1,0.0,0.0,-288.94,-100.0
+CUST1226,2026-01-27,1,Organic Search,Video Ad,Tablet,Australia,Premium,Investment,Investment Plan,13.25,0,0.0,1,3,1,0,0.3333333333333333,6207.46,6194.21,46748.75
+CUST1226,2026-01-29,2,YouTube,Email,Tablet,Australia,Premium,Investment,Investment Plan,586.64,0,0.0,1,3,0,0,0.3333333333333333,6207.46,5620.82,958.14
+CUST1226,2026-02-12,3,Facebook Ads,App Visit,Tablet,Australia,Premium,Investment,Investment Plan,417.15,1,18622.38,1,3,0,1,0.3333333333333333,6207.46,5790.31,1388.06
+CUST1227,2026-06-03,1,Google Ads,App Visit,Mobile,Canada,Premium,Insurance,Motor Insurance,485.66,0,0.0,0,2,1,0,0.0,0.0,-485.66,-100.0
+CUST1227,2026-06-16,2,Organic Search,Website Visit,Mobile,Canada,Premium,Insurance,Motor Insurance,40.86,0,0.0,0,2,0,1,0.0,0.0,-40.86,-100.0
+CUST1228,2026-01-16,1,Google Ads,Website Visit,Mobile,India,Returning,Investment,Mutual Fund,249.95,0,0.0,1,5,1,0,0.2,2484.1020000000003,2234.1520000000005,893.84
+CUST1228,2026-01-14,2,YouTube,Video Ad,Mobile,India,Returning,Investment,Mutual Fund,504.18,0,0.0,1,5,0,0,0.2,2484.1020000000003,1979.9220000000003,392.7
+CUST1228,2026-02-02,3,Website,Remarketing,Mobile,India,Returning,Investment,Mutual Fund,48.14,0,0.0,1,5,0,0,0.2,2484.1020000000003,2435.9620000000004,5060.16
+CUST1228,2026-01-27,4,Facebook Ads,Email,Mobile,India,Returning,Investment,Mutual Fund,165.91,0,0.0,1,5,0,0,0.2,2484.1020000000003,2318.1920000000005,1397.26
+CUST1228,2026-01-22,5,Website,Video Ad,Mobile,India,Returning,Investment,Mutual Fund,30.21,1,12420.51,1,5,0,1,0.2,2484.1020000000003,2453.8920000000003,8122.78
+CUST1229,2026-05-16,1,Instagram,Video Ad,Desktop,Australia,New Customer,Home Loan,Home Loan,213.38,0,0.0,0,5,1,0,0.0,0.0,-213.38,-100.0
+CUST1229,2026-05-19,2,Mobile App,App Visit,Desktop,Australia,New Customer,Home Loan,Home Loan,42.14,0,0.0,0,5,0,0,0.0,0.0,-42.14,-100.0
+CUST1229,2026-05-11,3,YouTube,Email,Desktop,Australia,New Customer,Home Loan,Home Loan,259.75,0,0.0,0,5,0,0,0.0,0.0,-259.75,-100.0
+CUST1229,2026-05-30,4,Website,Website Visit,Desktop,Australia,New Customer,Home Loan,Home Loan,74.31,0,0.0,0,5,0,0,0.0,0.0,-74.31,-100.0
+CUST1229,2026-06-04,5,Facebook Ads,Social Ad,Desktop,Australia,New Customer,Home Loan,Home Loan,219.42,0,0.0,0,5,0,1,0.0,0.0,-219.42,-100.0
+CUST1230,2026-02-20,1,Mobile App,Video Ad,Desktop,USA,Premium,Home Loan,Home Loan,7.92,0,0.0,0,4,1,0,0.0,0.0,-7.92,-100.0
+CUST1230,2026-02-23,2,YouTube,Email,Desktop,USA,Premium,Home Loan,Home Loan,324.29,0,0.0,0,4,0,0,0.0,0.0,-324.29,-100.0
+CUST1230,2026-02-14,3,Facebook Ads,Social Ad,Desktop,USA,Premium,Home Loan,Home Loan,147.22,0,0.0,0,4,0,0,0.0,0.0,-147.22,-100.0
+CUST1230,2026-02-13,4,Instagram,Organic Search,Desktop,USA,Premium,Home Loan,Home Loan,146.41,0,0.0,0,4,0,1,0.0,0.0,-146.41,-100.0
+CUST1231,2026-02-27,1,YouTube,Email,Desktop,UK,New Customer,Insurance,Life Insurance,429.28,0,0.0,0,4,1,0,0.0,0.0,-429.28,-100.0
+CUST1231,2026-03-01,2,Instagram,Paid Ad,Desktop,UK,New Customer,Insurance,Life Insurance,220.73,0,0.0,0,4,0,0,0.0,0.0,-220.73,-100.0
+CUST1231,2026-02-28,3,Google Ads,Organic Search,Desktop,UK,New Customer,Insurance,Life Insurance,111.26,0,0.0,0,4,0,0,0.0,0.0,-111.26,-100.0
+CUST1231,2026-02-24,4,YouTube,Organic Search,Desktop,UK,New Customer,Insurance,Life Insurance,378.98,0,0.0,0,4,0,1,0.0,0.0,-378.98,-100.0
+CUST1232,2026-01-11,1,Website,Email,Desktop,India,New Customer,Home Loan,Home Loan Balance Transfer,43.14,0,0.0,1,2,1,0,0.5,30091.325,30048.185,69652.72
+CUST1232,2026-01-12,2,Facebook Ads,Website Visit,Desktop,India,New Customer,Home Loan,Home Loan Balance Transfer,396.71,1,60182.65,1,2,0,1,0.5,30091.325,29694.615,7485.22
+CUST1233,2026-01-18,1,Email,Website Visit,Tablet,USA,Regular,Insurance,Motor Insurance,45.41,0,0.0,1,2,1,0,0.5,4198.405,4152.995,9145.55
+CUST1233,2026-01-16,2,Instagram,Paid Ad,Tablet,USA,Regular,Insurance,Motor Insurance,252.14,1,8396.81,1,2,0,1,0.5,4198.405,3946.265,1565.11
+CUST1234,2026-04-13,1,Google Ads,Organic Search,Tablet,USA,Premium,Home Loan,Home Loan,158.89,0,0.0,0,4,1,0,0.0,0.0,-158.89,-100.0
+CUST1234,2026-04-11,2,Website,Video Ad,Tablet,USA,Premium,Home Loan,Home Loan,59.74,0,0.0,0,4,0,0,0.0,0.0,-59.74,-100.0
+CUST1234,2026-04-17,3,YouTube,App Visit,Tablet,USA,Premium,Home Loan,Home Loan,443.74,0,0.0,0,4,0,0,0.0,0.0,-443.74,-100.0
+CUST1234,2026-04-29,4,Website,Organic Search,Tablet,USA,Premium,Home Loan,Home Loan,29.7,0,0.0,0,4,0,1,0.0,0.0,-29.7,-100.0
+CUST1235,2026-03-23,1,Instagram,App Visit,Tablet,USA,Regular,Personal Loan,Personal Loan,243.43,0,0.0,0,3,1,0,0.0,0.0,-243.43,-100.0
+CUST1235,2026-03-22,2,Instagram,Website Visit,Tablet,USA,Regular,Personal Loan,Personal Loan,212.78,0,0.0,0,3,0,0,0.0,0.0,-212.78,-100.0
+CUST1235,2026-03-31,3,Facebook Ads,Video Ad,Tablet,USA,Regular,Personal Loan,Personal Loan,385.81,0,0.0,0,3,0,1,0.0,0.0,-385.81,-100.0
+CUST1236,2026-04-27,1,Email,Video Ad,Desktop,India,Regular,Insurance,Health Insurance,19.61,0,0.0,0,4,1,0,0.0,0.0,-19.61,-100.0
+CUST1236,2026-05-06,2,Instagram,Paid Ad,Desktop,India,Regular,Insurance,Health Insurance,345.65,0,0.0,0,4,0,0,0.0,0.0,-345.65,-100.0
+CUST1236,2026-05-13,3,Email,Email,Desktop,India,Regular,Insurance,Health Insurance,30.9,0,0.0,0,4,0,0,0.0,0.0,-30.9,-100.0
+CUST1236,2026-04-26,4,Google Ads,Website Visit,Desktop,India,Regular,Insurance,Health Insurance,437.83,0,0.0,0,4,0,1,0.0,0.0,-437.83,-100.0
+CUST1237,2026-02-19,1,Mobile App,Remarketing,Tablet,USA,Returning,Investment,Fixed Deposit,15.65,0,0.0,0,4,1,0,0.0,0.0,-15.65,-100.0
+CUST1237,2026-02-23,2,YouTube,Paid Ad,Tablet,USA,Returning,Investment,Fixed Deposit,558.72,0,0.0,0,4,0,0,0.0,0.0,-558.72,-100.0
+CUST1237,2026-03-02,3,Google Ads,Organic Search,Tablet,USA,Returning,Investment,Fixed Deposit,195.73,0,0.0,0,4,0,0,0.0,0.0,-195.73,-100.0
+CUST1237,2026-02-19,4,YouTube,Email,Tablet,USA,Returning,Investment,Fixed Deposit,206.25,0,0.0,0,4,0,1,0.0,0.0,-206.25,-100.0
+CUST1238,2026-04-25,1,Google Ads,App Visit,Desktop,Australia,Returning,Home Loan,Home Loan Balance Transfer,284.96,0,0.0,0,3,1,0,0.0,0.0,-284.96,-100.0
+CUST1238,2026-04-27,2,Google Ads,Social Ad,Desktop,Australia,Returning,Home Loan,Home Loan Balance Transfer,317.59,0,0.0,0,3,0,0,0.0,0.0,-317.59,-100.0
+CUST1238,2026-05-06,3,Google Ads,Email,Desktop,Australia,Returning,Home Loan,Home Loan Balance Transfer,359.69,0,0.0,0,3,0,1,0.0,0.0,-359.69,-100.0
+CUST1239,2026-02-22,1,Website,Organic Search,Desktop,Australia,New Customer,Investment,Investment Plan,39.6,0,0.0,1,2,1,0,0.5,8779.435,8739.835,22070.29
+CUST1239,2026-02-27,2,Website,Organic Search,Desktop,Australia,New Customer,Investment,Investment Plan,73.93,1,17558.87,1,2,0,1,0.5,8779.435,8705.505,11775.33
+CUST1240,2026-02-22,1,Instagram,App Visit,Tablet,Canada,Regular,Insurance,Life Insurance,140.27,0,0.0,0,2,1,0,0.0,0.0,-140.27,-100.0
+CUST1240,2026-02-23,2,Google Ads,Video Ad,Tablet,Canada,Regular,Insurance,Life Insurance,386.96,0,0.0,0,2,0,1,0.0,0.0,-386.96,-100.0
+CUST1241,2026-07-10,1,Facebook Ads,Social Ad,Mobile,Canada,Regular,Home Loan,Home Loan Balance Transfer,303.63,0,0.0,0,3,1,0,0.0,0.0,-303.63,-100.0
+CUST1241,2026-07-14,2,Facebook Ads,App Visit,Mobile,Canada,Regular,Home Loan,Home Loan Balance Transfer,366.43,0,0.0,0,3,0,0,0.0,0.0,-366.43,-100.0
+CUST1241,2026-07-20,3,Instagram,App Visit,Mobile,Canada,Regular,Home Loan,Home Loan Balance Transfer,157.99,0,0.0,0,3,0,1,0.0,0.0,-157.99,-100.0
+CUST1242,2026-02-19,1,Google Ads,App Visit,Tablet,UK,Regular,Personal Loan,Personal Loan,240.95,0,0.0,0,3,1,0,0.0,0.0,-240.95,-100.0
+CUST1242,2026-02-25,2,Mobile App,Organic Search,Tablet,UK,Regular,Personal Loan,Personal Loan,16.75,0,0.0,0,3,0,0,0.0,0.0,-16.75,-100.0
+CUST1242,2026-02-15,3,Instagram,Email,Tablet,UK,Regular,Personal Loan,Personal Loan,232.99,0,0.0,0,3,0,1,0.0,0.0,-232.99,-100.0
+CUST1243,2026-06-12,1,YouTube,Email,Desktop,India,Premium,Insurance,Health Insurance,372.24,0,0.0,0,2,1,0,0.0,0.0,-372.24,-100.0
+CUST1243,2026-06-14,2,Mobile App,Social Ad,Desktop,India,Premium,Insurance,Health Insurance,44.01,0,0.0,0,2,0,1,0.0,0.0,-44.01,-100.0
+CUST1244,2026-01-13,1,Google Ads,Website Visit,Desktop,Australia,Regular,Investment,Investment Plan,155.59,0,0.0,1,3,1,0,0.3333333333333333,1624.0166666666667,1468.4266666666667,943.78
+CUST1244,2026-01-18,2,Google Ads,Organic Search,Desktop,Australia,Regular,Investment,Investment Plan,558.6,0,0.0,1,3,0,0,0.3333333333333333,1624.0166666666667,1065.4166666666665,190.73
+CUST1244,2026-01-26,3,Google Ads,Social Ad,Desktop,Australia,Regular,Investment,Investment Plan,596.74,1,4872.05,1,3,0,1,0.3333333333333333,1624.0166666666667,1027.2766666666666,172.15
+CUST1245,2026-04-28,1,Organic Search,Paid Ad,Tablet,Australia,Premium,Investment,Investment Plan,38.43,0,0.0,0,3,1,0,0.0,0.0,-38.43,-100.0
+CUST1245,2026-05-11,2,Organic Search,Website Visit,Tablet,Australia,Premium,Investment,Investment Plan,18.95,0,0.0,0,3,0,0,0.0,0.0,-18.95,-100.0
+CUST1245,2026-05-14,3,Facebook Ads,App Visit,Tablet,Australia,Premium,Investment,Investment Plan,75.97,0,0.0,0,3,0,1,0.0,0.0,-75.97,-100.0
+CUST1246,2026-05-16,1,YouTube,Paid Ad,Mobile,USA,Returning,Home Loan,Home Loan Balance Transfer,442.82,0,0.0,1,5,1,0,0.2,18022.282000000003,17579.462000000003,3969.89
+CUST1246,2026-05-26,2,Facebook Ads,Remarketing,Mobile,USA,Returning,Home Loan,Home Loan Balance Transfer,325.46,0,0.0,1,5,0,0,0.2,18022.282000000003,17696.822000000004,5437.48
+CUST1246,2026-06-03,3,Email,App Visit,Mobile,USA,Returning,Home Loan,Home Loan Balance Transfer,86.3,0,0.0,1,5,0,0,0.2,18022.282000000003,17935.982000000004,20783.29
+CUST1246,2026-05-19,4,Email,Website Visit,Mobile,USA,Returning,Home Loan,Home Loan Balance Transfer,65.29,0,0.0,1,5,0,0,0.2,18022.282000000003,17956.992000000002,27503.43
+CUST1246,2026-06-15,5,Mobile App,Remarketing,Mobile,USA,Returning,Home Loan,Home Loan Balance Transfer,57.52,1,90111.41,1,5,0,1,0.2,18022.282000000003,17964.762000000002,31232.2
+CUST1247,2026-05-06,1,Facebook Ads,Email,Mobile,UK,Regular,Credit Card,Rewards Card,215.62,0,0.0,0,2,1,0,0.0,0.0,-215.62,-100.0
+CUST1247,2026-05-08,2,Organic Search,Website Visit,Mobile,UK,Regular,Credit Card,Rewards Card,40.3,0,0.0,0,2,0,1,0.0,0.0,-40.3,-100.0
+CUST1248,2026-07-22,1,Email,Website Visit,Tablet,India,Regular,Personal Loan,Instant Personal Loan,20.25,0,0.0,1,4,1,0,0.25,5285.3275,5265.0775,26000.38
+CUST1248,2026-07-28,2,Organic Search,Website Visit,Tablet,India,Regular,Personal Loan,Instant Personal Loan,36.22,0,0.0,1,4,0,0,0.25,5285.3275,5249.1075,14492.29
+CUST1248,2026-07-28,3,Google Ads,Video Ad,Tablet,India,Regular,Personal Loan,Instant Personal Loan,251.87,0,0.0,1,4,0,0,0.25,5285.3275,5033.4575,1998.43
+CUST1248,2026-08-06,4,Organic Search,Remarketing,Tablet,India,Regular,Personal Loan,Instant Personal Loan,39.86,1,21141.31,1,4,0,1,0.25,5285.3275,5245.467500000001,13159.73
+CUST1249,2026-05-03,1,Website,Paid Ad,Tablet,USA,Returning,Insurance,Motor Insurance,47.37,0,0.0,0,4,1,0,0.0,0.0,-47.37,-100.0
+CUST1249,2026-05-02,2,Organic Search,Paid Ad,Tablet,USA,Returning,Insurance,Motor Insurance,28.87,0,0.0,0,4,0,0,0.0,0.0,-28.87,-100.0
+CUST1249,2026-05-01,3,Organic Search,Website Visit,Tablet,USA,Returning,Insurance,Motor Insurance,48.48,0,0.0,0,4,0,0,0.0,0.0,-48.48,-100.0
+CUST1249,2026-05-09,4,Email,Paid Ad,Tablet,USA,Returning,Insurance,Motor Insurance,98.53,0,0.0,0,4,0,1,0.0,0.0,-98.53,-100.0
+CUST1250,2026-07-24,1,Organic Search,Paid Ad,Tablet,Australia,Regular,Insurance,Life Insurance,20.69,0,0.0,0,2,1,0,0.0,0.0,-20.69,-100.0
+CUST1250,2026-07-25,2,Mobile App,Email,Tablet,Australia,Regular,Insurance,Life Insurance,34.37,0,0.0,0,2,0,1,0.0,0.0,-34.37,-100.0
+CUST1251,2026-04-13,1,YouTube,Social Ad,Tablet,USA,Premium,Home Loan,Home Loan,403.6,0,0.0,0,2,1,0,0.0,0.0,-403.6,-100.0
+CUST1251,2026-04-09,2,Mobile App,Video Ad,Tablet,USA,Premium,Home Loan,Home Loan,27.11,0,0.0,0,2,0,1,0.0,0.0,-27.11,-100.0
+CUST1252,2026-07-30,1,Instagram,Email,Desktop,Australia,Returning,Home Loan,Home Loan,182.4,0,0.0,0,2,1,0,0.0,0.0,-182.4,-100.0
+CUST1252,2026-08-03,2,Facebook Ads,Paid Ad,Desktop,Australia,Returning,Home Loan,Home Loan,422.93,0,0.0,0,2,0,1,0.0,0.0,-422.93,-100.0
+CUST1253,2026-01-11,1,Email,Email,Desktop,UK,New Customer,Credit Card,Rewards Card,28.05,0,0.0,0,4,1,0,0.0,0.0,-28.05,-100.0
+CUST1253,2026-01-14,2,Email,Organic Search,Desktop,UK,New Customer,Credit Card,Rewards Card,38.72,0,0.0,0,4,0,0,0.0,0.0,-38.72,-100.0
+CUST1253,2026-01-14,3,Mobile App,Social Ad,Desktop,UK,New Customer,Credit Card,Rewards Card,14.71,0,0.0,0,4,0,0,0.0,0.0,-14.71,-100.0
+CUST1253,2026-01-06,4,Email,Social Ad,Desktop,UK,New Customer,Credit Card,Rewards Card,96.25,0,0.0,0,4,0,1,0.0,0.0,-96.25,-100.0
+CUST1254,2026-02-08,1,Email,Email,Tablet,USA,New Customer,Home Loan,Home Loan Balance Transfer,16.41,0,0.0,0,4,1,0,0.0,0.0,-16.41,-100.0
+CUST1254,2026-02-06,2,Organic Search,Remarketing,Tablet,USA,New Customer,Home Loan,Home Loan Balance Transfer,6.5,0,0.0,0,4,0,0,0.0,0.0,-6.5,-100.0
+CUST1254,2026-02-09,3,Mobile App,Paid Ad,Tablet,USA,New Customer,Home Loan,Home Loan Balance Transfer,29.93,0,0.0,0,4,0,0,0.0,0.0,-29.93,-100.0
+CUST1254,2026-02-18,4,Facebook Ads,App Visit,Tablet,USA,New Customer,Home Loan,Home Loan Balance Transfer,121.59,0,0.0,0,4,0,1,0.0,0.0,-121.59,-100.0
+CUST1255,2026-07-04,1,Facebook Ads,Remarketing,Desktop,Australia,Returning,Home Loan,Home Loan Balance Transfer,87.17,0,0.0,0,3,1,0,0.0,0.0,-87.17,-100.0
+CUST1255,2026-07-09,2,Mobile App,Social Ad,Desktop,Australia,Returning,Home Loan,Home Loan Balance Transfer,25.18,0,0.0,0,3,0,0,0.0,0.0,-25.18,-100.0
+CUST1255,2026-07-09,3,Mobile App,Remarketing,Desktop,Australia,Returning,Home Loan,Home Loan Balance Transfer,66.58,0,0.0,0,3,0,1,0.0,0.0,-66.58,-100.0
+CUST1256,2026-07-06,1,Organic Search,Website Visit,Desktop,Australia,Regular,Home Loan,Home Loan Balance Transfer,24.38,0,0.0,0,3,1,0,0.0,0.0,-24.38,-100.0
+CUST1256,2026-06-30,2,Facebook Ads,Remarketing,Desktop,Australia,Regular,Home Loan,Home Loan Balance Transfer,190.58,0,0.0,0,3,0,0,0.0,0.0,-190.58,-100.0
+CUST1256,2026-07-08,3,Mobile App,Video Ad,Desktop,Australia,Regular,Home Loan,Home Loan Balance Transfer,54.92,0,0.0,0,3,0,1,0.0,0.0,-54.92,-100.0
+CUST1257,2026-04-01,1,Facebook Ads,Organic Search,Mobile,Australia,Regular,Insurance,Motor Insurance,210.33,0,0.0,0,2,1,0,0.0,0.0,-210.33,-100.0
+CUST1257,2026-04-03,2,Website,Email,Mobile,Australia,Regular,Insurance,Motor Insurance,23.28,0,0.0,0,2,0,1,0.0,0.0,-23.28,-100.0
+CUST1258,2026-08-02,1,Website,App Visit,Desktop,Canada,Regular,Credit Card,Travel Card,45.84,0,0.0,0,3,1,0,0.0,0.0,-45.84,-100.0
+CUST1258,2026-08-07,2,YouTube,Video Ad,Desktop,Canada,Regular,Credit Card,Travel Card,501.76,0,0.0,0,3,0,0,0.0,0.0,-501.76,-100.0
+CUST1258,2026-08-15,3,Mobile App,Social Ad,Desktop,Canada,Regular,Credit Card,Travel Card,43.74,0,0.0,0,3,0,1,0.0,0.0,-43.74,-100.0
+CUST1259,2026-04-19,1,Facebook Ads,App Visit,Mobile,Australia,Premium,Insurance,Life Insurance,247.72,0,0.0,1,4,1,0,0.25,1380.5,1132.78,457.28
+CUST1259,2026-04-17,2,Google Ads,Social Ad,Mobile,Australia,Premium,Insurance,Life Insurance,504.86,0,0.0,1,4,0,0,0.25,1380.5,875.64,173.44
+CUST1259,2026-05-05,3,Google Ads,Video Ad,Mobile,Australia,Premium,Insurance,Life Insurance,157.59,0,0.0,1,4,0,0,0.25,1380.5,1222.91,776.01
+CUST1259,2026-05-03,4,Email,App Visit,Mobile,Australia,Premium,Insurance,Life Insurance,62.01,1,5522.0,1,4,0,1,0.25,1380.5,1318.49,2126.25
+CUST1260,2026-01-27,1,Website,Video Ad,Tablet,UK,Premium,Home Loan,Home Loan Balance Transfer,9.68,0,0.0,0,4,1,0,0.0,0.0,-9.68,-100.0
+CUST1260,2026-02-03,2,Google Ads,Paid Ad,Tablet,UK,Premium,Home Loan,Home Loan Balance Transfer,371.22,0,0.0,0,4,0,0,0.0,0.0,-371.22,-100.0
+CUST1260,2026-02-01,3,Organic Search,Social Ad,Tablet,UK,Premium,Home Loan,Home Loan Balance Transfer,43.28,0,0.0,0,4,0,0,0.0,0.0,-43.28,-100.0
+CUST1260,2026-02-14,4,YouTube,App Visit,Tablet,UK,Premium,Home Loan,Home Loan Balance Transfer,454.1,0,0.0,0,4,0,1,0.0,0.0,-454.1,-100.0
+CUST1261,2026-06-25,1,Instagram,Email,Desktop,Canada,Premium,Insurance,Health Insurance,301.43,0,0.0,1,3,1,0,0.3333333333333333,760.9133333333332,459.4833333333332,152.43
+CUST1261,2026-06-21,2,Organic Search,App Visit,Desktop,Canada,Premium,Insurance,Health Insurance,14.42,0,0.0,1,3,0,0,0.3333333333333333,760.9133333333332,746.4933333333332,5176.79
+CUST1261,2026-06-19,3,Instagram,Video Ad,Desktop,Canada,Premium,Insurance,Health Insurance,62.24,1,2282.74,1,3,0,1,0.3333333333333333,760.9133333333332,698.6733333333332,1122.55
+CUST1262,2026-05-04,1,Website,Video Ad,Mobile,Canada,Returning,Credit Card,Rewards Card,43.21,0,0.0,0,5,1,0,0.0,0.0,-43.21,-100.0
+CUST1262,2026-05-02,2,Mobile App,App Visit,Mobile,Canada,Returning,Credit Card,Rewards Card,19.67,0,0.0,0,5,0,0,0.0,0.0,-19.67,-100.0
+CUST1262,2026-05-15,3,Website,Paid Ad,Mobile,Canada,Returning,Credit Card,Rewards Card,42.36,0,0.0,0,5,0,0,0.0,0.0,-42.36,-100.0
+CUST1262,2026-05-10,4,YouTube,Organic Search,Mobile,Canada,Returning,Credit Card,Rewards Card,655.94,0,0.0,0,5,0,0,0.0,0.0,-655.94,-100.0
+CUST1262,2026-04-29,5,Organic Search,Paid Ad,Mobile,Canada,Returning,Credit Card,Rewards Card,28.41,0,0.0,0,5,0,1,0.0,0.0,-28.41,-100.0
+CUST1263,2026-02-07,1,Email,Remarketing,Tablet,India,Premium,Insurance,Motor Insurance,57.1,0,0.0,0,2,1,0,0.0,0.0,-57.1,-100.0
+CUST1263,2026-02-13,2,Facebook Ads,Email,Tablet,India,Premium,Insurance,Motor Insurance,302.27,0,0.0,0,2,0,1,0.0,0.0,-302.27,-100.0
+CUST1264,2026-05-24,1,Mobile App,Remarketing,Tablet,Australia,New Customer,Home Loan,Home Loan,42.31,0,0.0,0,4,1,0,0.0,0.0,-42.31,-100.0
+CUST1264,2026-05-22,2,Organic Search,App Visit,Tablet,Australia,New Customer,Home Loan,Home Loan,48.03,0,0.0,0,4,0,0,0.0,0.0,-48.03,-100.0
+CUST1264,2026-05-22,3,Email,Organic Search,Tablet,Australia,New Customer,Home Loan,Home Loan,13.18,0,0.0,0,4,0,0,0.0,0.0,-13.18,-100.0
+CUST1264,2026-05-18,4,Email,Organic Search,Tablet,Australia,New Customer,Home Loan,Home Loan,66.64,0,0.0,0,4,0,1,0.0,0.0,-66.64,-100.0
+CUST1265,2026-05-09,1,Facebook Ads,Organic Search,Mobile,Australia,Regular,Home Loan,Home Loan,103.02,0,0.0,1,4,1,0,0.25,20378.7125,20275.6925,19681.32
+CUST1265,2026-05-18,2,Email,Organic Search,Mobile,Australia,Regular,Home Loan,Home Loan,33.13,0,0.0,1,4,0,0,0.25,20378.7125,20345.5825,61411.36
+CUST1265,2026-05-23,3,Facebook Ads,Video Ad,Mobile,Australia,Regular,Home Loan,Home Loan,345.59,0,0.0,1,4,0,0,0.25,20378.7125,20033.1225,5796.79
+CUST1265,2026-05-30,4,Mobile App,Website Visit,Mobile,Australia,Regular,Home Loan,Home Loan,16.4,1,81514.85,1,4,0,1,0.25,20378.7125,20362.3125,124160.44
+CUST1266,2026-01-28,1,Instagram,Remarketing,Mobile,Canada,Regular,Investment,Mutual Fund,278.81,0,0.0,0,4,1,0,0.0,0.0,-278.81,-100.0
+CUST1266,2026-02-02,2,YouTube,Remarketing,Mobile,Canada,Regular,Investment,Mutual Fund,482.54,0,0.0,0,4,0,0,0.0,0.0,-482.54,-100.0
+CUST1266,2026-01-23,3,YouTube,Website Visit,Mobile,Canada,Regular,Investment,Mutual Fund,485.36,0,0.0,0,4,0,0,0.0,0.0,-485.36,-100.0
+CUST1266,2026-01-27,4,Facebook Ads,Paid Ad,Mobile,Canada,Regular,Investment,Mutual Fund,235.61,0,0.0,0,4,0,1,0.0,0.0,-235.61,-100.0
+CUST1267,2026-06-26,1,Mobile App,Organic Search,Desktop,UK,Returning,Investment,Mutual Fund,39.48,0,0.0,0,5,1,0,0.0,0.0,-39.48,-100.0
+CUST1267,2026-06-28,2,Website,Paid Ad,Desktop,UK,Returning,Investment,Mutual Fund,74.54,0,0.0,0,5,0,0,0.0,0.0,-74.54,-100.0
+CUST1267,2026-07-15,3,Mobile App,App Visit,Desktop,UK,Returning,Investment,Mutual Fund,25.52,0,0.0,0,5,0,0,0.0,0.0,-25.52,-100.0
+CUST1267,2026-07-11,4,Google Ads,Social Ad,Desktop,UK,Returning,Investment,Mutual Fund,411.46,0,0.0,0,5,0,0,0.0,0.0,-411.46,-100.0
+CUST1267,2026-07-15,5,Website,Organic Search,Desktop,UK,Returning,Investment,Mutual Fund,25.27,0,0.0,0,5,0,1,0.0,0.0,-25.27,-100.0
+CUST1268,2026-07-22,1,YouTube,Email,Tablet,UK,New Customer,Investment,Fixed Deposit,506.63,0,0.0,0,5,1,0,0.0,0.0,-506.63,-100.0
+CUST1268,2026-07-25,2,Instagram,Website Visit,Tablet,UK,New Customer,Investment,Fixed Deposit,43.28,0,0.0,0,5,0,0,0.0,0.0,-43.28,-100.0
+CUST1268,2026-07-17,3,Google Ads,Social Ad,Tablet,UK,New Customer,Investment,Fixed Deposit,293.85,0,0.0,0,5,0,0,0.0,0.0,-293.85,-100.0
+CUST1268,2026-07-28,4,Facebook Ads,Remarketing,Tablet,UK,New Customer,Investment,Fixed Deposit,137.77,0,0.0,0,5,0,0,0.0,0.0,-137.77,-100.0
+CUST1268,2026-07-29,5,Email,Organic Search,Tablet,UK,New Customer,Investment,Fixed Deposit,13.06,0,0.0,0,5,0,1,0.0,0.0,-13.06,-100.0
+CUST1269,2026-01-25,1,Instagram,App Visit,Tablet,India,New Customer,Personal Loan,Personal Loan,317.76,0,0.0,0,2,1,0,0.0,0.0,-317.76,-100.0
+CUST1269,2026-01-27,2,Instagram,Organic Search,Tablet,India,New Customer,Personal Loan,Personal Loan,184.76,0,0.0,0,2,0,1,0.0,0.0,-184.76,-100.0
+CUST1270,2026-03-07,1,Facebook Ads,Organic Search,Desktop,Canada,New Customer,Insurance,Motor Insurance,203.12,0,0.0,1,4,1,0,0.25,987.9375,784.8175,386.38
+CUST1270,2026-03-11,2,Organic Search,Paid Ad,Desktop,Canada,New Customer,Insurance,Motor Insurance,47.78,0,0.0,1,4,0,0,0.25,987.9375,940.1575,1967.68
+CUST1270,2026-03-21,3,Email,Video Ad,Desktop,Canada,New Customer,Insurance,Motor Insurance,16.25,0,0.0,1,4,0,0,0.25,987.9375,971.6875,5979.62
+CUST1270,2026-03-12,4,YouTube,App Visit,Desktop,Canada,New Customer,Insurance,Motor Insurance,487.29,1,3951.75,1,4,0,1,0.25,987.9375,500.6475,102.74
+CUST1271,2026-02-03,1,Facebook Ads,Organic Search,Tablet,USA,Returning,Credit Card,Travel Card,57.51,0,0.0,1,4,1,0,0.25,1524.86,1467.35,2551.47
+CUST1271,2026-02-06,2,Mobile App,Video Ad,Tablet,USA,Returning,Credit Card,Travel Card,46.62,0,0.0,1,4,0,0,0.25,1524.86,1478.24,3170.83
+CUST1271,2026-02-04,3,Google Ads,App Visit,Tablet,USA,Returning,Credit Card,Travel Card,158.84,0,0.0,1,4,0,0,0.25,1524.86,1366.02,860.0
+CUST1271,2026-02-14,4,Organic Search,App Visit,Tablet,USA,Returning,Credit Card,Travel Card,0.19,1,6099.44,1,4,0,1,0.25,1524.86,1524.6699999999998,802457.89
+CUST1272,2026-05-20,1,Website,Remarketing,Desktop,Canada,Returning,Insurance,Motor Insurance,47.54,0,0.0,1,2,1,0,0.5,1496.75,1449.21,3048.4
+CUST1272,2026-05-29,2,Organic Search,Website Visit,Desktop,Canada,Returning,Insurance,Motor Insurance,15.14,1,2993.5,1,2,0,1,0.5,1496.75,1481.61,9786.06
+CUST1273,2026-07-14,1,YouTube,Video Ad,Tablet,UK,New Customer,Home Loan,Home Loan,680.51,0,0.0,0,5,1,0,0.0,0.0,-680.51,-100.0
+CUST1273,2026-07-25,2,YouTube,Organic Search,Tablet,UK,New Customer,Home Loan,Home Loan,334.06,0,0.0,0,5,0,0,0.0,0.0,-334.06,-100.0
+CUST1273,2026-07-29,3,Facebook Ads,Website Visit,Tablet,UK,New Customer,Home Loan,Home Loan,83.94,0,0.0,0,5,0,0,0.0,0.0,-83.94,-100.0
+CUST1273,2026-07-18,4,Mobile App,Email,Tablet,UK,New Customer,Home Loan,Home Loan,7.32,0,0.0,0,5,0,0,0.0,0.0,-7.32,-100.0
+CUST1273,2026-08-14,5,Google Ads,Email,Tablet,UK,New Customer,Home Loan,Home Loan,282.16,0,0.0,0,5,0,1,0.0,0.0,-282.16,-100.0
+CUST1274,2026-03-29,1,Google Ads,App Visit,Tablet,Canada,Premium,Insurance,Life Insurance,190.07,0,0.0,1,2,1,0,0.5,9323.34,9133.27,4805.21
+CUST1274,2026-04-08,2,Mobile App,Video Ad,Tablet,Canada,Premium,Insurance,Life Insurance,42.66,1,18646.68,1,2,0,1,0.5,9323.34,9280.68,21754.99
+CUST1275,2026-03-06,1,Instagram,Paid Ad,Desktop,USA,New Customer,Credit Card,Travel Card,236.13,0,0.0,0,2,1,0,0.0,0.0,-236.13,-100.0
+CUST1275,2026-03-11,2,Email,Social Ad,Desktop,USA,New Customer,Credit Card,Travel Card,65.01,0,0.0,0,2,0,1,0.0,0.0,-65.01,-100.0
+CUST1276,2026-01-23,1,Website,Website Visit,Mobile,India,New Customer,Insurance,Motor Insurance,29.32,0,0.0,0,3,1,0,0.0,0.0,-29.32,-100.0
+CUST1276,2026-01-30,2,Instagram,Website Visit,Mobile,India,New Customer,Insurance,Motor Insurance,339.05,0,0.0,0,3,0,0,0.0,0.0,-339.05,-100.0
+CUST1276,2026-02-04,3,YouTube,Paid Ad,Mobile,India,New Customer,Insurance,Motor Insurance,204.07,0,0.0,0,3,0,1,0.0,0.0,-204.07,-100.0
+CUST1277,2026-07-01,1,Instagram,Remarketing,Desktop,India,New Customer,Personal Loan,Instant Personal Loan,326.96,0,0.0,1,3,1,0,0.3333333333333333,2339.3566666666666,2012.3966666666665,615.49
+CUST1277,2026-06-29,2,Google Ads,Video Ad,Desktop,India,New Customer,Personal Loan,Instant Personal Loan,491.35,0,0.0,1,3,0,0,0.3333333333333333,2339.3566666666666,1848.0066666666667,376.11
+CUST1277,2026-06-28,3,Website,Video Ad,Desktop,India,New Customer,Personal Loan,Instant Personal Loan,70.97,1,7018.07,1,3,0,1,0.3333333333333333,2339.3566666666666,2268.3866666666668,3196.26
+CUST1278,2026-06-30,1,Mobile App,Video Ad,Mobile,USA,New Customer,Investment,Fixed Deposit,14.3,0,0.0,0,5,1,0,0.0,0.0,-14.3,-100.0
+CUST1278,2026-07-03,2,Email,Remarketing,Mobile,USA,New Customer,Investment,Fixed Deposit,31.53,0,0.0,0,5,0,0,0.0,0.0,-31.53,-100.0
+CUST1278,2026-07-16,3,Instagram,Paid Ad,Mobile,USA,New Customer,Investment,Fixed Deposit,95.8,0,0.0,0,5,0,0,0.0,0.0,-95.8,-100.0
+CUST1278,2026-07-17,4,Mobile App,Social Ad,Mobile,USA,New Customer,Investment,Fixed Deposit,58.72,0,0.0,0,5,0,0,0.0,0.0,-58.72,-100.0
+CUST1278,2026-07-23,5,Email,Website Visit,Mobile,USA,New Customer,Investment,Fixed Deposit,10.41,0,0.0,0,5,0,1,0.0,0.0,-10.41,-100.0
+CUST1279,2026-07-17,1,YouTube,Remarketing,Mobile,USA,Regular,Investment,Mutual Fund,265.86,0,0.0,0,4,1,0,0.0,0.0,-265.86,-100.0
+CUST1279,2026-07-26,2,YouTube,Social Ad,Mobile,USA,Regular,Investment,Mutual Fund,189.53,0,0.0,0,4,0,0,0.0,0.0,-189.53,-100.0
+CUST1279,2026-07-19,3,Mobile App,Remarketing,Mobile,USA,Regular,Investment,Mutual Fund,15.38,0,0.0,0,4,0,0,0.0,0.0,-15.38,-100.0
+CUST1279,2026-08-03,4,Google Ads,Paid Ad,Mobile,USA,Regular,Investment,Mutual Fund,269.38,0,0.0,0,4,0,1,0.0,0.0,-269.38,-100.0
+CUST1280,2026-01-27,1,Instagram,Video Ad,Desktop,Canada,Regular,Home Loan,Home Loan Balance Transfer,190.37,0,0.0,0,2,1,0,0.0,0.0,-190.37,-100.0
+CUST1280,2026-02-10,2,Facebook Ads,Social Ad,Desktop,Canada,Regular,Home Loan,Home Loan Balance Transfer,144.12,0,0.0,0,2,0,1,0.0,0.0,-144.12,-100.0
+CUST1281,2026-07-12,1,Organic Search,Email,Tablet,Australia,Returning,Home Loan,Home Loan Balance Transfer,16.31,0,0.0,0,3,1,0,0.0,0.0,-16.31,-100.0
+CUST1281,2026-07-22,2,Facebook Ads,Email,Tablet,Australia,Returning,Home Loan,Home Loan Balance Transfer,215.04,0,0.0,0,3,0,0,0.0,0.0,-215.04,-100.0
+CUST1281,2026-07-18,3,YouTube,App Visit,Tablet,Australia,Returning,Home Loan,Home Loan Balance Transfer,144.12,0,0.0,0,3,0,1,0.0,0.0,-144.12,-100.0
+CUST1282,2026-02-18,1,Instagram,Remarketing,Desktop,India,Returning,Personal Loan,Personal Loan,235.93,0,0.0,0,5,1,0,0.0,0.0,-235.93,-100.0
+CUST1282,2026-02-20,2,Email,Email,Desktop,India,Returning,Personal Loan,Personal Loan,21.45,0,0.0,0,5,0,0,0.0,0.0,-21.45,-100.0
+CUST1282,2026-02-19,3,Google Ads,Organic Search,Desktop,India,Returning,Personal Loan,Personal Loan,137.78,0,0.0,0,5,0,0,0.0,0.0,-137.78,-100.0
+CUST1282,2026-02-28,4,Mobile App,Remarketing,Desktop,India,Returning,Personal Loan,Personal Loan,16.13,0,0.0,0,5,0,0,0.0,0.0,-16.13,-100.0
+CUST1282,2026-03-05,5,Organic Search,Email,Desktop,India,Returning,Personal Loan,Personal Loan,30.18,0,0.0,0,5,0,1,0.0,0.0,-30.18,-100.0
+CUST1283,2026-05-21,1,YouTube,Remarketing,Tablet,Australia,Regular,Personal Loan,Personal Loan,267.5,0,0.0,0,5,1,0,0.0,0.0,-267.5,-100.0
+CUST1283,2026-05-17,2,Website,Email,Tablet,Australia,Regular,Personal Loan,Personal Loan,29.55,0,0.0,0,5,0,0,0.0,0.0,-29.55,-100.0
+CUST1283,2026-06-01,3,YouTube,Video Ad,Tablet,Australia,Regular,Personal Loan,Personal Loan,638.95,0,0.0,0,5,0,0,0.0,0.0,-638.95,-100.0
+CUST1283,2026-05-15,4,Website,Paid Ad,Tablet,Australia,Regular,Personal Loan,Personal Loan,79.35,0,0.0,0,5,0,0,0.0,0.0,-79.35,-100.0
+CUST1283,2026-06-16,5,Google Ads,App Visit,Tablet,Australia,Regular,Personal Loan,Personal Loan,285.05,0,0.0,0,5,0,1,0.0,0.0,-285.05,-100.0
+CUST1284,2026-07-02,1,YouTube,Video Ad,Desktop,Canada,New Customer,Personal Loan,Personal Loan,277.47,0,0.0,0,2,1,0,0.0,0.0,-277.47,-100.0
+CUST1284,2026-07-04,2,Facebook Ads,Paid Ad,Desktop,Canada,New Customer,Personal Loan,Personal Loan,317.61,0,0.0,0,2,0,1,0.0,0.0,-317.61,-100.0
+CUST1285,2026-05-04,1,Website,Video Ad,Tablet,Canada,Regular,Investment,Mutual Fund,52.01,0,0.0,0,5,1,0,0.0,0.0,-52.01,-100.0
+CUST1285,2026-05-05,2,Google Ads,Social Ad,Tablet,Canada,Regular,Investment,Mutual Fund,544.59,0,0.0,0,5,0,0,0.0,0.0,-544.59,-100.0
+CUST1285,2026-05-08,3,Organic Search,Paid Ad,Tablet,Canada,Regular,Investment,Mutual Fund,21.3,0,0.0,0,5,0,0,0.0,0.0,-21.3,-100.0
+CUST1285,2026-05-24,4,Email,Email,Tablet,Canada,Regular,Investment,Mutual Fund,71.62,0,0.0,0,5,0,0,0.0,0.0,-71.62,-100.0
+CUST1285,2026-05-31,5,Organic Search,Paid Ad,Tablet,Canada,Regular,Investment,Mutual Fund,47.27,0,0.0,0,5,0,1,0.0,0.0,-47.27,-100.0
+CUST1286,2026-06-09,1,Organic Search,Video Ad,Mobile,India,Premium,Insurance,Health Insurance,28.04,0,0.0,1,5,1,0,0.2,1742.13,1714.0900000000001,6113.02
+CUST1286,2026-06-13,2,YouTube,Video Ad,Mobile,India,Premium,Insurance,Health Insurance,243.18,0,0.0,1,5,0,0,0.2,1742.13,1498.95,616.4
+CUST1286,2026-06-26,3,Facebook Ads,Remarketing,Mobile,India,Premium,Insurance,Health Insurance,398.45,0,0.0,1,5,0,0,0.2,1742.13,1343.68,337.23
+CUST1286,2026-06-18,4,YouTube,Email,Mobile,India,Premium,Insurance,Health Insurance,311.63,0,0.0,1,5,0,0,0.2,1742.13,1430.5,459.04
+CUST1286,2026-06-25,5,Email,App Visit,Mobile,India,Premium,Insurance,Health Insurance,14.9,1,8710.65,1,5,0,1,0.2,1742.13,1727.23,11592.15
+CUST1287,2026-07-06,1,Email,Remarketing,Tablet,Canada,Returning,Investment,Mutual Fund,81.99,0,0.0,0,5,1,0,0.0,0.0,-81.99,-100.0
+CUST1287,2026-07-15,2,Facebook Ads,Email,Tablet,Canada,Returning,Investment,Mutual Fund,403.59,0,0.0,0,5,0,0,0.0,0.0,-403.59,-100.0
+CUST1287,2026-07-13,3,Facebook Ads,Social Ad,Tablet,Canada,Returning,Investment,Mutual Fund,409.18,0,0.0,0,5,0,0,0.0,0.0,-409.18,-100.0
+CUST1287,2026-07-04,4,Email,Social Ad,Tablet,Canada,Returning,Investment,Mutual Fund,24.83,0,0.0,0,5,0,0,0.0,0.0,-24.83,-100.0
+CUST1287,2026-08-01,5,Facebook Ads,Video Ad,Tablet,Canada,Returning,Investment,Mutual Fund,110.2,0,0.0,0,5,0,1,0.0,0.0,-110.2,-100.0
+CUST1288,2026-06-29,1,Instagram,Remarketing,Tablet,Australia,Regular,Credit Card,Travel Card,170.24,0,0.0,0,5,1,0,0.0,0.0,-170.24,-100.0
+CUST1288,2026-06-27,2,Google Ads,Organic Search,Tablet,Australia,Regular,Credit Card,Travel Card,112.73,0,0.0,0,5,0,0,0.0,0.0,-112.73,-100.0
+CUST1288,2026-07-07,3,YouTube,Website Visit,Tablet,Australia,Regular,Credit Card,Travel Card,447.22,0,0.0,0,5,0,0,0.0,0.0,-447.22,-100.0
+CUST1288,2026-07-12,4,Organic Search,Remarketing,Tablet,Australia,Regular,Credit Card,Travel Card,33.29,0,0.0,0,5,0,0,0.0,0.0,-33.29,-100.0
+CUST1288,2026-07-13,5,Mobile App,Remarketing,Tablet,Australia,Regular,Credit Card,Travel Card,41.87,0,0.0,0,5,0,1,0.0,0.0,-41.87,-100.0
+CUST1289,2026-03-20,1,Google Ads,Video Ad,Desktop,USA,Premium,Personal Loan,Instant Personal Loan,227.88,0,0.0,0,4,1,0,0.0,0.0,-227.88,-100.0
+CUST1289,2026-03-26,2,Instagram,Video Ad,Desktop,USA,Premium,Personal Loan,Instant Personal Loan,205.95,0,0.0,0,4,0,0,0.0,0.0,-205.95,-100.0
+CUST1289,2026-04-05,3,Instagram,Video Ad,Desktop,USA,Premium,Personal Loan,Instant Personal Loan,286.28,0,0.0,0,4,0,0,0.0,0.0,-286.28,-100.0
+CUST1289,2026-03-18,4,Instagram,Email,Desktop,USA,Premium,Personal Loan,Instant Personal Loan,52.76,0,0.0,0,4,0,1,0.0,0.0,-52.76,-100.0
+CUST1290,2026-02-22,1,Google Ads,Website Visit,Mobile,Australia,Premium,Insurance,Health Insurance,156.93,0,0.0,1,4,1,0,0.25,3823.2275,3666.2975,2336.26
+CUST1290,2026-02-25,2,Mobile App,Video Ad,Mobile,Australia,Premium,Insurance,Health Insurance,24.6,0,0.0,1,4,0,0,0.25,3823.2275,3798.6275,15441.58
+CUST1290,2026-03-04,3,Google Ads,App Visit,Mobile,Australia,Premium,Insurance,Health Insurance,479.63,0,0.0,1,4,0,0,0.25,3823.2275,3343.5975,697.12
+CUST1290,2026-02-21,4,Mobile App,Website Visit,Mobile,Australia,Premium,Insurance,Health Insurance,5.28,1,15292.91,1,4,0,1,0.25,3823.2275,3817.9474999999998,72309.61
+CUST1291,2026-03-30,1,Mobile App,Paid Ad,Desktop,UK,Premium,Home Loan,Home Loan,49.07,0,0.0,0,5,1,0,0.0,0.0,-49.07,-100.0
+CUST1291,2026-03-28,2,Facebook Ads,Organic Search,Desktop,UK,Premium,Home Loan,Home Loan,210.65,0,0.0,0,5,0,0,0.0,0.0,-210.65,-100.0
+CUST1291,2026-04-08,3,YouTube,Remarketing,Desktop,UK,Premium,Home Loan,Home Loan,155.49,0,0.0,0,5,0,0,0.0,0.0,-155.49,-100.0
+CUST1291,2026-04-15,4,Google Ads,Email,Desktop,UK,Premium,Home Loan,Home Loan,353.75,0,0.0,0,5,0,0,0.0,0.0,-353.75,-100.0
+CUST1291,2026-03-29,5,Email,Email,Desktop,UK,Premium,Home Loan,Home Loan,17.52,0,0.0,0,5,0,1,0.0,0.0,-17.52,-100.0
+CUST1292,2026-03-29,1,Google Ads,Website Visit,Tablet,India,Returning,Insurance,Life Insurance,156.93,0,0.0,0,5,1,0,0.0,0.0,-156.93,-100.0
+CUST1292,2026-03-29,2,Website,Website Visit,Tablet,India,Returning,Insurance,Life Insurance,32.96,0,0.0,0,5,0,0,0.0,0.0,-32.96,-100.0
+CUST1292,2026-04-03,3,Email,Website Visit,Tablet,India,Returning,Insurance,Life Insurance,37.73,0,0.0,0,5,0,0,0.0,0.0,-37.73,-100.0
+CUST1292,2026-03-29,4,Mobile App,Social Ad,Tablet,India,Returning,Insurance,Life Insurance,52.31,0,0.0,0,5,0,0,0.0,0.0,-52.31,-100.0
+CUST1292,2026-04-20,5,Mobile App,App Visit,Tablet,India,Returning,Insurance,Life Insurance,23.76,0,0.0,0,5,0,1,0.0,0.0,-23.76,-100.0
+CUST1293,2026-02-07,1,Mobile App,Website Visit,Mobile,Canada,Returning,Investment,Investment Plan,65.65,0,0.0,1,2,1,0,0.5,11472.925,11407.275,17375.89
+CUST1293,2026-02-06,2,Website,Social Ad,Mobile,Canada,Returning,Investment,Investment Plan,35.71,1,22945.85,1,2,0,1,0.5,11472.925,11437.215,32028.05
+CUST1294,2026-02-28,1,Website,Organic Search,Tablet,USA,Returning,Insurance,Motor Insurance,8.17,0,0.0,1,3,1,0,0.3333333333333333,1590.81,1582.6399999999999,19371.36
+CUST1294,2026-02-28,2,Email,Organic Search,Tablet,USA,Returning,Insurance,Motor Insurance,60.34,0,0.0,1,3,0,0,0.3333333333333333,1590.81,1530.47,2536.41
+CUST1294,2026-02-21,3,Mobile App,Email,Tablet,USA,Returning,Insurance,Motor Insurance,56.43,1,4772.43,1,3,0,1,0.3333333333333333,1590.81,1534.3799999999999,2719.09
+CUST1295,2026-05-07,1,YouTube,Paid Ad,Mobile,Canada,Premium,Home Loan,Home Loan Balance Transfer,558.83,0,0.0,0,3,1,0,0.0,0.0,-558.83,-100.0
+CUST1295,2026-05-15,2,Mobile App,Social Ad,Mobile,Canada,Premium,Home Loan,Home Loan Balance Transfer,53.46,0,0.0,0,3,0,0,0.0,0.0,-53.46,-100.0
+CUST1295,2026-05-14,3,Mobile App,App Visit,Mobile,Canada,Premium,Home Loan,Home Loan Balance Transfer,45.82,0,0.0,0,3,0,1,0.0,0.0,-45.82,-100.0
+CUST1296,2026-03-13,1,Google Ads,Video Ad,Desktop,India,Returning,Investment,Investment Plan,319.74,0,0.0,1,2,1,0,0.5,4833.96,4514.22,1411.84
+CUST1296,2026-03-10,2,Instagram,Website Visit,Desktop,India,Returning,Investment,Investment Plan,56.4,1,9667.92,1,2,0,1,0.5,4833.96,4777.56,8470.85
+CUST1297,2026-07-21,1,Facebook Ads,Video Ad,Desktop,India,Premium,Home Loan,Home Loan,398.98,0,0.0,0,3,1,0,0.0,0.0,-398.98,-100.0
+CUST1297,2026-07-26,2,Email,Organic Search,Desktop,India,Premium,Home Loan,Home Loan,72.82,0,0.0,0,3,0,0,0.0,0.0,-72.82,-100.0
+CUST1297,2026-08-02,3,Organic Search,Social Ad,Desktop,India,Premium,Home Loan,Home Loan,29.0,0,0.0,0,3,0,1,0.0,0.0,-29.0,-100.0
+CUST1298,2026-07-20,1,Organic Search,Video Ad,Mobile,India,Regular,Investment,Fixed Deposit,10.89,0,0.0,0,4,1,0,0.0,0.0,-10.89,-100.0
+CUST1298,2026-07-31,2,YouTube,Email,Mobile,India,Regular,Investment,Fixed Deposit,638.23,0,0.0,0,4,0,0,0.0,0.0,-638.23,-100.0
+CUST1298,2026-08-02,3,Facebook Ads,App Visit,Mobile,India,Regular,Investment,Fixed Deposit,416.41,0,0.0,0,4,0,0,0.0,0.0,-416.41,-100.0
+CUST1298,2026-07-19,4,Facebook Ads,Video Ad,Mobile,India,Regular,Investment,Fixed Deposit,241.81,0,0.0,0,4,0,1,0.0,0.0,-241.81,-100.0
+CUST1299,2026-02-17,1,Google Ads,Social Ad,Mobile,UK,Premium,Insurance,Motor Insurance,146.93,0,0.0,0,4,1,0,0.0,0.0,-146.93,-100.0
+CUST1299,2026-02-18,2,Instagram,Email,Mobile,UK,Premium,Insurance,Motor Insurance,78.86,0,0.0,0,4,0,0,0.0,0.0,-78.86,-100.0
+CUST1299,2026-02-27,3,Instagram,Social Ad,Mobile,UK,Premium,Insurance,Motor Insurance,254.15,0,0.0,0,4,0,0,0.0,0.0,-254.15,-100.0
+CUST1299,2026-02-14,4,Facebook Ads,Social Ad,Mobile,UK,Premium,Insurance,Motor Insurance,359.88,0,0.0,0,4,0,1,0.0,0.0,-359.88,-100.0
+CUST1300,2026-05-02,1,Email,Paid Ad,Mobile,India,Returning,Credit Card,Rewards Card,37.15,0,0.0,1,2,1,0,0.5,2705.825,2668.6749999999997,7183.51
+CUST1300,2026-05-13,2,Google Ads,Social Ad,Mobile,India,Returning,Credit Card,Rewards Card,144.37,1,5411.65,1,2,0,1,0.5,2705.825,2561.455,1774.23

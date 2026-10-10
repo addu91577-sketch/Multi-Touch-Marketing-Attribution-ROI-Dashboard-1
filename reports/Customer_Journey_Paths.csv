@@ -1,0 +1,26 @@
+Path,Total_Customers,Conversions,Total_Revenue,Avg_Path_Length,Avg_Journey_Days,Conversion_Rate_Pct,Revenue_Per_Customer
+Instagram -> Mobile App,4,2,21693.36,2.0,6.5,50.0,5423.34
+Mobile App -> Facebook Ads,3,2,25160.57,2.0,5.333333333333333,66.66666666666666,8386.856666666667
+Website -> Organic Search,3,2,24428.51,2.0,5.333333333333333,66.66666666666666,8142.836666666666
+Google Ads -> Instagram,2,2,44914.240000000005,2.0,3.0,100.0,22457.120000000003
+Instagram -> Facebook Ads,4,1,4468.94,2.0,8.0,25.0,1117.235
+Organic Search -> Mobile App,4,1,19304.2,2.0,3.0,25.0,4826.05
+Instagram -> Email,3,1,8396.81,2.0,2.6666666666666665,33.33333333333333,2798.9366666666665
+Email -> Website,2,1,51807.13,2.0,2.0,50.0,25903.565
+Facebook Ads -> Mobile App,2,1,3851.57,2.0,0.5,50.0,1925.785
+Facebook Ads -> Website -> YouTube,2,1,9820.7,3.0,6.0,50.0,4910.35
+Google Ads -> Google Ads -> Google Ads,2,1,4872.05,3.0,12.0,50.0,2436.025
+Google Ads -> Mobile App,2,1,18646.68,2.0,6.0,50.0,9323.34
+Instagram -> Google Ads,2,1,9667.92,2.0,2.0,50.0,4833.96
+Instagram -> Organic Search,2,1,14280.62,2.0,4.5,50.0,7140.31
+Instagram -> YouTube,2,1,13213.99,2.0,12.5,50.0,6606.995
+Organic Search -> YouTube -> Facebook Ads,2,1,18622.38,3.0,13.0,50.0,9311.19
+Website -> Mobile App,2,1,22945.85,2.0,3.0,50.0,11472.925
+YouTube -> Mobile App,2,1,1706.29,2.0,1.5,50.0,853.145
+Email -> Email -> Google Ads,1,1,26119.67,3.0,10.0,100.0,26119.67
+Email -> Email -> Organic Search -> Mobile App -> Facebook Ads,1,1,19770.13,5.0,12.0,100.0,19770.13
+Email -> Facebook Ads -> Instagram -> Organic Search,1,1,7030.57,4.0,22.0,100.0,7030.57
+Email -> Google Ads,1,1,5411.65,2.0,11.0,100.0,5411.65
+Email -> Instagram -> Organic Search,1,1,4290.61,3.0,2.0,100.0,4290.61
+Email -> Instagram -> YouTube -> Website,1,1,75702.01,4.0,10.0,100.0,75702.01
+Email -> Organic Search -> Google Ads -> Organic Search,1,1,21141.31,4.0,15.0,100.0,21141.31

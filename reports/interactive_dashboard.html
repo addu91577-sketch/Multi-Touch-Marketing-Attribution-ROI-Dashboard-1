@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Touch Marketing Attribution & ROI Executive Dashboard</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+            margin: 0;
+            padding: 24px;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 32px 40px;
+            border-radius: 16px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
+        }
+        .header h1 { margin: 0 0 8px 0; font-size: 28px; font-weight: 800; }
+        .header p { margin: 0; font-size: 15px; opacity: 0.9; }
+        .kpi-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+        .kpi-card {
+            background: white;
+            padding: 20px 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #3b82f6;
+        }
+        .kpi-card.green { border-left-color: #10b981; }
+        .kpi-card.purple { border-left-color: #8b5cf6; }
+        .kpi-card.amber { border-left-color: #f59e0b; }
+        .kpi-title { font-size: 13px; text-transform: uppercase; color: #64748b; font-weight: 700; margin-bottom: 6px; }
+        .kpi-value { font-size: 26px; font-weight: 800; color: #0f172a; }
+        .kpi-subtitle { font-size: 12px; color: #94a3b8; margin-top: 4px; }
+        .chart-card {
+            background: white;
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 1024px) {
+            .grid-2 { grid-template-columns: 1fr; }
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            text-align: right;
+        }
+        th, td {
+            padding: 12px 14px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background-color: #f1f5f9;
+            color: #334155;
+            font-weight: 700;
+        }
+        tr:hover { background-color: #f8fafc; }
+        .section-title {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: #0f172a;
+        }
+        .tag {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Multi-Touch Marketing Attribution & ROI Analytics Dashboard</h1>
+        <p>End-to-End Audit, Attribution Modeling (FTA, LTA, Linear, Position-Based, Time-Decay, Markov Chain), and Algorithmic Budget Optimization</p>
+    </div>
+
+    <!-- Executive KPI Row -->
+    <div class="kpi-container">
+        <div class="kpi-card">
+            <div class="kpi-title">Total Marketing Spend</div>
+            <div class="kpi-value">$173,734.22</div>
+            <div class="kpi-subtitle">Across 8 channels & 1,050 touchpoints</div>
+        </div>
+        <div class="kpi-card green">
+            <div class="kpi-title">Total Attributed Revenue</div>
+            <div class="kpi-value">$1,926,331.12</div>
+            <div class="kpi-subtitle">102 converted customer journeys</div>
+        </div>
+        <div class="kpi-card purple">
+            <div class="kpi-title">Portfolio Blended ROAS</div>
+            <div class="kpi-value">11.09x</div>
+            <div class="kpi-subtitle">Return on Ad Spend</div>
+        </div>
+        <div class="kpi-card amber">
+            <div class="kpi-title">Portfolio Blended ROI</div>
+            <div class="kpi-value">+1,008.8%</div>
+            <div class="kpi-subtitle">Net Return on Investment</div>
+        </div>
+        <div class="kpi-card green">
+            <div class="kpi-title">Projected Optimization Uplift</div>
+            <div class="kpi-value">+12.32%</div>
+            <div class="kpi-subtitle">+$237.3k revenue with $0 extra spend</div>
+        </div>
+    </div>
+
+    <!-- Chart Row 1: Model Comparison -->
+    <div class="chart-card">
+        <div style="height:500px; width:100%;">                        <script>window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-4.1.1.min.js" integrity="sha256-O24V1F27f8pb0glCkelh3cVHLNiHAJ5gCaVtq2aNch8=" crossorigin="anonymous"></script>                <div id="e4b3fecc-dd2c-48b2-8c3a-dc81eaf34809" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("e4b3fecc-dd2c-48b2-8c3a-dc81eaf34809")) {                    Plotly.newPlot(                        "e4b3fecc-dd2c-48b2-8c3a-dc81eaf34809",                        [{"hovertemplate":"\u003cb\u003e%{x}\u003c\u002fb\u003e\u003cbr\u003eFirst-Touch Revenue: $%{y:,.2f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#3498db"},"name":"First-Touch","x":["Email","Facebook Ads","Google Ads","Instagram","Mobile App","Organic Search","Website","YouTube"],"y":{"dtype":"f8","bdata":"rkfheqzQDEGPwvUomrgDQSlcj8Lb\u002fRJBpHA9Ct3lFUF7FK5H5aryQIXrUbiqvQZBw\u002fUoXMkcDUEAAAAAndIVQQ=="},"type":"bar"},{"hovertemplate":"\u003cb\u003e%{x}\u003c\u002fb\u003e\u003cbr\u003eLast-Touch Revenue: $%{y:,.2f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#e74c3c"},"name":"Last-Touch","x":["Email","Facebook Ads","Google Ads","Instagram","Mobile App","Organic Search","Website","YouTube"],"y":{"dtype":"f8","bdata":"pHA9Cv\u002fI4kDNzMzMbosPQcP1KFyBfwxBAAAAAJKABUH2KFyPxs4aQVyPwvVAEBNBuB6F63c8D0FI4XoUkO0JQQ=="},"type":"bar"},{"hovertemplate":"\u003cb\u003e%{x}\u003c\u002fb\u003e\u003cbr\u003eLinear Revenue: $%{y:,.2f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#2ecc71"},"name":"Linear","x":["Email","Facebook Ads","Google Ads","Instagram","Mobile App","Organic Search","Website","YouTube"],"y":{"dtype":"f8","bdata":"kxgE1hb+BUH8YskvQJYPQWJXgFy9iA5BvuZCEkUtE0FjyS8W27QIQUpTKk7IUAlBCh7ME3boEEEvlvziqtcMQQ=="},"type":"bar"},{"hovertemplate":"\u003cb\u003e%{x}\u003c\u002fb\u003e\u003cbr\u003ePosition-Based (U-Shaped) Revenue: $%{y:,.2f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#9b59b6"},"name":"Position-Based (U-Shaped)","x":["Email","Facebook Ads","Google Ads","Instagram","Mobile App","Organic Search","Website","YouTube"],"y":{"dtype":"f8","bdata":"+n5qvHizAkGs1THBitQLQRp2BcgTHxBB4cE8UfUyEUGe76fGRo4NQbbz\u002fdRePwxBTKk4+0N9D0EPn2HXbFcQQQ=="},"type":"bar"},{"hovertemplate":"\u003cb\u003e%{x}\u003c\u002fb\u003e\u003cbr\u003eTime-Decay Revenue: $%{y:,.2f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#f39c12"},"name":"Time-Decay","x":["Email","Facebook Ads","Google Ads","Instagram","Mobile App","Organic Search","Website","YouTube"],"y":{"dtype":"f8","bdata":"fHDKlLPvAEHktATDpboNQXrukn5BAwxByk\u002fBg9ufC0EWQ\u002fLMmA8UQXa80yIO0Q1B22Nbisb5EUFiITDKlfQKQQ=="},"type":"bar"},{"hovertemplate":"\u003cb\u003e%{x}\u003c\u002fb\u003e\u003cbr\u003eMarkov Chain Revenue: $%{y:,.2f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#1abc9c"},"name":"Markov Chain","x":["Email","Facebook Ads","Google Ads","Instagram","Mobile App","Organic Search","Website","YouTube"],"y":{"dtype":"f8","bdata":"7X3enLosAUGeHyFGFz0PQS8aQ2WRHA5B4CEmhe6lFEHQwERc4tIHQdJl8c1ppQpBWC4QvFs8EkGUEN0AlWIMQQ=="},"type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"title":{"font":{"size":18},"text":"\u003cb\u003eChannel Attributed Revenue Across 6 Attribution Models\u003c\u002fb\u003e"},"yaxis":{"title":{"text":"\u003cb\u003eAttributed Revenue ($)\u003c\u002fb\u003e"},"tickprefix":"$","tickformat":",.0f"},"legend":{"orientation":"h","yanchor":"bottom","y":1.02,"xanchor":"right","x":1},"barmode":"group","xaxis":{"title":{"text":"\u003cb\u003eMarketing Channel\u003c\u002fb\u003e"}},"height":500},                        {"responsive": true}                    )                };            </script>        </div>
+    </div>
+
+    <!-- Chart Row 2: Grid of Bubble & Waterfall -->
+    <div class="grid-2">
+        <div class="chart-card">
+            <div style="height:500px; width:100%;">                            <div id="30a7983e-c56d-466d-8973-eef457e7b709" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("30a7983e-c56d-466d-8973-eef457e7b709")) {                    Plotly.newPlot(                        "30a7983e-c56d-466d-8973-eef457e7b709",                        [{"hovertemplate":"\u003cb\u003e%{text}\u003c\u002fb\u003e\u003cbr\u003eSpend: $%{x:,.2f}\u003cbr\u003eLinear ROAS: %{y:.2f}x\u003cbr\u003eConversions: %{marker.size:,.1f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":{"dtype":"f8","bdata":"vaHQCqQUQEDnm47losceQLjc\u002fCVIqRlAxSLb+rIAJ0DQOTOBzmRDQEt4ULBaFk1AyX5Y1yimTECCEC07+VARQA=="},"colorbar":{"title":{"text":"Linear ROAS (x)"}},"colorscale":[[0.0,"#440154"],[0.1111111111111111,"#482878"],[0.2222222222222222,"#3e4989"],[0.3333333333333333,"#31688e"],[0.4444444444444444,"#26828e"],[0.5555555555555556,"#1f9e89"],[0.6666666666666666,"#35b779"],[0.7777777777777778,"#6ece58"],[0.8888888888888888,"#b5de2b"],[1.0,"#fde725"]],"line":{"color":"DarkSlateGrey","width":1.5},"showscale":true,"size":{"dtype":"f8","bdata":"iIiIiIiIQECJiIiIiIhGQDMzMzMzM0lA3t3d3d0dUEBERERERERKQFVVVVVV1UxAIiIiIiKiTEBERERERMRHQA=="}},"mode":"markers+text","text":["Email","Facebook Ads","Google Ads","Instagram","Mobile App","Organic Search","Website","YouTube"],"textposition":"top center","x":{"dtype":"f8","bdata":"j8L1KNzhtUCkcD0KZ2vgQM3MzMzMCeNA16NwPXqt2kDNzMzMDGK0QArXo3C92atACtejcL3iskAK16NwZabqQA=="},"y":{"dtype":"f8","bdata":"vaHQCqQUQEDnm47losceQLjc\u002fCVIqRlAxSLb+rIAJ0DQOTOBzmRDQEt4ULBaFk1AyX5Y1yimTECCEC07+VARQA=="},"type":"scatter"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"title":{"font":{"size":18},"text":"\u003cb\u003eMarketing Efficiency Matrix: Spend vs Multi-Touch Linear ROAS\u003c\u002fb\u003e\u003cbr\u003e\u003csup\u003e(Bubble size proportional to attributed conversions)\u003c\u002fsup\u003e"},"yaxis":{"title":{"text":"\u003cb\u003eLinear ROAS (Log Scale)\u003c\u002fb\u003e"},"type":"log"},"xaxis":{"title":{"text":"\u003cb\u003eTotal Spend ($)\u003c\u002fb\u003e"},"tickprefix":"$","tickformat":",.0f"},"height":500},                        {"responsive": true}                    )                };            </script>        </div>
+        </div>
+        <div class="chart-card">
+            <div style="height:450px; width:100%;">                            <div id="e6a2a71e-28ee-4a00-b9f8-8f0dea0a232c" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("e6a2a71e-28ee-4a00-b9f8-8f0dea0a232c")) {                    Plotly.newPlot(                        "e6a2a71e-28ee-4a00-b9f8-8f0dea0a232c",                        [{"hovertemplate":"\u003cb\u003e%{x}\u003c\u002fb\u003e\u003cbr\u003eBudget Shift: $%{y:,.2f}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":["#2ecc71","#2ecc71","#2ecc71","#2ecc71","#2ecc71","#2ecc71","#2ecc71","#e74c3c"]},"text":["+34.9%","+3.8%","+3.8%","+3.8%","+19.4%","+29.7%","+29.7%","-17.0%"],"textposition":"outside","x":["Email","Facebook Ads","Google Ads","Instagram","Mobile App","Organic Search","Website","YouTube"],"y":{"dtype":"f8","bdata":"LQrL3MuTnkBAPKTxCvGTQF9uIf89H5dAsEF+azUzkEC5J1fKpJOPQChfNnVckZBAYL6aljV4lkD4dEHVVRXCwA=="},"type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"title":{"font":{"size":18},"text":"\u003cb\u003eRecommended Budget Optimization Shifts ($ Delta)\u003c\u002fb\u003e"},"yaxis":{"title":{"text":"\u003cb\u003eBudget Delta ($)\u003c\u002fb\u003e"},"tickprefix":"$","tickformat":",.0f"},"xaxis":{"title":{"text":"\u003cb\u003eMarketing Channel\u003c\u002fb\u003e"}},"height":450},                        {"responsive": true}                    )                };            </script>        </div>
+        </div>
+    </div>
+
+    <!-- Chart Row 3: Markov Heatmap -->
+    <div class="chart-card">
+        <div style="height:500px; width:100%;">                            <div id="17231aa6-009f-4755-a200-345209a23ed1" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script>                window.PLOTLYENV=window.PLOTLYENV || {};                                if (document.getElementById("17231aa6-009f-4755-a200-345209a23ed1")) {                    Plotly.newPlot(                        "17231aa6-009f-4755-a200-345209a23ed1",                        [{"colorbar":{"title":{"text":"Probability"}},"colorscale":[[0.0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1.0,"rgb(8,48,107)"]],"text":{"dtype":"f8","bdata":"AAAAAAAAAAAK16NwPQq3PzMzMzMzM8M\u002fmpmZmZmZuT97FK5H4XrEPylcj8L1KLw\u002f7FG4HoXrwT8pXI\u002fC9Si8PzMzMzMzM8M\u002fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA7FG4HoXrwT+kcD0K16PAP5qZmZmZmbk\u002fmpmZmZmZqT+kcD0K16PAP6RwPQrXo8A\u002f7FG4HoXrsT+amZmZmZmpP5qZmZmZmak\u002fw\u002fUoXI\u002fCxT8AAAAAAAAAAHsUrkfherQ\u002fexSuR+F6tD97FK5H4Xq0Pylcj8L1KLw\u002fexSuR+F6tD8K16NwPQq3P3sUrkfherQ\u002fexSuR+F6tD8K16NwPQq3Pylcj8L1KMw\u002fAAAAAAAAAADsUbgeheuxP7gehetRuK4\u002fKVyPwvUovD+amZmZmZm5P7gehetRuL4\u002f7FG4HoXrsT+4HoXrUbiuP5qZmZmZmbk\u002fKVyPwvUovD9SuB6F61HIPwAAAAAAAAAACtejcD0Ktz8pXI\u002fC9Si8P5qZmZmZmbk\u002fpHA9CtejwD+amZmZmZm5P7gehetRuL4\u002fexSuR+F6tD97FK5H4Xq0P7gehetRuK4\u002fpHA9CtejwD8AAAAAAAAAAJqZmZmZmak\u002fCtejcD0Ktz+amZmZmZmpP7gehetRuK4\u002fMzMzMzMzwz+4HoXrUbiuPwrXo3A9Crc\u002fCtejcD0Ktz8pXI\u002fC9Si8PwAAAAAAANA\u002fAAAAAAAAAAB7FK5H4Xq0P3sUrkfheqQ\u002fCtejcD0Ktz+amZmZmZm5Pylcj8L1KLw\u002fexSuR+F6tD\u002fsUbgeheuxP5qZmZmZmbk\u002f7FG4HoXrwT8K16NwPQrHPwAAAAAAAAAA7FG4HoXrsT\u002fsUbgeheuxPwrXo3A9Crc\u002fCtejcD0Ktz+4HoXrUbiuP6RwPQrXo8A\u002fCtejcD0Ktz+kcD0K16PAP5qZmZmZmbk\u002fw\u002fUoXI\u002fCxT8AAAAAAAAAALgehetRuK4\u002fCtejcD0Ktz8K16NwPQq3P5qZmZmZmbk\u002fuB6F61G4vj97FK5H4XqkPwrXo3A9Crc\u002fKVyPwvUovD+amZmZmZm5P1K4HoXrUcg\u002fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8D8=","shape":"11, 11"},"texttemplate":"%{text}","x":["(start)","Email","Facebook Ads","Google Ads","Instagram","Mobile App","Organic Search","Website","YouTube","(conversion)","(null)"],"y":["(start)","Email","Facebook Ads","Google Ads","Instagram","Mobile App","Organic Search","Website","YouTube","(conversion)","(null)"],"z":{"dtype":"f8","bdata":"AAAAAAAAAAAK16NwPQq3P8SSXyz5xcI\u002fctpApw10uj97FK5H4XrEP0ob6LSBTrs\u002ffLHkF0t+wT8pXI\u002fC9Si8P8SSXyz5xcI\u002fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAActFFF110wT9IkKcEeUrAP5qZmZmZmbk\u002fPhdddNFFpz9IkKcEeUrAP0iQpwR5SsA\u002fnBLkKUGesj8+F1100UWnPz4XXXTRRac\u002fG9a+Ye0bxj8AAAAAAAAAAFNVVVVVVbU\u002fYZNNNtlksz9TVVVVVVW1PyKbbLLJJrs\u002fU1VVVVVVtT9FF1100UW3P1NVVVVVVbU\u002fU1VVVVVVtT9FF1100UW3Px988MEHH8w\u002fAAAAAAAAAAA730+Nl26yP\u002fyp8dJNYrA\u002feekmMQisvD\u002f6fmq8dJO4P7gehetRuL4\u002fO99PjZdusj956SYxCKysPzm0yHa+n7o\u002feekmMQisvD\u002f6fmq8dJPIPwAAAAAAAAAARRdddNFFtz+L4V4Fs6S8P18Fs6QcELk\u002f4l4Fs6QcwD948wjVZ9q6P6TPtDX+br4\u002fLCkHRIZ7tT8SO7ETO7GzP99eBbOkHLA\u002f4l4Fs6QcwD8AAAAAAAAAAHaDKfJZN6g\u002fxmfdYIp8tj\u002fIusEU+ayrPyjyWTeYIq8\u002fbTBFPusGwz8o8lk3mCKvP8Zn3WCKfLY\u002fxmfdYIp8tj941g2myGe9PwAAAAAAANA\u002fAAAAAAAAAAASfjUm0gO1P4OJ9EDl7KY\u002fion0QOXstj8ClbNb+NW4P+qrMZEeqLw\u002fEn41JtIDtT8pZ7fwqzGxP3qgcnYLv7o\u002f5ewWfjUmwj+NifRA5ezGPwAAAAAAAAAADBiBERiBsT8MGIERGIGxPxeBERiBEbg\u002fEV7hFV7htT8a6qEe6qGuP5AGaZAGacA\u002fF4ERGIERuD+QBmmQBmnAPxakQRqkQbo\u002fFF7hFV7hxT8AAAAAAAAAAD5MriAmV7A\u002fWPyJhFOatz9Y\u002fImEU5q3P2HogN0ea7k\u002feqxl6IDdvj9XEJMriMmlP1j8iYRTmrc\u002fadR3Nuo7uz9h6IDdHmu5P2ByBTG5gsg\u002fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8D8=","shape":"11, 11"},"type":"heatmap"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermap":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermap"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"title":{"font":{"size":18},"text":"\u003cb\u003eMarkov State Transition Probability Matrix\u003c\u002fb\u003e"},"xaxis":{"title":{"text":"\u003cb\u003eNext State\u003c\u002fb\u003e"}},"yaxis":{"title":{"text":"\u003cb\u003eCurrent State\u003c\u002fb\u003e"}},"height":500},                        {"responsive": true}                    )                };            </script>        </div>
+    </div>
+
+    <!-- Table 1: Channel Attribution Performance -->
+    <div class="chart-card">
+        <div class="section-title">Channel Performance & Multi-Touch Attribution Matrix</div>
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="text-align: left;">Channel</th>
+                        <th>Spend ($)</th>
+                        <th>Spend Share</th>
+                        <th>First-Touch Rev</th>
+                        <th>Last-Touch Rev</th>
+                        <th>Linear Rev</th>
+                        <th>Markov Rev</th>
+                        <th>FTA ROAS</th>
+                        <th>LTA ROAS</th>
+                        <th>Linear ROAS</th>
+                        <th>Markov ROAS</th>
+                        <th>Linear CAC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr>
+            <td style="font-weight: bold; text-align: left;">Email</td>
+            <td>$5,601.86</td>
+            <td>3.2%</td>
+            <td>$236,053.56</td>
+            <td>$38,471.97</td>
+            <td style="font-weight: bold; color: #27ae60;">$180,162.85</td>
+            <td>$140,695.33</td>
+            <td>42.14x</td>
+            <td>6.87x</td>
+            <td style="font-weight: bold; color: #2980b9;">32.16x</td>
+            <td>25.12x</td>
+            <td>$677.64</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: bold; text-align: left;">Facebook Ads</td>
+            <td>$33,627.22</td>
+            <td>19.4%</td>
+            <td>$161,555.27</td>
+            <td>$258,413.85</td>
+            <td style="font-weight: bold; color: #27ae60;">$258,760.02</td>
+            <td>$255,906.91</td>
+            <td>4.80x</td>
+            <td>7.68x</td>
+            <td style="font-weight: bold; color: #2980b9;">7.69x</td>
+            <td>7.61x</td>
+            <td>$2,984.66</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: bold; text-align: left;">Google Ads</td>
+            <td>$38,990.40</td>
+            <td>22.4%</td>
+            <td>$311,158.94</td>
+            <td>$233,456.17</td>
+            <td style="font-weight: bold; color: #27ae60;">$250,135.67</td>
+            <td>$246,674.17</td>
+            <td>7.98x</td>
+            <td>5.99x</td>
+            <td style="font-weight: bold; color: #2980b9;">6.42x</td>
+            <td>6.33x</td>
+            <td>$3,094.48</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: bold; text-align: left;">Instagram</td>
+            <td>$27,317.91</td>
+            <td>15.7%</td>
+            <td>$358,775.26</td>
+            <td>$176,146.25</td>
+            <td style="font-weight: bold; color: #27ae60;">$314,193.27</td>
+            <td>$338,299.63</td>
+            <td>13.13x</td>
+            <td>6.45x</td>
+            <td style="font-weight: bold; color: #2980b9;">11.50x</td>
+            <td>12.38x</td>
+            <td>$1,695.01</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: bold; text-align: left;">Mobile App</td>
+            <td>$5,218.05</td>
+            <td>3.0%</td>
+            <td>$76,462.33</td>
+            <td>$439,217.64</td>
+            <td style="font-weight: bold; color: #27ae60;">$202,395.39</td>
+            <td>$195,164.30</td>
+            <td>14.65x</td>
+            <td>84.17x</td>
+            <td style="font-weight: bold; color: #2980b9;">38.79x</td>
+            <td>37.40x</td>
+            <td>$397.31</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: bold; text-align: left;">Organic Search</td>
+            <td>$3,564.87</td>
+            <td>2.1%</td>
+            <td>$186,293.34</td>
+            <td>$312,336.24</td>
+            <td style="font-weight: bold; color: #27ae60;">$207,385.04</td>
+            <td>$218,285.23</td>
+            <td>52.26x</td>
+            <td>87.62x</td>
+            <td style="font-weight: bold; color: #2980b9;">58.17x</td>
+            <td>61.23x</td>
+            <td>$247.27</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: bold; text-align: left;">Website</td>
+            <td>$4,834.74</td>
+            <td>2.8%</td>
+            <td>$238,489.17</td>
+            <td>$255,886.99</td>
+            <td style="font-weight: bold; color: #27ae60;">$277,021.52</td>
+            <td>$298,774.93</td>
+            <td>49.33x</td>
+            <td>52.93x</td>
+            <td style="font-weight: bold; color: #2980b9;">57.30x</td>
+            <td>61.80x</td>
+            <td>$337.70</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: bold; text-align: left;">YouTube</td>
+            <td>$54,579.17</td>
+            <td>31.4%</td>
+            <td>$357,543.25</td>
+            <td>$212,402.01</td>
+            <td style="font-weight: bold; color: #27ae60;">$236,277.36</td>
+            <td>$232,530.63</td>
+            <td>6.55x</td>
+            <td>3.89x</td>
+            <td style="font-weight: bold; color: #2980b9;">4.33x</td>
+            <td>4.26x</td>
+            <td>$4,592.92</td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Table 2: Strategic Recommendations -->
+    <div class="chart-card">
+        <div class="section-title">Algorithmic Budget Optimization & Reallocation Strategy</div>
+        <div style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="text-align: left;">Channel</th>
+                        <th>Current Spend</th>
+                        <th>Optimized Spend</th>
+                        <th>Budget Delta</th>
+                        <th>Classification</th>
+                        <th>Recommended Action</th>
+                        <th style="text-align: left;">Strategic Rationale</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+        <tr>
+            <td style="font-weight: bold;">Email</td>
+            <td>$5,601.86 (3.2%)</td>
+            <td style="font-weight: bold;">$7,558.81 (4.4%)</td>
+            <td style="color: green; font-weight: bold;">$+1,956.95 (+34.9%)</td>
+            <td style="color: #27ae60; font-weight: bold;">Heavily Undervalued (Top-Funnel Initiator)</td>
+            <td><b>Scale Budget (+25% to +40%)</b></td>
+            <td style="font-size: 13px; text-align: left;">Drives substantial customer acquisition (First-Touch ROAS 42.1x) that is obscured by single-touch Last-Click models (6.9x).</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: bold;">Facebook Ads</td>
+            <td>$33,627.22 (19.4%)</td>
+            <td style="font-weight: bold;">$34,903.48 (20.1%)</td>
+            <td style="color: green; font-weight: bold;">$+1,276.26 (+3.8%)</td>
+            <td style="color: #2980b9; font-weight: bold;">Balanced Performer</td>
+            <td><b>Maintain Budget with Creative Optimization</b></td>
+            <td style="font-size: 13px; text-align: left;">Steady cross-funnel contributor with 7.7x multi-touch ROAS.</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: bold;">Google Ads</td>
+            <td>$38,990.40 (22.4%)</td>
+            <td style="font-weight: bold;">$40,470.21 (23.3%)</td>
+            <td style="color: green; font-weight: bold;">$+1,479.81 (+3.8%)</td>
+            <td style="color: #2980b9; font-weight: bold;">Balanced Performer</td>
+            <td><b>Maintain Budget with Creative Optimization</b></td>
+            <td style="font-size: 13px; text-align: left;">Steady cross-funnel contributor with 6.4x multi-touch ROAS.</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: bold;">Instagram</td>
+            <td>$27,317.91 (15.7%)</td>
+            <td style="font-weight: bold;">$28,354.71 (16.3%)</td>
+            <td style="color: green; font-weight: bold;">$+1,036.80 (+3.8%)</td>
+            <td style="color: #2980b9; font-weight: bold;">Balanced Performer</td>
+            <td><b>Maintain Budget with Creative Optimization</b></td>
+            <td style="font-size: 13px; text-align: left;">Steady cross-funnel contributor with 11.5x multi-touch ROAS.</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: bold;">Mobile App</td>
+            <td>$5,218.05 (3.0%)</td>
+            <td style="font-weight: bold;">$6,228.51 (3.6%)</td>
+            <td style="color: green; font-weight: bold;">$+1,010.46 (+19.4%)</td>
+            <td style="color: #e67e22; font-weight: bold;">Conversion Closer (Bottom-Funnel Accelerator)</td>
+            <td><b>Protect / Optimize Retention Flow</b></td>
+            <td style="font-size: 13px; text-align: left;">Dominant closer with 84.2x Last-Touch ROAS. Maintain seamless conversion funnels while relying on top-funnel channels for feeder traffic.</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: bold;">Organic Search</td>
+            <td>$3,564.87 (2.1%)</td>
+            <td style="font-weight: bold;">$4,625.21 (2.7%)</td>
+            <td style="color: green; font-weight: bold;">$+1,060.34 (+29.7%)</td>
+            <td style="color: #2980b9; font-weight: bold;">High-Efficiency Nurturer (Under-invested)</td>
+            <td><b>Scale Budget (+15% to +30%)</b></td>
+            <td style="font-size: 13px; text-align: left;">Exceptional multi-touch efficiency (Linear ROAS 58.2x) with only 2.1% budget share.</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: bold;">Website</td>
+            <td>$4,834.74 (2.8%)</td>
+            <td style="font-weight: bold;">$6,272.79 (3.6%)</td>
+            <td style="color: green; font-weight: bold;">$+1,438.05 (+29.7%)</td>
+            <td style="color: #2980b9; font-weight: bold;">High-Efficiency Nurturer (Under-invested)</td>
+            <td><b>Scale Budget (+15% to +30%)</b></td>
+            <td style="font-size: 13px; text-align: left;">Exceptional multi-touch efficiency (Linear ROAS 57.3x) with only 2.8% budget share.</td>
+        </tr>
+        
+        <tr>
+            <td style="font-weight: bold;">YouTube</td>
+            <td>$54,579.17 (31.4%)</td>
+            <td style="font-weight: bold;">$45,320.50 (26.1%)</td>
+            <td style="color: red; font-weight: bold;">$-9,258.67 (-17.0%)</td>
+            <td style="color: #c0392b; font-weight: bold;">Over-budgeted / Marginal Diminishing Returns</td>
+            <td><b>Reallocate / Trim Budget (-15% to -25%)</b></td>
+            <td style="font-size: 13px; text-align: left;">Absorbs 31.4% of budget, but multi-touch Markov ROAS is 4.3x. Shift marginal dollars to higher-ROAS top-funnel channels.</td>
+        </tr>
+        
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div style="text-align: center; color: #94a3b8; font-size: 13px; margin-top: 32px; padding-bottom: 24px;">
+        Multi-Touch Marketing Attribution ROI Project &bull; Produced by Antigravity AI
+    </div>
+
+</body>
+</html>
